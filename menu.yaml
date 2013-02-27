@@ -1,0 +1,236 @@
+# Diese Datei enthält die Konfiguration des GSO-Datenbankmenü im YAML-Format.
+# Festgelegt ist an dieser Stelle nur die Auswahl und Reihenfolge der 
+# Datenbanken, referenziert über ihren Datenbank-Key oder Prefix-key.
+
+# Auf der Kommandozeile kann YAML folgendermaßen nach JSON umgewandelt werden:
+# perl -MYAML -MJSON -E 'say JSON->new->pretty->encode(Load(join("",<>)))' < menu.yaml
+
+databases:
+    - gvk
+    - olc
+    - gvkplus
+    - 
+        databases: olcssg
+        info: "http://www.gbv.de/benutzer/datenbanken/ssg"
+        sorted: true
+    - 
+        title: "Nationale Datenbanken und Bibliographien"
+        titleen:German National Databases 
+        info: "http://www.gbv.de/benutzer/datenbanken/deutsche_nationaldatenbanken"
+        databases:
+            - bmsonline
+            - digicult
+            - eromm
+            - idz
+            - ikar
+            - iwf
+            - leibniz
+            - ddbexil
+            - vd17
+            - vki
+            - wao
+    -
+        title: "Datenbanken mit Nationallizenz"
+        databases:
+            - suchkiste
+            - natliz
+            - natlizzss
+            - natlizfak
+    -
+        title: "Kataloge im CBS-Service der VZG"
+        
+        databases:
+            -
+                access: "http://gso.gbv.de/DB=9.663/"
+                title: "Wissenschaftskolleg zu Berlin"
+                titleen:Institute for Advanced Study - Online Library Catalog
+            -
+                access: "http://gso.gbv.de/DB=9.647/"
+                title: "Leibniz-Zentrum für Marine Tropenökologie, Bremen"
+                titleen:
+            -
+                access: "http://gso.gbv.de/DB=9.651/"
+                title: "Museen der Stadt Halberstadt"
+                titleen:
+            -
+                access: "http://gso.gbv.de/DB=9.642/"
+                title: "Stadmuseum und Horst Janssen Museum Oldenburg"
+                titleen:
+            -
+                access: "http://gso.gbv.de/DB=1.92/"
+                title: "Bibliotheken Friedrich des Großen, Potsdam"
+                titleen:Libraries of Frederik the Great
+            -
+                access: "http://gso.gbv.de/DB=9.675/"
+                title: "Stadtarchiv, Hansestadt Stade"
+                titleen:Hansestadt Stade Stadtarchiv - Online-Katalog
+            -
+                access: "http://gso.gbv.de/DB=9.662/"
+                title: "Landschaftsverband Stade"
+                titleen:Regional Association Stade - Online Library Catalog
+    - 
+        databases: rk
+        sorted: true
+    -
+        title: "Fachkataloge"
+        databases: "fachopac|fachopacplus"
+        sorted: true
+    -
+        title: "Bibliotheksspezifische Fachkataloge"
+        databases:
+            - aghbb
+            - thbb
+            - mpigbv
+            - museen
+            - amb
+    -
+        title: "Lokale Bibliothekskataloge"
+        databases:
+            -
+                access: "http://vzlbs.gbv.de/cgi-bin/wwwopc4menu" 
+                title: LBS-Service der Verbundzentrale
+                titleen:
+            -
+                access: "http://lhanh.gbv.de/cgi-bin/wwwopc4menu"
+                title: LBS Anhalt
+                titleen:
+            -
+                access: "http://stabikat.staatsbibliothek-berlin.de/ "
+                title: LBS Berlin - Staatsbibliothek
+                titleen:The Online Catalogue of the Berlin State Library - Prussian Cultural Heritage - StaBiKat
+            -
+                access: "http://iaiweb1.iai.spk-berlin.de/cgi-bin/wwwopc4menu"
+                title: LBS Berlin - Stiftung Preußischer Kulturbesitz
+                titleen:
+            -
+                access: "http://sunny.biblio.etc.tu-bs.de/cgi-bin/wwwopc4menu"
+                title: LBS Braunschweig
+                titleen:Catalog menu LBS Braunschweig
+            -
+                access: "http://katalog.suub.uni-bremen.de/cgi-bin/wwwopc4menu"
+                title: LBS Bremen
+                titleen:Library Catalogue SuUB Bremen
+            -
+                access: "http://opac.ub.tu-clausthal.de/cgi-bin/wwwopc4menu"
+                title: LBS Clausthal
+                titleen:
+            -
+                access: "http://lhemd.gbv.de/cgi-bin/wwwopc4menu "
+                title: LBS Emden
+                titleen:
+            -
+                access: "http://opac.uni-erfurt.de/cgi-bin/wwwopc4menu"
+                title: LBS Erfurt
+                titleen:
+            -
+                access: "http://opac.sub.uni-goettingen.de/cgi-bin/wwwopc4menu "
+                title: LBS Göttingen
+                titleen:
+            -
+                access: "https://opac.ub.uni-greifswald.de/cgi-bin/wwwopc4menu"
+                title: LBS Greifswald
+                titleen:
+            -
+                access: "http://haweb1.bibliothek.uni-halle.de/cgi-bin/wwwopc4menu"
+                title: LBS Halle - Merseburg
+                titleen:Local Library System Halle-Merseburg
+            -
+                access: "http://kataloge.uni-hamburg.de/cgi-bin/wwwopc4menu "
+                title: LBS Hamburg
+                titleen:Local Library System Hamburg
+            -
+                access: "http://katalog.b.tu-harburg.de/ "
+                title: LBS TU Hamburg-Harburg
+                titleen:University Library of TUHH - Books and Journals
+            -
+                access: "https://katalog.b.tu-harburg.de/DB=22/"
+                title: LBS Hamburg, HCU
+                titleen:Welcome to Informations- und Medienzentrum (IMZ) der HCU
+            -
+                access: "http://hsu-bibliothek.de/DB=1/"
+                title: LBS Hamburg, HSU
+                titleen:Catalog of the University Library of the Helmut-Schmidt-Universität 
+            -
+                access: "http://opac.tib.uni-hannover.de/cgi-bin/wwwopc4menu"
+                title: LBS Hannover
+                titleen:Hannover Local Library System (HOBSY)
+            -
+                access: "http://opac.lbs-hildesheim.gbv.de/cgi-bin/wwwopc4menu"
+                title: LBS Hildesheim
+                titleen:
+            -
+                access: "http://katalog.bibliothek.tu-ilmenau.de/cgi-bin/wwwopc4menu"
+                title: LBS Ilmenau
+                titleen:
+            -
+                access: "http://kataloge.thulb.uni-jena.de/cgi-bin/wwwopc4menu_ssl"
+                title: LBS Jena
+                titleen:
+            -
+                access: "http://lhweb.ub.uni-kiel.de/cgi-bin/wwwopc4menu"
+                title: LBS Kiel
+                titleen:
+            -
+                access: "http://www.econis.eu"
+                title: LBS Kiel: ZBW
+                titleen:
+            -
+                access: "http://katalog.leuphana.gbv.de/DB=1/"
+                title: LBS Lüneburg
+                titleen:Online Catalogue of the University Library of Lueneburg
+            -
+                access: "http://opac.uni-magdeburg.de/cgi-bin/wwwopc4menu"
+                title: LBS Magdeburg
+                titleen:Local Library System of Magdeburg
+            -
+                access: "http://osopc4.ub.uni-osnabrueck.de/cgi-bin/wwwopc4menu"
+                title: LBS Osnabrück
+                titleen:Osnabrueck Local Library System
+            -
+                access: "http://opac.ub.uni-potsdam.de"
+                title: LBS Potsdam
+                titleen:Online Catalogue of the University Library Potsdam
+            -
+                access: "http://katalog.ub.uni-rostock.de/ubscript-cgi/wwwopc4menu?LNG=DU"
+                title: LBS Rostock
+                titleen:Catalogue Menu Lokales Bibliothekssystem
+            -
+                access: "http://lhopc4.hsb.hs-wismar.de/cgi-bin/wwwopc4menu"
+                title: LBS Schwerin - Wismar
+                titleen:
+            -
+                access: "http://wwwopac.ub.uni-weimar.de/cgi-bin/wwwopc4menu"
+                title: LBS Weimar
+                titleen:
+    -
+        title: "Datenbanken für Öffentliche Bibliotheken"
+        titleen:Databases for Public Libraries 
+        info: "http://www.gbv.de/benutzer/datenbanken/datenbanken_OEBs" 
+        databases:
+            - oevk
+            - goevk
+            - ekztitel
+            - olcoeb
+            -
+                title: Regionalkataloge Öffentlicher Bibliotheken
+                databases: rkoeb
+                sorted: true
+    -
+        title: "Sonstige Datenbanken"
+        databases:
+            - doajgbv
+            - ohbtoc
+            - hdeutsch
+    -
+        title: "Externe Datenbanken"
+        databases:
+            - dnbportal
+            - bvb
+            - hbz
+            - hebis
+            - kobv
+            - swb
+            - icat
+            - loccat
+            - tel
+

@@ -1,0 +1,79 @@
+# Diese YAML-Datei entspricht einer JSON-Datei.
+# Auf der Kommandozeile kann YAML folgendermaßen nach JSON umgewandelt werden:
+# perl -MYAML -MJSON -E 'say JSON->new->pretty->encode(Load(join("",<>)))'
+
+# Diese Datei enthält Nicht-PICA Datenbanken und andere Informationen,
+# die noch nicht in der Datenbankkonfiguration eingetragen sind.
+# Sobal dies geschehen ist, wird diese Datei nicht mehr benötigt.
+
+databases:
+    dnbportal:
+        title: "DNB - Deutsche Nationalbibliothek"
+        titleen:
+        access: "http://portal.d-nb.de/"
+    suchkiste:
+        title: "Nationallizenzen Suchmaschine"
+        titleen:
+        access: "http://finden.nationallizenzen.de"
+    bvb:
+        title: "BVB - Bibliotheksverbund Bayern "
+        titleen:
+        access: "http://bvba2.bib-bvb.de/"
+    hbz:
+        title: "HBZ - Verbundkatalog NRW"
+        titleen:
+        access: "http://okeanos-www.hbz-nrw.de/F/"
+    kobv:
+        title: "KOBV - Kooperativer Bibliotheksverbund Berlin-Brandenburg"
+        titleen:
+        access: "http://search.kobv.de/"
+    icat:
+        title: "ICAT - Die Britische Bibliothek London"
+        titleen: British library
+        access: "http://catalogue.bl.uk/"
+    loccat:
+        title: "LoC - Library of Congress"
+        access: "http://catalog.loc.gov/"
+    tel:
+        title: "TEL - The European Library"
+        access: "http://search.theeuropeanlibrary.org/"
+
+    # Nicht zu verwechseln mit 'doajgbv', eine GBV-Datenbank, die nur einen Ausschnitt von doaj enthält
+    doaj:
+        title: "DOAJ - Directory of Open Access Journals"
+        access: "http://www.doaj.org/"
+
+    hdeutsch:
+        title: "Niedersächsisches Konsortium - Verlag Harry Deutsch"
+        titleen:Access Authorized Institutions for the Harri Deutsch Databases 
+        access: "http://www.gbv.de/benutzer/datenbanken/harri_deutsch_verlag"
+
+    # info-urls
+    gvk: { info: "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV" }
+    gvkplus: { info: "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV" }
+    olc: { info: "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV" }
+    natliz: { info: "http://www.gbv.de/benutzer/datenbanken/nl_monographien" }
+    natlizzss: { info: "http://www.gbv.de/benutzer/datenbanken/nl_zeitschriften" }
+    natlizfak: { info: "http://www.gbv.de/benutzer/datenbanken/nationallizenzen-fach-und-faktendatenbanken" }
+    doajgbv: { info: "http://www.gbv.de/benutzer/datenbanken/online_ressourcen" }
+    olr: { info: "http://www.gbv.de/benutzer/datenbanken/online_ressourcen" }
+
+# TODO: 
+#   add english titles
+#  dnbportal:
+#       title: "DNB - Deutsche Nationalbibliothek"
+#       title_en: "DNB - German National Library"
+#
+
+# ___general format___
+# 
+# key:
+#   title: ...
+#   title_en: ...
+#   access: "psi://{host}/DB={dbsid}?level={level}"
+#   info: "{infourl}"
+#   username: ...
+#   password: ...
+#   restricted: true|false
+#   allow: ...
+#
