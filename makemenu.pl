@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 #ABSTRACT: Collect GBV database information for GSO-Menu
-use v5.14.2;
+use v5.10;
+use strict;
 
 use Config::ZOMG;
 use Hash::Merge qw(merge);

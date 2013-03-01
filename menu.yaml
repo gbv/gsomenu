@@ -15,7 +15,7 @@ databases:
         sorted: true
     - 
         title_de: "Nationale Datenbanken und Bibliographien"
-        title_en: German National Databases 
+        title_en: "German National Databases"
         info: "http://www.gbv.de/benutzer/datenbanken/deutsche_nationaldatenbanken"
         databases:
             - bmsonline
@@ -214,11 +214,11 @@ databases:
         databases:
             - oevk
             - goevk
-            - ekztitel
+#            - ekztitel
             - olcoeb
             -
                 title_de: "Regionalkataloge Öffentlicher Bibliotheken"
-                title_en: "Regional catalogue of public libraries"
+                title_en: "Regional catalogues of public libraries"
                 databases: rkoeb
                 sorted: true
     -
@@ -226,7 +226,7 @@ databases:
         title_en: "Other databases"
         databases:
             - doajgbv
-            - ohbtoc
+#            - ohbtoc
             - hdeutsch
     -
         title_de: "Externe Datenbanken"

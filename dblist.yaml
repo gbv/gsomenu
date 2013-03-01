@@ -62,4 +62,10 @@ olr: { info: "http://www.gbv.de/benutzer/datenbanken/online_ressourcen" }
 
 # englische titel
 digicult:
-    title_en: digiCULT
+    title_en: "digiCULT"
+gvk:
+    title_en: "GVK - GBV Union Catalogue"
+olc:
+    title_en: "Online Contents"
+gvkplus:
+    title_en: "GVK-PLUS - GBV Union Catalogue with Online Contents"
