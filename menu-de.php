@@ -23,34 +23,28 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    
-      <base href="http://www.gbv.de/gsomenu" /><!--[if lt IE 7]></base><![endif]-->
-    
-
-    
-        
   
-    <style type="text/css" media="screen">@import url(http://www.gbv.de/portal_css/Estatelite%20Theme/base-cachekey-08c5318f0877d5a668d9ec2215f43bcb.css);</style>
-    <link rel="stylesheet" type="text/css" media="screen" href="http://www.gbv.de/portal_css/Estatelite%20Theme/collective.js.jqueryui.custom.min-cachekey-213ed9e5b8b59b591bbea9503b2a74ad.css" />
-    <style type="text/css" media="screen">@import url(http://www.gbv.de/portal_css/Estatelite%20Theme/columns-cachekey-c294c29e2d58393fc3e19997e02543f8.css);</style>
-    <link rel="stylesheet" type="text/css" media="screen" href="http://www.gbv.de/portal_css/Estatelite%20Theme/resourcetinymce.stylesheetstinymce-cachekey-3b6bd48bf749b8338aa600178793b898.css" />
-    <style type="text/css">@import url(http://www.gbv.de/portal_css/Estatelite%20Theme/print-cachekey-da9e33ac2e89e6cc27e2c5a7e2232814.css);</style>
-    <link rel="stylesheet" type="text/css" media="screen" href="http://www.gbv.de/portal_css/Estatelite%20Theme/resourceplone.app.discussion.stylesheetsdiscussion-cachekey-f209a67cf763f267665ddee2a5cba917.css" />
-    <style type="text/css" media="screen">@import url(http://www.gbv.de/portal_css/Estatelite%20Theme/ploneKss-cachekey-10ffe8c1206f5eb84b107eb7365bc649.css);</style>
-    <style type="text/css" media="screen">@import url(http://www.gbv.de/portal_css/Estatelite%20Theme/resourceProducts.Doormat.stylesheetsdoormat-cachekey-ec4e8a8dbc71a06320b96fab5e55a8a0.css);</style>
+    <style type="text/css" media="screen">@import url(./portal_css/base.css);</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="./portal_css/collective.js.jqueryui.custom.min.css" />
+    <style type="text/css" media="screen">@import url(./portal_css/columns.css);</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="./portal_css/resourcetinymce.stylesheetstinymce.css" />
+    <style type="text/css">@import url(./portal_css/print.css);</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="./portal_css/resourceplone.app.discussion.stylesheetsdiscussion.css" />
+    <style type="text/css" media="screen">@import url(./portal_css/ploneKss.css);</style>
+    <style type="text/css" media="screen">@import url(./portal_css/resourceProducts.Doormat.stylesheetsdoormat.css);</style>
         <!--[if lt IE 8]>    
     
-    <link rel="stylesheet" type="text/css" media="screen" href="http://www.gbv.de/portal_css/Estatelite%20Theme/IEFixes-cachekey-fb793c1c7c7001705e6362463c7ece32.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./portal_css/IEFixes.css" />
         <![endif]-->
     
-    <style type="text/css">@import url(http://www.gbv.de/portal_css/Estatelite%20Theme/estatelite-cachekey-937bc3fae98216f49760df9b28a22c78.css);</style>
+    <style type="text/css">@import url(./portal_css/estatelite.css);</style>
 
   
-    <link rel="stylesheet" data-rel="kinetic-stylesheet" type="text/kss" href="http://www.gbv.de/portal_kss/Estatelite%20Theme/resourcetinymce.ksstinymce-cachekey-966c54d2c1847dcf535eb2c9896bf26d.kss" />
-    <link rel="stylesheet" data-rel="kinetic-stylesheet" type="text/kss" href="http://www.gbv.de/portal_kss/Estatelite%20Theme/at-cachekey-1e9f138ed00838e3014ae7d78f390ce5.kss" />
+    <link rel="stylesheet" data-rel="kinetic-stylesheet" type="text/kss" href="./portal_kss/resourcetinymce.ksstinymce.kss" />
+    <link rel="stylesheet" data-rel="kinetic-stylesheet" type="text/kss" href="./portal_kss/at.kss" />
   
-    <script type="text/javascript" src="http://www.gbv.de/portal_javascripts/Estatelite%20Theme/resourceplone.app.jquery-cachekey-f8f8cdb493560cdb3cc28d199205b4b0.js"></script>
-    <script type="text/javascript" src="http://www.gbv.de/portal_javascripts/Estatelite%20Theme/collective.js.jqueryui.custom.min-cachekey-39c9ebdab1a2b76743ee1af887ebbe41.js"></script>
+    <script type="text/javascript" src="./portal_javascripts/resourceplone.app.jquery.js"></script>
+    <script type="text/javascript" src="./portal_javascripts/collective.js.jqueryui.custom.min.js"></script>
 
 
 <meta name="description" content="Übersicht über das digitale Angebot der Verbundzentrale des GBV (VZG)" />
