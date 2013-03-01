@@ -6,9 +6,6 @@ body {
   font-size: 9pt;
 }
 
-/* use german by default */
-.ln-en { display: none; }
-
 a, a:hover, a:visited { 
   text-decoration: none; 
   color:#039;
@@ -22,7 +19,11 @@ a, a:hover, a:visited {
 #header {
   height: 150px; 
   width: 1000px;
-  background-color: #577FBB;
+  background: url("https://www.gbv.de/header.jpg") no-repeat scroll 0 0 transparent;
+}
+#portal-languageselector li {
+  display: inline;
+  margin-bottom: 0;
 }
 #globalnav {
   background-color: #577FBB;
