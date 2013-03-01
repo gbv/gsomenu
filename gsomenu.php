@@ -24,6 +24,8 @@ $ln = (@$_GET['ln'] == 'en' || @$_GET['set_language'] == 'en') ?  'en' : 'de';
 $gsomenu = json_decode(file_get_contents('gsomenu.json'),1);
 
 function dbmenu($menu) {
+	global $ln;
+	
 	if(!@$menu['databases']) return;
 	echo @$menu['sorted'] ? "<ul class='dbsorted'>\n" : "<ul>\n";
 	foreach ($menu['databases'] as $db) {
