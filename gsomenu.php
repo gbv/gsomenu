@@ -1,30 +1,33 @@
+<div class='dblist'>
 <?php
+
+$ln = (@$_GET['ln'] == 'en' || @$_GET['set_language'] == 'en') ?  'en' : 'de';
+$script = !@$_GET['noscript'];
+$debug = @$_GET['debug'];
+
 /**
  * Gibt das volle GSO-Menu, gegeben in der Datei gsomenu.json, als 
  * HTML-Baumstruktur aus. Für den Ein-/Ausklappeffekt und die
  * Formatierung werden zusätzlich eine JavaScript und eine CSS-Datei
  * geladen (benötigt jQuery).
  */
-?>
-<script type="text/javascript">
-var base = document.location.href.split('?')[0];
-$('head base').attr('href',base); // to use relative path
 
-$('head').append('<link rel="stylesheet" type="text/css" href="./gsomenu.css"/>');
-$('head').append('<script type="text/javascript" src="./gsomenu.js"/>');
 
-// optional:
-$('#portal-languageselector .language-en a').attr('href','?ln=en');
-$('#portal-languageselector .language-de a').attr('href','?ln=de');
-</script>
-<?php
+if ($script) { ?>
+  <script type="text/javascript">
+    var base = document.location.href.split('?')[0];
+    $('head base').attr('href',base); // to use relative path
 
-$ln = (@$_GET['ln'] == 'en' || @$_GET['set_language'] == 'en') ?  'en' : 'de';
+    $('head').append('<link rel="stylesheet" type="text/css" href="./gsomenu.css"/>');
+    $('head').append('<script type="text/javascript" src="./gsomenu.js"/>');
 
-$gsomenu = json_decode(file_get_contents('gsomenu.json'),1);
+    // optional:
+    // $('#portal-languageselector .language-en a').attr('href','?ln=en');
+    // $('#portal-languageselector .language-de a').attr('href','?ln=de');
+  </script>
+<?php }
 
-function dbmenu($menu) {
-	global $ln;
+function menu2html($menu, $language='de', $debug=FALSE) {
 	
 	if(!@$menu['databases']) return;
 	echo @$menu['sorted'] ? "<ul class='dbsorted'>\n" : "<ul>\n";
@@ -32,7 +35,7 @@ function dbmenu($menu) {
 		echo "<li>";
 		$title =  @$db['title_en'];
 		// uncomment for testing:
-		if (!$_GET['debug']) {
+		if (!$debug) {
 			if (!$title || $ln == 'de') $title = @$db['title_de'];
 		}
 
@@ -49,32 +52,15 @@ function dbmenu($menu) {
 			echo " <a href='".$db['info']."'><img alt='info' title='info' src='http://www.gbv.de/gsomenu/img/info.gif'></a>\n";
 		}
 		if (@$db['databases']) {
-			dbmenu($db);
+			menu2html($db, $language, $debug);
 		}
 		echo "</li>\n";
 	}
 	echo "</ul>\n";
 }
 
-echo "<div class='dblist'>";
-dbmenu($gsomenu);
-echo "</div>";
+$menu = json_decode(file_get_contents('gsomenu.json'),1);
+menu2html($menu, $ln, $debug);
 
-if ($ln == 'en') {
-?><p>
-	Sie haben keinen Zugriff?
-	<a href="http://www.gbv.de/benutzer/datenbanken/zugangsprobleme">Dann schauen Sie bitte hier!</a>
-  </p>
-  <p>
-	Informationen über <a href="http://www.gbv.de/benutzer/faq/sfx">SFX</a> 
-	und <a href="http://www.gbv.de/benutzer/z39.50-zugang/informationen-zum-z39.50-zugang-des-gbv">Literaturverwaltungsprogramme (Z39.50)</a>
-  </p>
-<?php } else { ?><p>
-	Sie haben keinen Zugriff?
-	<a href="http://www.gbv.de/benutzer/datenbanken/zugangsprobleme">Dann schauen Sie bitte hier!</a>
-  </p>
-  <p>
-	Informationen über <a href="http://www.gbv.de/benutzer/faq/sfx">SFX</a> 
-	und <a href="http://www.gbv.de/benutzer/z39.50-zugang/informationen-zum-z39.50-zugang-des-gbv">Literaturverwaltungsprogramme (Z39.50)</a>
-	</p>
-<?php } ?>
+?>
+</div>
