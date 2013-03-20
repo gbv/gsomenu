@@ -88,23 +88,23 @@
       <div id="portal-top">
         <div id="portal-header">
     <p class="hiddenStructure">
-  <a accesskey="2" href="http://www.gbv.de/gsomenu?set_language=en#content">Skip to content.</a> |
+  <a accesskey="2" href="http://www.gbv.de/gsomenu/?set_language=en#content">Skip to content.</a> |
 
-  <a accesskey="6" href="http://www.gbv.de/gsomenu?set_language=en#portal-globalnav">Skip to navigation</a>
+  <a accesskey="6" href="http://www.gbv.de/gsomenu/?set_language=en#portal-globalnav">Skip to navigation</a>
 </p>
 
 
 <ul id="portal-languageselector">
     
     <li class="currentLanguage language-en">
-        <a href="http://www.gbv.de/gsomenu?set_language=en" title="English">
+        <a href="http://www.gbv.de/gsomenu/?set_language=en" title="English">
                 <img width="14" height="11" alt="English" src="http://www.gbv.de/++resource++country-flags/gb.gif" title="English" />
             </a>
     </li>
     
     
     <li class="language-de">
-        <a href="http://www.gbv.de/gsomenu?set_language=de" title="Deutsch">
+        <a href="http://www.gbv.de/gsomenu/?set_language=de" title="Deutsch">
                 <img width="14" height="11" alt="Deutsch" src="http://www.gbv.de/++resource++country-flags/de.gif" title="Deutsch" />
             </a>
     </li>

@@ -101,10 +101,10 @@ sub retrieve {
 }
 
 sub expand_list {
-	my $db = shift;
+	my ($db, @prefixes) = @_;
 	$db->{databases} = [ ];
 
-	foreach my $prefix (@_) {
+	foreach my $prefix (@prefixes) {
 		my $uri = "http://uri.gbv.de/database/$prefix";
 		my $rdf = $LOD->retrieve( $uri );
 		$rdf = RDF::Lazy->new( $rdf, namespaces => NS )->resource($uri);
@@ -129,4 +129,11 @@ sub expand_list {
 			push @{$db->{databases}}, expand($prefix);
 		}
 	}
+
+    if (@prefixes == 1) {
+        $db->{dbkey} = $prefixes[0];
+		$db->{uri}   = "http://uri.gbv.de/database/$prefixes[0]";
+    }
+
+    $db = merge( $db, map { $dblist->{$_} // { } } @prefixes );
 }
