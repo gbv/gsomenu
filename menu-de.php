@@ -105,7 +105,7 @@
 <ul id="portal-languageselector">
     
     <li class="language-en">
-        <a href="http://www.gbv.de/digital-library?set_language=en" title="English">
+        <a href="http://www.gbv.de/gsomenu?set_language=en" title="English">
                 <img width="14" height="11" alt="English" src="http://www.gbv.de/++resource++country-flags/gb.gif" title="English" />
             </a>
     </li>

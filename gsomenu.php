@@ -1,7 +1,7 @@
 <div class='dblist'>
 <?php
 
-$ln = (@$_GET['ln'] == 'en' || @$_GET['set_language'] == 'en') ?  'en' : 'de';
+$language = (@$_GET['ln'] == 'en' || @$_GET['set_language'] == 'en') ?  'en' : 'de';
 $script = !@$_GET['noscript'];
 $debug = @$_GET['debug'];
 
@@ -33,11 +33,10 @@ function menu2html($menu, $language='de', $debug=FALSE) {
 	echo @$menu['sorted'] ? "<ul class='dbsorted'>\n" : "<ul>\n";
 	foreach ($menu['databases'] as $db) {
 		echo "<li>";
-		$title =  @$db['title_en'];
-		// uncomment for testing:
-		if (!$debug) {
-			if (!$title || $ln == 'de') $title = @$db['title_de'];
-		}
+		$title =  @$db["title_$language"];
+
+        if (!$title && !$debug) $title = @$db['title_de'];
+        if (!$title) $title = "???";
 
 		$access = @$db['access'];
 		$dbkey  = @$db['dbkey'];
@@ -51,6 +50,9 @@ function menu2html($menu, $language='de', $debug=FALSE) {
 		if (@$db['info']) {
 			echo " <a href='".$db['info']."'><img alt='info' title='info' src='http://www.gbv.de/gsomenu/img/info.gif'></a>\n";
 		}
+        if ($debug) {
+			echo " [<a href='".$db['uri']."'>$dbkey</a>]\n";
+        }
 		if (@$db['databases']) {
 			menu2html($db, $language, $debug);
 		}
@@ -60,7 +62,7 @@ function menu2html($menu, $language='de', $debug=FALSE) {
 }
 
 $menu = json_decode(file_get_contents('gsomenu.json'),1);
-menu2html($menu, $ln, $debug);
+menu2html($menu, $language, $debug);
 
 ?>
 </div>

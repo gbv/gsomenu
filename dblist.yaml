@@ -22,6 +22,10 @@ hbz:
     title_de: "HBZ - Verbundkatalog NRW"
     title_en: "HBZ - Union Catalogue North Rhine-Westphalia"
     access: "http://okeanos-www.hbz-nrw.de/F/"
+hebis:
+    title_en: "HeBIS - Union Catalogue Hessia"
+swb:
+    title_en: "SWB Online-Katalog"
 kobv:
     title_de: "KOBV - Kooperativer Bibliotheksverbund Berlin-Brandenburg"
     title_en: "KOBV - Cooperative Library Network Berlin-Brandenburg"
@@ -71,3 +75,14 @@ gvkplus:
     title_en: "GVK-PLUS - GBV Union Catalogue with Online Contents"
 doajgbv:
     title_en: "DOAJ - Directory of Open Access Journals"
+
+goevk:
+    title_en: "GOeVK combined"
+
+natliz:
+    title_en: "Nationallizenzen - Collections - Monographics"
+natlizzss:
+    title_en: "Nationallizenzen - Collections - Journals"
+natlizfak:
+    title_en: "Nationallizenzen - Fach- und Faktendatenbanken"
+

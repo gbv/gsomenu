@@ -72,10 +72,11 @@ databases:
                 title_en: "Regional Association Stade"
     - 
         databases: rk
+        title_en: "Regional databases"
         sorted: true
     -
         title_de: "Fachkataloge"
-        title_de: "Fachkataloge"
+        title_en: "Fachkataloge"
         databases: "fachopac|fachopacplus"
         sorted: true
     -

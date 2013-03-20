@@ -40,7 +40,7 @@ sub expand {
 			};
 			if ($m->{databases}) {
 				if (ref $m->{databases}) {
-					$db->{databases} = expand($m->{databases});
+					$db->{databases} = expand( $m->{databases} );
 				} else {
 					expand_list(
 						$db,
@@ -53,8 +53,7 @@ sub expand {
 		default {
 			return merge(
 				retrieve( $m ),
-				$dblist->{$m} // { },
-				{ dbkey => $m },
+				$dblist->{$m},
 			);
 		}
 	};
@@ -74,11 +73,12 @@ write_file('gsomenu.json',to_json($fullmenu, { utf8 => 1, pretty => 1 }));
 sub retrieve {
     my $dbkey = shift || return '';
     my $uri = "http://uri.gbv.de/database/$dbkey";
+
 	print $uri;
     
 	my $rdf  = $LOD->retrieve($uri);
 
-	my $db = { };
+	my $db = { dbkey => $dbkey, uri => $uri };
 
     if ($rdf->size) { 
         my $lazy = RDF::Lazy->new( $rdf, namespaces => NS );
@@ -94,7 +94,9 @@ sub retrieve {
 	
 		# TODO: info-URL 
     }
+
 	say (keys %$db ? " - ok" : " - not found");
+
 	return $db;
 }
 
