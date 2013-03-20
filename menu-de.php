@@ -238,9 +238,15 @@
             
         
 <?php include 'gsomenu.php' ?>
-                            
-                                
-                                
+  <hr>                            
+  <p>
+	Sie haben keinen Zugriff?
+	<a href="http://www.gbv.de/benutzer/datenbanken/zugangsprobleme">Dann schauen Sie bitte hier!</a>
+  </p>
+  <p>
+	Informationen über <a href="http://www.gbv.de/benutzer/faq/sfx">SFX</a> 
+	und <a href="http://www.gbv.de/benutzer/z39.50-zugang/informationen-zum-z39.50-zugang-des-gbv">Literaturverwaltungsprogramme (Z39.50)</a>
+  </p>
             
 
     <div class="visualClear"><!-- --></div>

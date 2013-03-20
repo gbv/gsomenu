@@ -219,7 +219,15 @@ are here:</span>
                 </div-->
                                       
 <?php include 'gsomenu.php' ?>
-
+  <hr>
+  <p>
+	No access?
+	<a href="http://www.gbv.de/benutzer-en/datenbanken-en/zugangsprobleme?set_language=en">then please look here!</a>
+  </p>
+  <p>
+	Informationen about <a href="http://www.gbv.de/benutzer/faq/sfx?set_language=en">SFX</a> 
+	and <a href="http://www.gbv.de/benutzer-en/z39.50-zugang-en?set_language=en">Reference management software (Z39.50)</a>
+	</p>
 
     <div class="visualClear"><!-- --></div>
 
