@@ -47,6 +47,10 @@ databases:
                 title_de: "Wissenschaftskolleg zu Berlin"
                 title_en: "Institute for Advanced Study Berlin"
             -
+                access: "http://gso.gbv.de/DB=9.359/"
+                title_de: "Institut für niederdeutsche Sprache, Bremen"
+                title_en: "Institut för nedderdüütsche Spraak, Bremen"
+            -
                 access: "http://gso.gbv.de/DB=9.647/"
                 title_de: "Leibniz-Zentrum für Marine Tropenökologie, Bremen"
                 title_en: "Leibniz Center for Tropical Marine Ecology Bremen" 
