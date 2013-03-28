@@ -38,6 +38,7 @@ sub expand {
 				access   => $m->{access},
 				info   	 => $m->{info},
 			};
+            $db->{sorted} = $m->{sorted} if $m->{sorted};
 			if ($m->{databases}) {
 				if (ref $m->{databases}) {
 					$db->{databases} = expand( $m->{databases} );

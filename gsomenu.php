@@ -28,12 +28,14 @@ if ($script) { ?>
 <?php }
 
 function menu2html($menu, $language='de', $debug=FALSE) {
-	
 	if(!@$menu['databases']) return;
-	echo @$menu['sorted'] ? "<ul class='dbsorted'>\n" : "<ul>\n";
+    $items = array();
+
+    $n=0;
 	foreach ($menu['databases'] as $db) {
-		echo "<li>";
-		$title =  @$db["title_$language"];
+        $html = "";
+
+		$title = @$db["title_$language"];
 
         if (!$title && !$debug) $title = @$db['title_de'];
         if (!$title) $title = "???";
@@ -41,28 +43,35 @@ function menu2html($menu, $language='de', $debug=FALSE) {
 		$access = @$db['access'];
 		$dbkey  = @$db['dbkey'];
 		if ($access) {
-			echo "<a class='dbentry' href='$access' title='$dbkey'>";
-			echo htmlspecialchars($title);
-			echo "</a>";
+			$html .= "<a class='dbentry' href='$access' title='$dbkey'>";
+			$html .= htmlspecialchars($title);
+			$html .= "</a>";
 		} else {
-			echo htmlspecialchars($title);
+			$html .= htmlspecialchars($title);
 		}
 		if (@$db['info']) {
-			echo " <a href='".$db['info']."'><img alt='info' title='info' src='http://www.gbv.de/gsomenu/img/info.gif'></a>\n";
+			$html .= " <a href='".$db['info']."'><img alt='info' title='info' src='http://www.gbv.de/gsomenu/img/info.gif'></a>\n";
 		}
         if ($debug) {
-			echo " [<a href='".$db['uri']."'>$dbkey</a>]\n";
+			$html .= " [<a href='".$db['uri']."'>$dbkey</a>]\n";
         }
 		if (@$db['databases']) {
-			menu2html($db, $language, $debug);
+			$html .= menu2html($db, $language, $debug);
 		}
-		echo "</li>\n";
+
+        $d = sprintf("%04d",$n++);
+        if (@$menu['sorted']) {
+    		$items[$title.$d] = "<li>$html</li>";
+        } else {
+    	    $items[$d] = "<li>$html</li>";
+        }
 	}
-	echo "</ul>\n";
+    ksort($items);
+	return "<ul>\n".implode("\n",$items)."</ul>";
 }
 
 $menu = json_decode(file_get_contents('gsomenu.json'),1);
-menu2html($menu, $language, $debug);
+echo menu2html($menu, $language, $debug);
 
 ?>
 </div>
