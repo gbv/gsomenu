@@ -534,7 +534,7 @@
     </dt>
 
     <dd class="portletItem odd">
-        <form action="vzgsearchform" method="post" enctype="multipart/form-data">
+        <form action="http://www.gbv.de/vzgsearchform" method="post" enctype="multipart/form-data">
             <div style="margin-bottom: 10pt;">
                 <input class="textType" id="form.q" name="form.q" size="15" type="text" value="" />
             </div>
