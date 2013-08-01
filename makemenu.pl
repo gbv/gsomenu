@@ -6,13 +6,10 @@ use strict;
 use Config::ZOMG;
 use Hash::Merge qw(merge);
 use Scalar::Util qw(reftype);
-use Data::Dumper;
 use JSON;
 use File::Slurp qw(write_file);
-use RDF::Flow::LinkedData;
-use RDF::Lazy;
-use RDF::NS;
-use constant NS => RDF::NS->new('20120917');
+use RDF::Lazy 0.081;
+use Encode;
 
 # load config files
 my ($menu, $dblist) = map {
@@ -60,8 +57,6 @@ sub expand {
 	};
 }
 
-my $LOD = RDF::Flow::LinkedData->new;
-
 # expand databases
 my $fullmenu = { 
 	databases => expand( $menu->{databases} ) 
@@ -77,22 +72,24 @@ sub retrieve {
 
 	print $uri;
     
-	my $rdf  = $LOD->retrieve($uri);
+	my $rdf  = RDF::Lazy->new($uri, namespaces => '20120917');
 
 	my $db = { dbkey => $dbkey, uri => $uri };
 
     if ($rdf->size) { 
-        my $lazy = RDF::Lazy->new( $rdf, namespaces => NS );
-		my $dbrdf = $lazy->resource($uri); 
+		my $dbrdf = $rdf->resource($uri); 
 
-		my ($title_de) = $dbrdf->dcterms_title('@de','');
-		my ($title_en) = $dbrdf->dcterms_title('@en');
-		my ($access)   = $dbrdf->gbv_picabase;
+        # encode_utf8 only for Perl <= 5.10??
+		my $title_de = encode_utf8($dbrdf->dcterms_title('@de','') // '');
+		my $title_en = encode_utf8($dbrdf->dcterms_title('@en') // '');
+		my $access   = encode_utf8($dbrdf->gbv_picabase // '');
 
-		$db->{title_de} = $title_de->str if defined $title_de;
-		$db->{title_en} = $title_en->str if defined $title_en;
-		$db->{access}   = $access->str   if defined $access;
-	
+        print " $title_de ";
+
+		$db->{title_de} = $title_de if $title_de;
+		$db->{title_en} = $title_en if $title_en;
+		$db->{access}   = $access   if $access;
+
 		# TODO: info-URL 
     }
 
@@ -107,8 +104,7 @@ sub expand_list {
 
 	foreach my $prefix (@prefixes) {
 		my $uri = "http://uri.gbv.de/database/$prefix";
-		my $rdf = $LOD->retrieve( $uri );
-		$rdf = RDF::Lazy->new( $rdf, namespaces => NS )->resource($uri);
+		my $rdf = RDF::Lazy->new( $uri )->resource($uri);
 
 		if ( $rdf->type('skos:Concept') ) {
 			if (!$db->{title_de}) {
