@@ -1,7 +1,3 @@
-# Diese YAML-Datei entspricht einer JSON-Datei.
-# Auf der Kommandozeile kann YAML folgendermaßen nach JSON umgewandelt werden:
-# perl -MYAML -MJSON -E 'say JSON->new->pretty->encode(Load(join("",<>)))'
-
 # Diese Datei enthält Nicht-PICA Datenbanken und andere Informationen,
 # die noch nicht in der Datenbankkonfiguration eingetragen sind.
 # Sobal dies geschehen ist, wird diese Datei nicht mehr benötigt.
@@ -12,7 +8,7 @@ dnbportal:
     access: "http://portal.d-nb.de/"
 suchkiste:
     title_de: "Nationallizenzen Suchmaschine"
-    title_en: "Nationallizenzen search engine" 
+    title_en: "Nationallizenzen Search Engine" 
     access: "http://finden.nationallizenzen.de"
 bvb:
     title_de: "BVB - Bibliotheksverbund Bayern"
@@ -54,35 +50,27 @@ hdeutsch:
     title_en: "Harri Deutsch Databases"
     access: "http://www.gbv.de/benutzer/datenbanken/harri_deutsch_verlag"
 
-# info-urls
-gvk: { info: "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV" }
-gvkplus: { info: "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV" }
-olc: { info: "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV" }
-natliz: { info: "http://www.gbv.de/benutzer/datenbanken/nl_monographien" }
-natlizzss: { info: "http://www.gbv.de/benutzer/datenbanken/nl_zeitschriften" }
-natlizfak: { info: "http://www.gbv.de/benutzer/datenbanken/nationallizenzen-fach-und-faktendatenbanken" }
-doajgbv: { info: "http://www.gbv.de/benutzer/datenbanken/online_ressourcen" }
-olr: { info: "http://www.gbv.de/benutzer/datenbanken/online_ressourcen" }
 
-# englische titel
-digicult:
-    title_en: "digiCULT"
-gvk:
-    title_en: "GVK - GBV Union Catalogue"
-olc:
-    title_en: "Online Contents"
-gvkplus:
-    title_en: "GVK-PLUS - GBV Union Catalogue with Online Contents"
-doajgbv:
-    title_en: "DOAJ - Directory of Open Access Journals"
+## Englische Titel und Info-URLs
 
-goevk:
-    title_en: "GOeVK combined"
-
-natliz:
-    title_en: "Nationallizenzen - Collections - Monographics"
-natlizzss:
-    title_en: "Nationallizenzen - Collections - Journals"
-natlizfak:
-    title_en: "Nationallizenzen - Fach- und Faktendatenbanken"
-
+bmsonline: { title_en: "BMS - Bibliography of Music Literature online" }
+ddbexil: { title_en: "German Exile Press 1933-1945" }
+digicult: { title_en: "digiCULT" }
+digicult: { title_en: "digiCULT" }
+doajgbv: { title_en: "DOAJ - Directory of Open Access Journals", info: "http://www.gbv.de/benutzer/datenbanken/online_ressourcen"  }
+eromm: { title_en: "" } # TODO
+goevk: { title_en: "GOeVK combined" }
+gvk: { title_en: "GVK - GBV Union Catalogue", info: "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV" }
+gvkplus: { title_en: "GVK-PLUS - GBV Union Catalogue with Online Contents", info: "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV"  }
+idz: { title_en: "IDZ - Index of German Journals 1750-1815" }
+ikar: { title_en: "IKAR - Printed Maps before 1850" }
+iwf: { title_en: "IWF - Knowledge and Media" }
+leibniz: { title_en: "Leibniz Bibliography" }
+natliz: { title_en: "Nationallizenzen - Collections - Monographics", info: "http://www.gbv.de/benutzer/datenbanken/nl_monographien" }
+natlizfak: { title_en: "Nationallizenzen - Fach- und Faktendatenbanken", info: "http://www.gbv.de/benutzer/datenbanken/nationallizenzen-fach-und-faktendatenbanken" }
+natlizzss: { title_en: "Nationallizenzen - Collections - Journals", info: "http://www.gbv.de/benutzer/datenbanken/nl_zeitschriften" }
+olc: { title_en: "Online Contents", info: "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV" }
+olr: { info: "http://www.gbv.de/benutzer/datenbanken/online_ressourcen" } 
+vd17: { title_en: "VD17 - Bibliography of Books Printed in the German Speaking Countries from 1601 to 1700" }
+vki: { title_en: "VKI - Union Catalogue for Internet Resources" }
+wao: { title_en: "WAO - World Affairs Online" }

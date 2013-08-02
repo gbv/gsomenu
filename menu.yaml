@@ -45,7 +45,7 @@ databases:
             -
                 access: "http://gso.gbv.de/DB=9.663/"
                 title_de: "Wissenschaftskolleg zu Berlin"
-                title_en: "Institute for Advanced Study Berlin"
+                title_en: "Institute for Advanced Study, Berlin"
             -
                 access: "http://gso.gbv.de/DB=9.359/"
                 title_de: "Institut für niederdeutsche Sprache, Bremen"
@@ -53,7 +53,7 @@ databases:
             -
                 access: "http://gso.gbv.de/DB=9.647/"
                 title_de: "Leibniz-Zentrum für Marine Tropenökologie, Bremen"
-                title_en: "Leibniz Center for Tropical Marine Ecology Bremen" 
+                title_en: "Leibniz Center for Tropical Marine Ecology, Bremen" 
             -
                 access: "http://gso.gbv.de/DB=9.651/"
                 title_de: "Museen der Stadt Halberstadt"
@@ -69,7 +69,7 @@ databases:
             -
                 access: "http://gso.gbv.de/DB=9.675/"
                 title_de: "Stadtarchiv, Hansestadt Stade"
-                title_en: "Muncipal archive Stade"
+                title_en: "Muncipal Archive Stade"
             -
                 access: "http://gso.gbv.de/DB=9.662/"
                 title_de: "Landschaftsverband Stade"
@@ -99,7 +99,7 @@ databases:
             -
                 access: "http://vzlbs.gbv.de/cgi-bin/wwwopc4menu" 
                 title_de: "LBS-Service der Verbundzentrale"
-                title_en: "LBS service"
+                title_en: "LBS Service"
             -
                 access: "http://lhanh.gbv.de/cgi-bin/wwwopc4menu"
                 title_de: "LBS Anhalt"
@@ -143,19 +143,19 @@ databases:
             -
                 access: "http://haweb1.bibliothek.uni-halle.de/cgi-bin/wwwopc4menu"
                 title_de: "LBS Halle - Merseburg"
-                title_en: "Local Library System Halle-Merseburg"
+                title_en: "LBS Halle-Merseburg"
             -
                 access: "http://kataloge.uni-hamburg.de/cgi-bin/wwwopc4menu "
                 title_de: "LBS Hamburg"
-                title_en: "Local Library System Hamburg"
+                title_en: "LBS Hamburg"
             -
                 access: "http://katalog.b.tu-harburg.de/ "
                 title_de: "LBS TU Hamburg-Harburg"
-                title_en: "Local Library System TU Hamburg-Harburg"
+                title_en: "LBS TU Hamburg-Harburg"
             -
                 access: "https://katalog.b.tu-harburg.de/DB=22/"
                 title_de: "LBS Hamburg, HCU"
-                title_en: "Informations- und Medienzentrum (IMZ) HCU Hamburg"
+                title_en: "LBS Hamburg, HCU"
             -
                 access: "http://hsu-bibliothek.de/DB=1/"
                 title_de: "LBS Hamburg, HSU"
@@ -191,15 +191,15 @@ databases:
             -
                 access: "http://opac.uni-magdeburg.de/cgi-bin/wwwopc4menu"
                 title_de: "LBS Magdeburg"
-                title_en: "Local Library System of Magdeburg"
+                title_en: "LBS Magdeburg"
             -
                 access: "http://osopc4.ub.uni-osnabrueck.de/cgi-bin/wwwopc4menu"
                 title_de: "LBS Osnabrück"
-                title_en: "Osnabrueck Local Library System"
+                title_en: "LBS Osnabrueck"
             -
                 access: "http://opac.ub.uni-potsdam.de"
                 title_de: "LBS Potsdam"
-                title_en: "Online Catalogue of the University Library Potsdam"
+                title_en: "LBS Potsdam"
             -
                 access: "http://katalog.ub.uni-rostock.de/ubscript-cgi/wwwopc4menu?LNG=DU"
                 title_de: "LBS Rostock"

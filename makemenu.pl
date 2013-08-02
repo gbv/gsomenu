@@ -11,6 +11,8 @@ use File::Slurp qw(write_file);
 use RDF::Lazy 0.081;
 use Encode;
 
+my $utf8 = grep { $_ =~ /^-utf-?8$/i } @ARGV;
+
 # load config files
 my ($menu, $dblist) = map {
     if ( my $c = Config::ZOMG->open( file => $_ ) ) {
@@ -18,7 +20,7 @@ my ($menu, $dblist) = map {
     } else {
         die "failed to load config file $_: $@\n";
     }   
-} ('menu.yaml', 'dblist.yaml');
+} ('menu.yaml', 'databases.yaml');
 
 # expand menu
 sub expand {
@@ -56,6 +58,10 @@ sub expand {
 		}
 	};
 }
+
+#my $x = expand('gvk');
+#my $x = $dblist->{'gvk'};
+#say to_json $x;
 
 # expand databases
 my $fullmenu = { 

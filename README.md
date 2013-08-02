@@ -6,7 +6,7 @@ sich aus folgenden Quellen:
 * Datenbankverzeichnis (aka unAPI-Konfiguration) als Linked Open Data von
   <http://uri.gbv.de/database/>
 * Zusätzliche Datenbankinformationen, die noch nicht als Linked Open Data
-  vorhanden sind - in der Datei `dblist.yaml`.
+  vorhanden sind - in der Datei `databases.yaml`.
 
 Aus diesen Quellen erzeugt das Skript `makemenu.pl` die Datei `gsomenu.json`,
 in der Inhalt des gesamten Datenbankmenu enthalten ist.
