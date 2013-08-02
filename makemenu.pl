@@ -11,6 +11,8 @@ use File::Slurp qw(write_file);
 use RDF::Lazy 0.081;
 use Encode;
 
+binmode *STDOUT, 'utf8';
+
 my $utf8 = grep { $_ =~ /^-utf-?8$/i } @ARGV;
 
 # load config files
@@ -39,6 +41,7 @@ sub expand {
 			};
             $db->{sorted} = $m->{sorted} if $m->{sorted};
 			if ($m->{databases}) {
+                say "# ".$db->{title_de};
 				if (ref $m->{databases}) {
 					$db->{databases} = expand( $m->{databases} );
 				} else {
@@ -70,7 +73,9 @@ my $fullmenu = {
 
 # TODO: write only if no error:
 
-write_file('gsomenu.json',to_json($fullmenu, { utf8 => 1, pretty => 1 }));
+my $output = 'test.json'; 
+#my $output = 'gsomenu.json'; 
+write_file($output,to_json($fullmenu, { pretty => 1 }));
 
 sub retrieve {
     my $dbkey = shift || return '';
@@ -85,23 +90,39 @@ sub retrieve {
     if ($rdf->size) { 
 		my $dbrdf = $rdf->resource($uri); 
 
-        # encode_utf8 only for Perl <= 5.10??
-		my $title_de = encode_utf8($dbrdf->dcterms_title('@de','') // '');
-		my $title_en = encode_utf8($dbrdf->dcterms_title('@en') // '');
-		my $access   = encode_utf8($dbrdf->gbv_picabase // '');
-
-        print " $title_de ";
-
-		$db->{title_de} = $title_de if $title_de;
-		$db->{title_en} = $title_en if $title_en;
-		$db->{access}   = $access   if $access;
-
-		# TODO: info-URL 
+        rdf2db( $dbrdf => $db );
     }
 
 	say (keys %$db ? " - ok" : " - not found");
 
 	return $db;
+}
+
+sub rdf2db {
+    my $rdf = shift;
+    my $db = shift;
+
+    # encode_utf8 only for Perl <= 5.10??
+	my $title_de = "".($rdf->dcterms_title('@de','') || $rdf->skos_prefLabel('@de','') || "");
+	my $title_en = "".($rdf->dcterms_title('@en')    || $rdf->skos_prefLabel('@en')    || "");
+    my $access   = ("".$rdf->gbv_picabase) || "";
+
+#    if ($utf8) {
+        ($title_en, $title_de, $access) = map { encode_utf8($_) } ($title_en, $title_de, $access);
+ #   }
+    print " $title_de ";
+
+    if (!$db->{title_de}) {
+        $db->{title_de} = $title_de if $title_de;
+    }
+
+    if (!$db->{title_en}) {
+        $db->{title_en} = $title_en if $title_en;
+    }
+
+    $db->{access}   = $access   if $access;
+
+    # TODO: info-URL 
 }
 
 sub expand_list {
@@ -112,16 +133,9 @@ sub expand_list {
 		my $uri = "http://uri.gbv.de/database/$prefix";
 		my $rdf = RDF::Lazy->new( $uri )->resource($uri);
 
+        rdf2db( $rdf => $db );
+
 		if ( $rdf->type('skos:Concept') ) {
-			if (!$db->{title_de}) {
-				my ($title_de) = $rdf->dcterms_title('@de','') || $rdf->skos_prefLabel('@de','');
-				$db->{title_de} = $title_de->str if defined $title_de;
-			}
-			if (!$db->{title_en}) {
-				my ($title_en) = $rdf->dcterms_title('@en')    || $rdf->skos_prefLabel('@en');
-				$db->{title_en} = $title_en->str if defined $title_en;
-			}
-			# TODO: info-URL 
 
 			foreach ( @{ $rdf->revs('dc:subject') } ) {
 				next unless $_ =~ s{^http://uri.gbv.de/database/}{};
