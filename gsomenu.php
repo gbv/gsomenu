@@ -52,7 +52,7 @@ function menu2html($menu, $language='de', $debug=FALSE) {
 		if (@$db['info']) {
 			$html .= " <a href='".$db['info']."'><img alt='info' title='info' src='http://www.gbv.de/gsomenu/img/info.gif'></a>\n";
 		}
-        if ($debug) {
+        if ($debug && $dbkey) {
 			$html .= " [<a href='".$db['uri']."'>$dbkey</a>]\n";
         }
 		if (@$db['databases']) {
