@@ -64,7 +64,7 @@ databases:
             -
                 access: "http://gso.gbv.de/DB=9.642/"
                 title_de: "Stadmuseum und Horst Janssen Museum Oldenburg"
-                title_en: "Oldenburg Museum"
+                title_en: "City Museum and Horst Janssen Museum, Oldenburg"
             -
                 access: "http://gso.gbv.de/DB=1.92/"
                 title_de: "Bibliotheken Friedrich des Großen, Potsdam"
