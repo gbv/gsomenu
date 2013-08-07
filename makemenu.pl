@@ -11,9 +11,10 @@ use File::Slurp qw(write_file);
 use RDF::Lazy 0.081;
 use Encode;
 
-binmode *STDOUT, 'utf8';
+#binmode *STDOUT, 'utf8';
 
-my $utf8 = grep { $_ =~ /^-utf-?8$/i } @ARGV;
+#my $output = 'test.json'; 
+my $output = 'gsomenu.json'; 
 
 # load config files
 my ($menu, $dblist) = map {
@@ -22,7 +23,7 @@ my ($menu, $dblist) = map {
     } else {
         die "failed to load config file $_: $@\n";
     }   
-} ('menu.yaml', 'databases.yaml');
+} ('menu.yaml', 'databases.csv');
 
 # expand menu
 sub expand {
@@ -39,9 +40,9 @@ sub expand {
 				access   => $m->{access},
 				info   	 => $m->{info},
 			};
+            say "# ".$db->{title_de};
             $db->{sorted} = $m->{sorted} if $m->{sorted};
 			if ($m->{databases}) {
-                say "# ".$db->{title_de};
 				if (ref $m->{databases}) {
 					$db->{databases} = expand( $m->{databases} );
 				} else {
@@ -73,8 +74,6 @@ my $fullmenu = {
 
 # TODO: write only if no error:
 
-my $output = 'test.json'; 
-#my $output = 'gsomenu.json'; 
 write_file($output,to_json($fullmenu, { pretty => 1 }));
 
 sub retrieve {
@@ -107,9 +106,7 @@ sub rdf2db {
 	my $title_en = "".($rdf->dcterms_title('@en')    || $rdf->skos_prefLabel('@en')    || "");
     my $access   = ("".$rdf->gbv_picabase) || "";
 
-#    if ($utf8) {
-        ($title_en, $title_de, $access) = map { encode_utf8($_) } ($title_en, $title_de, $access);
- #   }
+    ($title_en, $title_de, $access) = map { encode_utf8($_) } ($title_en, $title_de, $access);
     print " $title_de ";
 
     if (!$db->{title_de}) {

@@ -34,7 +34,10 @@ databases:
         title_de: "Datenbanken mit Nationallizenz"
         title_en: "National license databases"
         databases:
-            - suchkiste
+            -
+                title_de: "Nationallizenzen Suchmaschine"
+                title_en: "Nationallizenzen Search Engine" 
+                access: "http://finden.nationallizenzen.de"
             - natliz
             - natlizzss
             - natlizfak
@@ -74,6 +77,7 @@ databases:
                 access: "http://gso.gbv.de/DB=9.662/"
                 title_de: "Landschaftsverband Stade"
                 title_en: "Regional Association Stade"
+            - "opac-de-brk1"
     - 
         databases: rk
         title_en: "Regional databases"
@@ -233,18 +237,42 @@ databases:
         databases:
             - doajgbv
 #            - ohbtoc
-            - hdeutsch
+            -
+                title_de: "Niedersächsisches Konsortium - Verlag Harri Deutsch"
+                title_en: "Harri Deutsch Databases"
+                access: "http://www.gbv.de/benutzer/datenbanken/harri_deutsch_verlag"
     -
         title_de: "Externe Datenbanken"
         title_en: "External databases"
         databases:
-            - dnbportal
-            - bvb
-            - hbz
+            -
+                title_de: "DNB - Deutsche Nationalbibliothek"
+                title_en: "DNB - German National Library"
+                access: "http://portal.d-nb.de/"
+            -
+                title_de: "BVB - Bibliotheksverbund Bayern"
+                title_en: "BVB - Bavarian Library Network"
+                access: "http://bvba2.bib-bvb.de/"
+            -
+                title_de: "HBZ - Verbundkatalog NRW"
+                title_en: "HBZ - Union Catalogue North Rhine-Westphalia"
+                access: "http://okeanos-www.hbz-nrw.de/F/"
             - hebis
-            - kobv
+            -
+                title_de: "KOBV - Kooperativer Bibliotheksverbund Berlin-Brandenburg"
+                title_en: "KOBV - Cooperative Library Network Berlin-Brandenburg"
+                access: "http://search.kobv.de/"
             - swb
-            - icat
-            - loccat
-            - tel
+            -
+                title_de: "ICAT - Die Britische Bibliothek London"
+                title_en:  "ICAT - The British library"
+                access: "http://catalogue.bl.uk/"
+            -
+                title_de: "LoC - Library of Congress"
+                title_en: "LoC - Library of Congress"
+                access: "http://catalog.loc.gov/"
+            -
+                title_de: "TEL - The European Library"
+                title_en: "TEL - The European Library"
+                access: "http://search.theeuropeanlibrary.org/"
 
