@@ -117,7 +117,7 @@ databases:
                 title_de: "LBS Berlin - Stiftung Preußischer Kulturbesitz"
                 title_en: "LBS Berlin - Stiftung Preußischer Kulturbesitz"
             -
-                access: "http://sunny.biblio.etc.tu-bs.de/cgi-bin/wwwopc4menu"
+                access: "https://opac.lbs-braunschweig.gbv.de/cgi-bin/wwwopc4menu"
                 title_de: "LBS Braunschweig"
                 title_en: "LBS Braunschweig"
             -
@@ -137,7 +137,7 @@ databases:
                 title_de: "LBS Erfurt"
                 title_en: "LBS Erfurt"
             -
-                access: "http://opac.sub.uni-goettingen.de/cgi-bin/wwwopc4menu "
+                access: "http://www.sub.uni-goettingen.de/weitere-informationen/weitere-sucheinstiege-recherchetipps/lokale-kataloge/"
                 title_de: "LBS Göttingen"
                 title_en: "LBS Göttingen"
             -
@@ -209,7 +209,7 @@ databases:
                 title_de: "LBS Rostock"
                 title_en: "LBS Rostock"
             -
-                access: "http://lhopc4.hsb.hs-wismar.de/cgi-bin/wwwopc4menu"
+                access: "http://opac.hs-wismar.de/cgi-bin/wwwopc4menu"
                 title_de: "LBS Schwerin - Wismar"
                 title_en: "LBS Schwerin - Wismar"
 
