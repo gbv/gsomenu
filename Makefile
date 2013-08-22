@@ -1,4 +1,4 @@
-gsmenu.json: menu.yaml databases.yaml
+gsomenu.json: menu.yaml databases.csv
 	@echo "Updating gsomenu.json"
 	@./makemenu.pl
 
