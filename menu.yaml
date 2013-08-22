@@ -60,7 +60,7 @@ databases:
             -
                 access: "http://gso.gbv.de/DB=9.651/"
                 title_de: "Museen der Stadt Halberstadt"
-                title_en: "Museums of Halberstadt"
+                title_en: "Museums of the City Halberstadt"
             -
                 access: "http://gso.gbv.de/DB=9.642/"
                 title_de: "Stadmuseum und Horst Janssen Museum Oldenburg"
@@ -77,6 +77,7 @@ databases:
                 access: "http://gso.gbv.de/DB=9.662/"
                 title_de: "Landschaftsverband Stade"
                 title_en: "Regional Association Stade"
+
             - "opac-de-brk1"
     - 
         databases: rk

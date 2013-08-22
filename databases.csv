@@ -1,25 +1,75 @@
 dbkey, title_en, info_url
-bmsonline, "BMS - Bibliography of Music Literature online"
-ddbexil, "German Exile Press 1933-1945"
-digicult, "digiCULT"
-doajgbv, "DOAJ - Directory of Open Access Journals","http://www.gbv.de/benutzer/datenbanken/online_ressourcen"
-eromm, ""
-goevk, "GOeVK combined"
-gvk, "GVK - GBV Union Catalogue","http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV"
-gvkplus, "GVK-PLUS - GBV Union Catalogue with Online Contents","http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV"
-hebis, "HeBIS - Union Catalogue Hessia"
-idz, "IDZ - Index of German Journals 1750-1815"
-ikar, "IKAR - Printed Maps before 1850"
-iwf, "IWF - Knowledge and Media"
-leibniz, "Leibniz Bibliography"
-natliz, "Nationallizenzen - Collections - Monographics","http://www.gbv.de/benutzer/datenbanken/nl_monographien"
-natlizfak, "Nationallizenzen - Fach- und Faktendatenbanken","http://www.gbv.de/benutzer/datenbanken/nationallizenzen-fach-und-faktendatenbanken"
-natlizzss, "Nationallizenzen - Collections - Journals","http://www.gbv.de/benutzer/datenbanken/nl_zeitschriften"
-olc, "Online Contents","http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV"
-olr, "http://www.gbv.de/benutzer/datenbanken/online_ressourcen" 
-opac-de-brk1, ""
-swb, "SWB Online-Katalog"
-vd17, "VD17 - Bibliography of Books Printed in the German Speaking Countries from 1601 to 1700"
-vki, "VKI - Union Catalogue for Internet Resource"
-wao, "WAO - World Affairs Online"
-opac-de-brk1, "Centre for Global Ministries and Ecumenical Relations, Breklum"
+bmsonline,BMS - Bibliography of Music Literature,
+ddbexil,German Exile Press 1933-1945,
+ddbexil,German Exile Press 1933-1945,
+digicult,digiCULT,
+doajgbv,DOAJ - Directory of Open Access Journals,http://www.gbv.de/benutzer/datenbanken/online_ressourcen
+eromm,EROMM - European Register of Microform ans Digital Masters,
+goevk,GOeVK combined,
+gvk,GVK - GBV Union Catalogue,http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV
+gvkplus,GVK-PLUS - GBV Union Catalogue with Online Contents,http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV
+gvkplus,GVK-PLUS - GBV Union Catalogue with Online Contents,
+hebis,HeBIS - Union Catalogue Hessia,
+idz,IDZ - Index of German Journals 1750-1815,
+ikar,IKAR - Printed Maps before 1850,
+iwf,IWF - Knowledge and Media,
+leibniz,Leibniz Bibliography,
+natliz,Nationallizenzen - Collections – Monographies,http://www.gbv.de/benutzer/datenbanken/nl_monographien
+natlizfak,Nationallizenzen - Fach- und Faktendatenbanken,http://www.gbv.de/benutzer/datenbanken/nationallizenzen-fach-und-faktendatenbanken
+natlizzss,Nationallizenzen - Collections - Journals,http://www.gbv.de/benutzer/datenbanken/nl_zeitschriften
+olc,Online Contents,http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV
+olc,Online Contents,
+olcssg-alt,OLC-SSG Classics - Online Contents-Special Subject Collection,
+olcssg-ana,OLC-SSG Asia and Northafrica - Online Contents-Special Subject Collection,
+olcssg-ang,OLC-SSG Anglistics - Online Contents-Special Subject Collection,
+olcssg-arc,OLC-SSG Architecture and Civil Engineering - Online Contents-Special Subject Collection,
+olcssg-ast,OLC-SSG Astronomy - Online Contents-Special Subject Collection,
+olcssg-bal,OLC-SSG Baltic Countries - Online Contents-Special Subject Collection,
+olcssg-bbi,"OLC-SSG Book Studies, Library and Information Sciences - Online Contents-Special Subject Collection",
+olcssg-benelux,OLC-SSG Benelux - Online Contents-Special Subject Collection,
+olcssg-bildung,OLC-SSG Education Research - Online Contents-Special Subject Collection,
+olcssg-che,OLC-SSG Chemistry - Online Contents-Special Subject Collection,
+olcssg-eth,OLC-SSG Ethnology - Online Contents-Special Subject Collection,
+olcssg-film,OLC-SSG Movie and Theatre Science - Online Contents-Special Subject Collection,
+olcssg-for,OLC-SSG Forestry - Online Contents-Special Subject Collection,
+olcssg-ger,OLC-SSG German language and literature studies - Online Contents-Special Subject Collection,
+olcssg-ggo,OLC-SSG Earth Sciences - Online Contents-Special Subject Collection,
+olcssg-his,OLC-SSG History - Online Contents-Special Subject Collection,
+olcssg-hsw,OLC-SSG Higher Education - Online Contents-Special Subject Collection,
+olcssg-iba,"OLC-SSG Ibero-America, Spain and Portugal - Online Contents-Special Subject Collection",
+olcssg-int,OLC-SSG International Relations and Area Studies - Online Contents-Special Subject Collection,
+olcssg-ita,OLC-SSG Italian Studies - Online Contents - Special Subject Collections,
+olcssg-jur,OLC-SSG Law - Online Contents-Special Subject Collection,
+olcssg-kph,OLC-SSG Greek and Latin Philology - Online Contents - Special Subject Collections,
+olcssg-kun,OLC-SSG Arts and Art Sciences - Online Contents-Special Subject Collection,
+olcssg-mat,OLC-SSG Mathematics and Informatics - Online Contents-Special Subject Collection,
+olcssg-med,OLC-SSG Media and Communication Sciences - Online Contents-Special Subject Collection,
+olcssg-mus,OLC-SSG Music Research - Online Contents-Special Subject Collection,
+olcssg-nord,OLC-SSG North Europe - Online Contents-Special Subject Collection,
+olcssg-oeu,OLC-SSG Eastern Europe-Online Contents-Special Subject Collection,
+olcssg-ost,OLC-SSG East and Southeast Asia - Online Contents-Special Subject Collection,
+olcssg-pha,Online Contents- SSG Pharmacy,
+olcssg-phi,OLC-SSG Philosophy - Online Contents-Special Subject Collection,
+olcssg-phy,OLC-SSG Physics - Online Contents-Special Subject Collection,
+olcssg-pol,OLC-SSG Political Science and Peace Research - Online Contents-Special Subject Collection,
+olcssg-psy,OLC-SSG Psychology - Online Contents-Special Subject Collection,
+olcssg-rok,OLC-SSG French and Italian Studies - Online Contents - Special Subject Collections,
+olcssg-rom,OLC-SSG French and General Romance Studies - Online Contents-Special Subject Collection,
+olcssg-sla,OLC-SSG Slavistics - Online Contents-Special Subject Collection,
+olcssg-soa,OLC-SSG South Asia - Online Contents-Special Subject Collection,
+olcssg-soz,OLC-SSG Social Sciences - Online Contents-Special Subject Collection,
+olcssg-spo,OLC-SSG Sports Sciences - Online Contents-Special Subject Collection,
+olcssg-ssa,OLC-SSG Africa in the south of Sahara - Online Contents-Special Subject Collection,
+olcssg-tec,OLC-SSG Technology - Online Contents-Special Subject Collection,
+olcssg-thi,OLC-SSG History of Technology - Online Contents-Special Subject Collection,
+olcssg-umw,OLC-SSG Environment - Online Contents-Special Subject Collection,
+olcssg-vet,OLC-SSG Veterinary Medicine - Online Contents-Special Subject Collection,
+olcssg-vor,OLC-SSG Middle East and North Africa - Online Contents-Special Subject Collection,
+olcssg-wiw,OLC-SSG Economic Sciences - Online Contents-Special Subject Collection,
+olcssg-zge,OLC-SSG Contemporary History - Online Contents-Special Subject Collection,
+olr,,http://www.gbv.de/benutzer/datenbanken/online_ressourcen 
+opac-de-brk1,"Centre for Global Ministries and Ecumenical Relations, Breklum",
+swb,SWB Online-Katalog,
+vd17,VD17 - Bibliography of Books Printed in the German Speaking Countries from 1601 to 1700,
+vki,VKI - Union Catalogue for Internet Resources,
+wao,WAO - World Affairs Online,
