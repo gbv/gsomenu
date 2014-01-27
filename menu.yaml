@@ -24,11 +24,9 @@ databases:
             - eromm
             - idz
             - ikar
-            - iwf
             - leibniz
             - ddbexil
             - vd17
-            - vki
             - wao
     -
         title_de: "Datenbanken mit Nationallizenz"
