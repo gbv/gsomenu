@@ -90,7 +90,7 @@ databases:
         title_de: "Bibliotheksspezifische Fachkataloge"
         title_en: "Library specific databases"
         databases:
-            - aghbb
+            - "opac-de-616"
             - thbb
             - mpigbv
             - museen
