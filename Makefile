@@ -4,3 +4,6 @@ gsomenu.json: menu.yaml databases.csv
 
 alle-gsomenu-datenbanken.csv: gsomenu.json
 	@./json2csv.pl
+
+deps:
+	cpanm --installdeps .

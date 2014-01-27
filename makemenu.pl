@@ -3,7 +3,7 @@
 use v5.10;
 use strict;
 
-use Config::ZOMG;
+use Config::Any;
 use Hash::Merge qw(merge);
 use Scalar::Util qw(reftype);
 use JSON;
@@ -18,8 +18,10 @@ my $output = 'gsomenu.json';
 
 # load config files
 my ($menu, $dblist) = map {
-    if ( my $c = Config::ZOMG->open( file => $_ ) ) {
-        say "loaded config file $_"; $c;
+    my $c = Config::Any->load_files({ files => [ $_ ], use_ext => 1 });
+    if ($c && $c->[0]->{$_}) { 
+        say "loaded config file $_"; 
+        $c->[0]->{$_};
     } else {
         die "failed to load config file $_: $@\n";
     }   
