@@ -63,10 +63,6 @@ databases:
                 title_de: "Stadmuseum und Horst Janssen Museum Oldenburg"
                 title_en: "City Museum and Horst Janssen Museum, Oldenburg"
             -
-                access: "http://gso.gbv.de/DB=1.92/"
-                title_de: "Bibliotheken Friedrich des Großen, Potsdam"
-                title_en: "Libraries of Frederik the Great, Potsdam"
-            -
                 access: "http://gso.gbv.de/DB=9.675/"
                 title_de: "Stadtarchiv, Hansestadt Stade"
                 title_en: "Muncipal Archive Stade"
@@ -77,7 +73,7 @@ databases:
 
             - "opac-de-brk1"
     - 
-        databases: rk
+        databasse: rk
         title_en: "Regional databases"
         sorted: true
     -
