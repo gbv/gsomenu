@@ -27,7 +27,6 @@ databases:
             - leibniz
             - ddbexil
             - vd17
-            - wao
     -
         title_de: "Datenbanken mit Nationallizenz"
         title_en: "National license databases"
