@@ -73,7 +73,7 @@ databases:
 
             - "opac-de-brk1"
     - 
-        databasse: rk
+        databases: rk
         title_en: "Regional databases"
         sorted: true
     -
