@@ -70,8 +70,20 @@ databases:
                 access: "http://gso.gbv.de/DB=9.662/"
                 title_de: "Landschaftsverband Stade"
                 title_en: "Regional Association Stade"
-
             - "opac-de-brk1"
+            -
+                access: "http://gso.gbv.de/DB=9.690/"
+                title_de: "Archiv des Landkreises Cuxhaven"
+                title_en: "Archive of the Rural District of Cuxhaven"
+            -
+                access: "http://gso.gbv.de/DB=9.646/"
+                title_de: "Mathias Hochschule Rheine"
+                title_en: "Mathias University of Applied Sciences Rheine"
+            -
+                access: "http://gso.gbv.de/DB=9.359/"
+                title_de: "Institut für niederdeutsche Sprache (INS), Bremen"
+                title_en: "Institute for the Low German Language (INS), Bremen"
+
     - 
         databases: rk
         title_en: "Regional databases"
