@@ -25,7 +25,6 @@ databases:
             - idz
             - ikar
             - leibniz
-            - ddbexil
             - vd17
     -
         title_de: "Datenbanken mit Nationallizenz"
