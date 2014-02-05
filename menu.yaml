@@ -46,14 +46,20 @@ databases:
                 access: "http://gso.gbv.de/DB=9.663/"
                 title_de: "Wissenschaftskolleg zu Berlin"
                 title_en: "Institute for Advanced Study, Berlin"
+            - "opac-de-brk1"
             -
                 access: "http://gso.gbv.de/DB=9.359/"
                 title_de: "Institut für niederdeutsche Sprache, Bremen"
-                title_en: "Institut för nedderdüütsche Spraak, Bremen"
+                title_nds: "Institut för nedderdüütsche Spraak, Bremen"
+                title_en: "Institute for the Low German Language, Bremen"
             -
                 access: "http://gso.gbv.de/DB=9.647/"
                 title_de: "Leibniz-Zentrum für Marine Tropenökologie, Bremen"
                 title_en: "Leibniz Center for Tropical Marine Ecology, Bremen" 
+            -
+                access: "http://gso.gbv.de/DB=9.690/"
+                title_de: "Archiv des Landkreises Cuxhaven"
+                title_en: "Archive of the Rural District of Cuxhaven"
             -
                 access: "http://gso.gbv.de/DB=9.651/"
                 title_de: "Museen der Stadt Halberstadt"
@@ -63,6 +69,10 @@ databases:
                 title_de: "Stadmuseum und Horst Janssen Museum Oldenburg"
                 title_en: "City Museum and Horst Janssen Museum, Oldenburg"
             -
+                access: "http://gso.gbv.de/DB=9.646/"
+                title_de: "Mathias Hochschule Rheine"
+                title_en: "Mathias University of Applied Sciences Rheine"
+            -
                 access: "http://gso.gbv.de/DB=9.675/"
                 title_de: "Stadtarchiv, Hansestadt Stade"
                 title_en: "Muncipal Archive Stade"
@@ -70,19 +80,6 @@ databases:
                 access: "http://gso.gbv.de/DB=9.662/"
                 title_de: "Landschaftsverband Stade"
                 title_en: "Regional Association Stade"
-            - "opac-de-brk1"
-            -
-                access: "http://gso.gbv.de/DB=9.690/"
-                title_de: "Archiv des Landkreises Cuxhaven"
-                title_en: "Archive of the Rural District of Cuxhaven"
-            -
-                access: "http://gso.gbv.de/DB=9.646/"
-                title_de: "Mathias Hochschule Rheine"
-                title_en: "Mathias University of Applied Sciences Rheine"
-            -
-                access: "http://gso.gbv.de/DB=9.359/"
-                title_de: "Institut für niederdeutsche Sprache (INS), Bremen"
-                title_en: "Institute for the Low German Language (INS), Bremen"
 
     - 
         databases: rk
