@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 #ABSTRACT: Collect GBV database information for GSO-Menu
 use v5.10;
 use strict;
