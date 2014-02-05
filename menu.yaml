@@ -66,11 +66,11 @@ databases:
                 title_en: "Museums of the City Halberstadt"
             -
                 access: "http://gso.gbv.de/DB=9.642/"
-                title_de: "Stadmuseum und Horst Janssen Museum Oldenburg"
+                title_de: "Stadtmuseum und Horst Janssen Museum Oldenburg"
                 title_en: "City Museum and Horst Janssen Museum, Oldenburg"
             -
                 access: "http://gso.gbv.de/DB=9.646/"
-                title_de: "Mathias Hochschule Rheine"
+                title_de: "Mathias Hochschule, Rheine"
                 title_en: "Mathias University of Applied Sciences Rheine"
             -
                 access: "http://gso.gbv.de/DB=9.675/"
