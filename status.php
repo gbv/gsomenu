@@ -44,7 +44,7 @@ if (!$allowed) {
 
 flush();
 
-$command = 'awk -F\" \'$2 ~ /^GET \/isil/ { print }\' /var/log/apache2/access.log | tail -40';
+$command = 'git status';
 $log = shell_exec("$command 2>&1");
 
 echo htmlentities(trim($command))."\n";
