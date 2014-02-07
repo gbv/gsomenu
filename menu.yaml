@@ -46,6 +46,7 @@ databases:
                 title_de: "Wissenschaftskolleg zu Berlin"
                 title_en: "Institute for Advanced Study, Berlin"
             - "opac-de-brk1"
+
             -
                 access: "http://gso.gbv.de/DB=9.359/"
                 title_de: "Institut für niederdeutsche Sprache, Bremen"
