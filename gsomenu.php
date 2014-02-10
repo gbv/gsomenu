@@ -41,6 +41,12 @@ function menu2html($menu, $language='de', $debug=FALSE) {
         if (!$title) $title = "???";
 
 		$access = @$db['access'];
+        $psi_lang = array(
+            'de' => '?LNG=DU',
+            'en' => '?LNG=EN',
+        );
+        $access = str_replace('{?LNG}',@$psi_lang[$language],$access);
+
 		$dbkey  = @$db['dbkey'];
 		if ($access) {
 			$html .= "<a class='dbentry' href='$access' title='$dbkey'>";

@@ -119,7 +119,12 @@ sub rdf2db {
         $db->{title_en} = $title_en if $title_en;
     }
 
-    $db->{access}   = $access   if $access;
+    if ($access) {
+        if ($access =~ qr{/DB=[0-9.]+[/]?$}) {
+            $access .= '{?LNG}';
+        }
+        $db->{access} = $access;
+    }
 
     # TODO: info-URL 
 }
