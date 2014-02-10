@@ -4,7 +4,7 @@
 // Available from https://gist.github.com/nichtich/5290675#file-deploy-php
 
 $TITLE   = 'Git Deployment Hamster';
-$VERSION = '0.11';
+$VERSION = '0.12';
 
 echo <<<EOT
 <!DOCTYPE HTML>
@@ -65,10 +65,8 @@ $commands = array(
 	'git status',
 #    'cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)',
 #    'make deps',
-    'make gsomenu.json'
+    $_GET['force'] ? 'make -B gsomenu.json' : 'make gsomenu.json',
 );
-
-$output = "\n";
 
 $log = "####### ".date('Y-m-d H:i:s'). " #######\n";
 
@@ -76,19 +74,17 @@ foreach($commands AS $command){
     // Run it
     $tmp = shell_exec("$command 2>&1");
     // Output
-    $output .= "<span style=\"color: #6BE234;\">\$</span> <span style=\"color: #729FCF;\">{$command}\n</span>";
-    $output .= htmlentities(trim($tmp)) . "\n";
+    echo "<span style=\"color: #6BE234;\">\$</span> <span style=\"color: #729FCF;\">{$command}\n</span>";
+    echo htmlentities(trim($tmp)) . "\n";
+    flush();
 
     $log  .= "\$ $command\n".trim($tmp)."\n";
 }
 
-$log .= "\n";
-
-file_put_contents ('deploy-log.txt',$log,FILE_APPEND);
-
-echo $output; 
+file_put_contents ('deploy-log.txt',"$log\n",FILE_APPEND);
 
 ?>
 </pre>
+<hr>
 </body>
 </html>
