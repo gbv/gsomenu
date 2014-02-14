@@ -87,7 +87,7 @@ databases:
         sorted: true
     -
         title_de: "Fachkataloge"
-        title_en: "Fachkataloge"
+        title_en: "Subject catalouges"
         databases: "fachopac|fachopacplus"
         sorted: true
     -
