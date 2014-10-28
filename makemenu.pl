@@ -8,7 +8,10 @@ use Hash::Merge qw(merge);
 use Scalar::Util qw(reftype);
 use JSON;
 use File::Slurp qw(write_file);
-use RDF::Lazy 0.081;
+
+use RDF::aREF '0.21';
+use RDF::Trine;
+
 use Encode;
 
 #binmode *STDOUT, 'utf8';
@@ -31,38 +34,34 @@ my ($menu, $dblist) = map {
 sub expand {
     my $m = shift;
 
-	given ( reftype($m) ) {
-		when ('ARRAY') {
-			return [ map { expand($_) } @$m ];
-		}
-		when ('HASH') {
-			my $db = {
-				title_de => $m->{title_de},
-				title_en => $m->{title_en},
-				access   => $m->{access},
-				info   	 => $m->{info},
-			};
-            say "# ".$db->{title_de};
-            $db->{sorted} = $m->{sorted} if $m->{sorted};
-			if ($m->{databases}) {
-				if (ref $m->{databases}) {
-					$db->{databases} = expand( $m->{databases} );
-				} else {
-					expand_list(
-						$db,
-        				split /\s*\|\s*/, $m->{databases}
-					);
-				}
-			}
-			return $db;
-		}
-		default {
-			return merge(
-				retrieve( $m ),
-				$dblist->{$m},
-			);
-		}
-	};
+	if ( reftype $m and reftype $m eq 'ARRAY' ) {
+		return [ map { expand($_) } @$m ];
+	} elsif ( reftype $m and reftype $m eq 'HASH' ) {
+        my $db = {
+            title_de => $m->{title_de},
+            title_en => $m->{title_en},
+            access   => $m->{access},
+            info   	 => $m->{info},
+        };
+        say "# ".$db->{title_de};
+        $db->{sorted} = $m->{sorted} if $m->{sorted};
+        if ($m->{databases}) {
+            if (ref $m->{databases}) {
+                $db->{databases} = expand( $m->{databases} );
+            } else {
+                expand_list(
+                    $db,
+                    split /\s*\|\s*/, $m->{databases}
+                );
+            }
+        }
+        return $db;
+	} else {
+        return merge(
+            retrieve( $m ),
+            $dblist->{$m},
+        );
+	}
 }
 
 #my $x = expand('gvk');
@@ -76,7 +75,8 @@ my $fullmenu = {
 
 # TODO: write only if no error:
 
-write_file($output,to_json($fullmenu, { pretty => 1 }));
+open my $fh, '>', $output;
+print $fh to_json($fullmenu, { pretty => 1 });
 
 sub retrieve {
     my $dbkey = shift || return '';
@@ -84,15 +84,8 @@ sub retrieve {
 
 	print $uri;
     
-	my $rdf  = RDF::Lazy->new($uri, namespaces => '20120917');
-
 	my $db = { dbkey => $dbkey, uri => $uri };
-
-    if ($rdf->size) { 
-		my $dbrdf = $rdf->resource($uri); 
-
-        rdf2db( $dbrdf => $db );
-    }
+    rdf2db( encode_aref($uri) => $db );
 
 	say (keys %$db ? " - ok" : " - not found");
 
@@ -100,15 +93,14 @@ sub retrieve {
 }
 
 sub rdf2db {
-    my $rdf = shift;
-    my $db = shift;
+    my ($rdf, $db) = @_;
+    my $uri = $rdf->{_url};
 
-    # encode_utf8 only for Perl <= 5.10??
-	my $title_de = "".($rdf->dcterms_title('@de','') || $rdf->skos_prefLabel('@de','') || "");
-	my $title_en = "".($rdf->dcterms_title('@en')    || $rdf->skos_prefLabel('@en')    || "");
-    my $access   = ("".$rdf->gbv_picabase) || "";
+	my ($title_de) = aref_query($rdf, $uri, 'dct_title@de', 'skos_prefLabel@de');
+	my ($title_en) = aref_query($rdf, $uri, 'dct_title@en', 'skos_prefLabel@en');
+    my $access   = aref_query($rdf, $uri, 'gbv_picabase');
 
-    ($title_en, $title_de, $access) = map { encode_utf8($_) } ($title_en, $title_de, $access);
+#    ($title_en, $title_de, $access) = map { encode_utf8($_) } ($title_en, $title_de, $access);
     print " $title_de ";
 
     if (!$db->{title_de}) {
@@ -135,15 +127,20 @@ sub expand_list {
 
 	foreach my $prefix (@prefixes) {
 		my $uri = "http://uri.gbv.de/database/$prefix";
-		my $rdf = RDF::Lazy->new( $uri )->resource($uri);
-
+		my $rdf = encode_aref $uri;
         rdf2db( $rdf => $db );
 
-		if ( $rdf->type('skos:Concept') ) {
-
-			foreach ( @{ $rdf->revs('dc:subject') } ) {
-				next unless $_ =~ s{^http://uri.gbv.de/database/}{};
-				push @{$db->{databases}}, expand($_);
+        print "RDF: $rdf\n";
+        use Data::Dumper;
+        print Dumper($rdf->{$uri});
+        # '$uri a skos_Concept'
+		if ( grep { $_ eq 'http://www.w3.org/2004/02/skos/core#Concept' } 
+                aref_query($rdf,$uri,'a') ) {
+			foreach my $s ( keys %$rdf ) {
+                # $s dc_subject $uri
+                next unless ( grep { $_ eq $uri } aref_query $rdf, $s, 'dc_subject' );
+				next unless $s =~ s{^http://uri.gbv.de/database/}{};
+				push @{$db->{databases}}, expand($s);
 			}
 		} else { 
 			# single database
