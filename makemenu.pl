@@ -7,7 +7,6 @@ use Config::Any;
 use Hash::Merge qw(merge);
 use Scalar::Util qw(reftype);
 use JSON;
-use File::Slurp qw(write_file);
 
 use RDF::aREF '0.21';
 use RDF::Trine;
@@ -76,7 +75,7 @@ my $fullmenu = {
 # TODO: write only if no error:
 
 open my $fh, '>', $output;
-print $fh to_json($fullmenu, { pretty => 1 });
+print $fh to_json($fullmenu, { pretty => 1, canonical => 1 });
 
 sub retrieve {
     my $dbkey = shift || return '';
@@ -85,7 +84,7 @@ sub retrieve {
 	print $uri;
     
 	my $db = { dbkey => $dbkey, uri => $uri };
-    rdf2db( encode_aref($uri) => $db );
+    rdf2db( encode_aref($uri), $uri => $db );
 
 	say (keys %$db ? " - ok" : " - not found");
 
@@ -93,15 +92,14 @@ sub retrieve {
 }
 
 sub rdf2db {
-    my ($rdf, $db) = @_;
-    my $uri = $rdf->{_url};
+    my ($rdf, $uri, $db) = @_;
 
-	my ($title_de) = aref_query($rdf, $uri, 'dct_title@de', 'skos_prefLabel@de');
+	my ($title_de) = aref_query($rdf, $uri, qw(
+        dct_title@de skos_prefLabel@de dct_title@ skos_prefLabel@));
 	my ($title_en) = aref_query($rdf, $uri, 'dct_title@en', 'skos_prefLabel@en');
-    my $access   = aref_query($rdf, $uri, 'gbv_picabase');
+    my ($access)   = aref_query($rdf, $uri, 'gbv_picabase');
 
-#    ($title_en, $title_de, $access) = map { encode_utf8($_) } ($title_en, $title_de, $access);
-    print " $title_de ";
+    print " $title_de : $access";
 
     if (!$db->{title_de}) {
         $db->{title_de} = $title_de if $title_de;
@@ -128,11 +126,8 @@ sub expand_list {
 	foreach my $prefix (@prefixes) {
 		my $uri = "http://uri.gbv.de/database/$prefix";
 		my $rdf = encode_aref $uri;
-        rdf2db( $rdf => $db );
+        rdf2db( $rdf, $uri => $db );
 
-        print "RDF: $rdf\n";
-        use Data::Dumper;
-        print Dumper($rdf->{$uri});
         # '$uri a skos_Concept'
 		if ( grep { $_ eq 'http://www.w3.org/2004/02/skos/core#Concept' } 
                 aref_query($rdf,$uri,'a') ) {
