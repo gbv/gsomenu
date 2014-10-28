@@ -63,9 +63,6 @@ $commands = array(
 	'whoami',
 	'git pull origin master',
 	'git status',
-#    'cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)',
-#    'make deps',
-    $_GET['force'] ? 'make -B gsomenu.json' : 'make gsomenu.json',
 );
 
 $log = "####### ".date('Y-m-d H:i:s'). " #######\n";
