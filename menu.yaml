@@ -41,21 +41,14 @@ databases:
         title_de: "Kataloge im CBS-Service der VZG"
         title_en: "VZG CBS-Service Catalogues"
         databases:
-            -
-                access: "http://gso.gbv.de/DB=9.663/"
-                title_de: "Wissenschaftskolleg zu Berlin"
-                title_en: "Institute for Advanced Study, Berlin"
+            - "opac-de-b1594"
             - "opac-de-brk1"
-
             -
                 access: "http://gso.gbv.de/DB=9.359/"
                 title_de: "Institut für niederdeutsche Sprache, Bremen"
                 title_nds: "Institut för nedderdüütsche Spraak, Bremen"
                 title_en: "Institute for the Low German Language, Bremen"
-            -
-                access: "http://gso.gbv.de/DB=9.647/"
-                title_de: "Leibniz-Zentrum für Marine Tropenökologie, Bremen"
-                title_en: "Leibniz Center for Tropical Marine Ecology, Bremen" 
+            - "opac-de-bre14"
             -
                 access: "http://gso.gbv.de/DB=9.690/"
                 title_de: "Archiv des Landkreises Cuxhaven"
@@ -68,14 +61,9 @@ databases:
                 access: "http://gso.gbv.de/DB=9.642/"
                 title_de: "Stadtmuseum und Horst Janssen Museum Oldenburg"
                 title_en: "City Museum and Horst Janssen Museum, Oldenburg"
-            -
-                access: "http://gso.gbv.de/DB=9.646/"
-                title_de: "Mathias Hochschule, Rheine"
-                title_en: "Mathias University of Applied Sciences Rheine"
-            -
-                access: "http://gso.gbv.de/DB=9.675/"
-                title_de: "Stadtarchiv, Hansestadt Stade"
-                title_en: "Muncipal Archive Stade"
+            - "oapc-de-rhn2"
+            - "opac-de-sta4"
+            - "opac-de-sta4"
             -
                 access: "http://gso.gbv.de/DB=9.662/"
                 title_de: "Landschaftsverband Stade"
