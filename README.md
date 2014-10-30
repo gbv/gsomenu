@@ -12,11 +12,3 @@ sich aus folgenden Quellen:
 
 Aus diesen Quellen erzeugt das Skript `makemenu.pl` die Datei `gsomenu.json`,
 in der Inhalt des gesamten Datenbankmenu enthalten ist.
-
-Die Aktualisierung wird per WebHook von GitHub getriggert. Dazu müssen alle
-Dateien der Gruppe www-data gehören:
-
-    chmod -R g+w .
-    chown -R `whoami`:www-data .
-
-Außerdem muss bei GitHub die deploy-URL als WebHook eingetragen werden.
