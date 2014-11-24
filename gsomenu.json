@@ -28,6 +28,14 @@
          "access" : null,
          "databases" : [
             {
+               "access" : "http://gso.gbv.de/DB=2.151/{?LNG}",
+               "dbkey" : "olcssg-bal",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Baltische Länder",
+               "title_en" : "OLC-SSG Baltic Countries - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-bal"
+            },
+            {
                "access" : "http://gso.gbv.de/DB=2.47/{?LNG}",
                "dbkey" : "olcssg-nord",
                "info_url" : "",
@@ -36,12 +44,84 @@
                "uri" : "http://uri.gbv.de/database/olcssg-nord"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.75/{?LNG}",
-               "dbkey" : "olcssg-ang",
+               "access" : "http://gso.gbv.de/DB=2.76/{?LNG}",
+               "dbkey" : "olcssg-pha",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Anglistik",
-               "title_en" : "OLC-SSG Anglistics - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-ang"
+               "title_de" : "Online Contents - SSG Pharmazie",
+               "title_en" : "Online Contents- SSG Pharmacy",
+               "uri" : "http://uri.gbv.de/database/olcssg-pha"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.149/{?LNG}",
+               "dbkey" : "olcssg-med",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Medien- und Kommunikationswissenschaften",
+               "title_en" : "OLC-SSG Media and Communication Sciences - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-med"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.34/{?LNG}",
+               "dbkey" : "olcssg-jur",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Recht",
+               "title_en" : "OLC-SSG Law - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-jur"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.141/{?LNG}",
+               "dbkey" : "olcssg-bildung",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Bildungsforschung",
+               "title_en" : "OLC-SSG Education Research - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-bildung"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.142/{?LNG}",
+               "dbkey" : "olcssg-ost",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Ost- und Südostasien",
+               "title_en" : "OLC-SSG East and Southeast Asia - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-ost"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.85/{?LNG}",
+               "dbkey" : "olcssg-benelux",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Benelux",
+               "title_en" : "OLC-SSG Benelux - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-benelux"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.38/{?LNG}",
+               "dbkey" : "olcssg-ggo",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Geowissenschaften",
+               "title_en" : "OLC-SSG Earth Sciences - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-ggo"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.84/{?LNG}",
+               "dbkey" : "olcssg-vor",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Vorderer Orient",
+               "title_en" : "OLC-SSG Middle East and North Africa - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-vor"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.147/{?LNG}",
+               "dbkey" : "olcssg-film",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Film und Theater",
+               "title_en" : "OLC-SSG Movie and Theatre Science - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-film"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.89/{?LNG}",
+               "dbkey" : "olcssg-pol",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Politikwissenschaft und Friedensforschung",
+               "title_en" : "OLC-SSG Political Science and Peace Research - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-pol"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.79/{?LNG}",
@@ -60,92 +140,12 @@
                "uri" : "http://uri.gbv.de/database/olcssg-vet"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.78/{?LNG}",
-               "dbkey" : "olcssg-che",
+               "access" : "http://gso.gbv.de/DB=2.35/{?LNG}",
+               "dbkey" : "olcssg-his",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Chemie",
-               "title_en" : "OLC-SSG Chemistry - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-che"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.38/{?LNG}",
-               "dbkey" : "olcssg-ggo",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Geowissenschaften",
-               "title_en" : "OLC-SSG Earth Sciences - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-ggo"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.159/{?LNG}",
-               "dbkey" : "olcssg-ssa",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Afrika südlich der Sahara",
-               "title_en" : "OLC-SSG Africa in the south of Sahara - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-ssa"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.41/{?LNG}",
-               "dbkey" : "olcssg-eth",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Ethnologie",
-               "title_en" : "OLC-SSG Ethnology - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-eth"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.76/{?LNG}",
-               "dbkey" : "olcssg-pha",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Pharmazie",
-               "title_en" : "Online Contents- SSG Pharmacy",
-               "uri" : "http://uri.gbv.de/database/olcssg-pha"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.50/{?LNG}",
-               "dbkey" : "olcssg-mus",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Musikwissenschaft",
-               "title_en" : "OLC-SSG Music Research - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-mus"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.44/{?LNG}",
-               "dbkey" : "olcssg-alt",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Altertumswissenschaften",
-               "title_en" : "OLC-SSG Classics - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-alt"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.147/{?LNG}",
-               "dbkey" : "olcssg-film",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Film und Theater",
-               "title_en" : "OLC-SSG Movie and Theatre Science - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-film"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.33/{?LNG}",
-               "dbkey" : "olcssg-sla",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Slavistik",
-               "title_en" : "OLC-SSG Slavistics - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-sla"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.34/{?LNG}",
-               "dbkey" : "olcssg-jur",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Recht",
-               "title_en" : "OLC-SSG Law - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-jur"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.36/{?LNG}",
-               "dbkey" : "olcssg-zge",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Zeitgeschichte",
-               "title_en" : "OLC-SSG Contemporary History - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-zge"
+               "title_de" : "Online Contents - SSG Geschichte",
+               "title_en" : "OLC-SSG History - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-his"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.130/{?LNG}",
@@ -156,116 +156,12 @@
                "uri" : "http://uri.gbv.de/database/olcssg-ita"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.43/{?LNG}",
-               "dbkey" : "olcssg-ast",
+               "access" : "http://gso.gbv.de/DB=2.133/{?LNG}",
+               "dbkey" : "olcssg-oeu",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Astronomie",
-               "title_en" : "OLC-SSG Astronomy - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-ast"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.140/{?LNG}",
-               "dbkey" : "olcssg-phi",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Philosophie",
-               "title_en" : "OLC-SSG Philosophy - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-phi"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.84/{?LNG}",
-               "dbkey" : "olcssg-vor",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Vorderer Orient",
-               "title_en" : "OLC-SSG Middle East and North Africa - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-vor"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.82/{?LNG}",
-               "dbkey" : "olcssg-umw",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Umwelt",
-               "title_en" : "OLC-SSG Environment - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-umw"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.81/{?LNG}",
-               "dbkey" : "olcssg-arc",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Architektur",
-               "title_en" : "OLC-SSG Architecture and Civil Engineering - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-arc"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.160/{?LNG}",
-               "dbkey" : "olcssg-iba",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Ibero-Amerika, Spanien und Portugal",
-               "title_en" : "OLC-SSG Ibero-America, Spain and Portugal - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-iba"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.31/{?LNG}",
-               "dbkey" : "olcssg-rom",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Frankreichkunde und Allgemeine Romanistik",
-               "title_en" : "OLC-SSG French and General Romance Studies - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-rom"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.149/{?LNG}",
-               "dbkey" : "olcssg-med",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Medien- und Kommunikationswissenschaften",
-               "title_en" : "OLC-SSG Media and Communication Sciences - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-med"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.35/{?LNG}",
-               "dbkey" : "olcssg-his",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Geschichte",
-               "title_en" : "OLC-SSG History - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-his"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.156/{?LNG}",
-               "dbkey" : "olcssg-int",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Internationale Beziehungen und Länderkunde",
-               "title_en" : "OLC-SSG International Relations and Area Studies - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-int"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.89/{?LNG}",
-               "dbkey" : "olcssg-pol",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Politikwissenschaft und Friedensforschung",
-               "title_en" : "OLC-SSG Political Science and Peace Research - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-pol"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.45/{?LNG}",
-               "dbkey" : "olcssg-bbi",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Informations-, Buch- und Bibliothekswesen",
-               "title_en" : "OLC-SSG Book Studies, Library and Information Sciences - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-bbi"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.42/{?LNG}",
-               "dbkey" : "olcssg-kun",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Kunst und Kunstwissenschaft",
-               "title_en" : "OLC-SSG Arts and Art Sciences - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-kun"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.131/{?LNG}",
-               "dbkey" : "olcssg-kph",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Klassische Philologie",
-               "title_en" : "OLC-SSG Greek and Latin Philology - Online Contents - Special Subject Collections",
-               "uri" : "http://uri.gbv.de/database/olcssg-kph"
+               "title_de" : "Online Contents - SSG Osteuropa",
+               "title_en" : "OLC-SSG Eastern Europe-Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-oeu"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.134/{?LNG}",
@@ -276,20 +172,20 @@
                "uri" : "http://uri.gbv.de/database/olcssg-soa"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.85/{?LNG}",
-               "dbkey" : "olcssg-benelux",
+               "access" : "http://gso.gbv.de/DB=2.80/{?LNG}",
+               "dbkey" : "olcssg-tec",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Benelux",
-               "title_en" : "OLC-SSG Benelux - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-benelux"
+               "title_de" : "Online Contents - SSG Technik",
+               "title_en" : "OLC-SSG Technology - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-tec"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.158/{?LNG}",
-               "dbkey" : "olcssg-ger",
+               "access" : "http://gso.gbv.de/DB=2.160/{?LNG}",
+               "dbkey" : "olcssg-iba",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Germanistik",
-               "title_en" : "OLC-SSG German language and literature studies - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-ger"
+               "title_de" : "Online Contents - SSG Ibero-Amerika, Spanien und Portugal",
+               "title_en" : "OLC-SSG Ibero-America, Spain and Portugal - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-iba"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.39/{?LNG}",
@@ -300,28 +196,68 @@
                "uri" : "http://uri.gbv.de/database/olcssg-wiw"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.152/{?LNG}",
-               "dbkey" : "olcssg-soz",
+               "access" : "http://gso.gbv.de/DB=2.43/{?LNG}",
+               "dbkey" : "olcssg-ast",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Sozialwissenschaften",
-               "title_en" : "OLC-SSG Social Sciences - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-soz"
+               "title_de" : "Online Contents - SSG Astronomie",
+               "title_en" : "OLC-SSG Astronomy - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-ast"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.142/{?LNG}",
-               "dbkey" : "olcssg-ost",
+               "access" : "http://gso.gbv.de/DB=2.36/{?LNG}",
+               "dbkey" : "olcssg-zge",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Ost- und Südostasien",
-               "title_en" : "OLC-SSG East and Southeast Asia - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-ost"
+               "title_de" : "Online Contents - SSG Zeitgeschichte",
+               "title_en" : "OLC-SSG Contemporary History - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-zge"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.141/{?LNG}",
-               "dbkey" : "olcssg-bildung",
+               "access" : "http://gso.gbv.de/DB=2.140/{?LNG}",
+               "dbkey" : "olcssg-phi",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Bildungsforschung",
-               "title_en" : "OLC-SSG Education Research - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-bildung"
+               "title_de" : "Online Contents - SSG Philosophie",
+               "title_en" : "OLC-SSG Philosophy - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-phi"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.81/{?LNG}",
+               "dbkey" : "olcssg-arc",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Architektur",
+               "title_en" : "OLC-SSG Architecture and Civil Engineering - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-arc"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.41/{?LNG}",
+               "dbkey" : "olcssg-eth",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Ethnologie",
+               "title_en" : "OLC-SSG Ethnology - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-eth"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.42/{?LNG}",
+               "dbkey" : "olcssg-kun",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Kunst und Kunstwissenschaft",
+               "title_en" : "OLC-SSG Arts and Art Sciences - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-kun"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.37/{?LNG}",
+               "dbkey" : "olcssg-psy",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Psychologie",
+               "title_en" : "OLC-SSG Psychology - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-psy"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.50/{?LNG}",
+               "dbkey" : "olcssg-mus",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Musikwissenschaft",
+               "title_en" : "OLC-SSG Music Research - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-mus"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.132/{?LNG}",
@@ -332,20 +268,12 @@
                "uri" : "http://uri.gbv.de/database/olcssg-rok"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.133/{?LNG}",
-               "dbkey" : "olcssg-oeu",
+               "access" : "http://gso.gbv.de/DB=2.82/{?LNG}",
+               "dbkey" : "olcssg-umw",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Osteuropa",
-               "title_en" : "OLC-SSG Eastern Europe-Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-oeu"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.151/{?LNG}",
-               "dbkey" : "olcssg-bal",
-               "info_url" : "",
-               "title_de" : "Online Contents - SSG Baltische Länder",
-               "title_en" : "OLC-SSG Baltic Countries - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-bal"
+               "title_de" : "Online Contents - SSG Umwelt",
+               "title_en" : "OLC-SSG Environment - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-umw"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.144/{?LNG}",
@@ -356,20 +284,76 @@
                "uri" : "http://uri.gbv.de/database/olcssg-hsw"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.80/{?LNG}",
-               "dbkey" : "olcssg-tec",
+               "access" : "http://gso.gbv.de/DB=2.156/{?LNG}",
+               "dbkey" : "olcssg-int",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Technik",
-               "title_en" : "OLC-SSG Technology - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-tec"
+               "title_de" : "Online Contents - SSG Internationale Beziehungen und Länderkunde",
+               "title_en" : "OLC-SSG International Relations and Area Studies - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-int"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.37/{?LNG}",
-               "dbkey" : "olcssg-psy",
+               "access" : "http://gso.gbv.de/DB=2.131/{?LNG}",
+               "dbkey" : "olcssg-kph",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Psychologie",
-               "title_en" : "OLC-SSG Psychology - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-psy"
+               "title_de" : "Online Contents - SSG Klassische Philologie",
+               "title_en" : "OLC-SSG Greek and Latin Philology - Online Contents - Special Subject Collections",
+               "uri" : "http://uri.gbv.de/database/olcssg-kph"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.159/{?LNG}",
+               "dbkey" : "olcssg-ssa",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Afrika südlich der Sahara",
+               "title_en" : "OLC-SSG Africa in the south of Sahara - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-ssa"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.31/{?LNG}",
+               "dbkey" : "olcssg-rom",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Frankreichkunde und Allgemeine Romanistik",
+               "title_en" : "OLC-SSG French and General Romance Studies - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-rom"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.78/{?LNG}",
+               "dbkey" : "olcssg-che",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Chemie",
+               "title_en" : "OLC-SSG Chemistry - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-che"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.45/{?LNG}",
+               "dbkey" : "olcssg-bbi",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Informations-, Buch- und Bibliothekswesen",
+               "title_en" : "OLC-SSG Book Studies, Library and Information Sciences - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-bbi"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.148/{?LNG}",
+               "dbkey" : "olcssg-spo",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Sportwissenschaft",
+               "title_en" : "OLC-SSG Sports Sciences - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-spo"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.44/{?LNG}",
+               "dbkey" : "olcssg-alt",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Altertumswissenschaften",
+               "title_en" : "OLC-SSG Classics - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-alt"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.33/{?LNG}",
+               "dbkey" : "olcssg-sla",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Slavistik",
+               "title_en" : "OLC-SSG Slavistics - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-sla"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.77/{?LNG}",
@@ -388,12 +372,28 @@
                "uri" : "http://uri.gbv.de/database/olcssg-ana"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.148/{?LNG}",
-               "dbkey" : "olcssg-spo",
+               "access" : "http://gso.gbv.de/DB=2.158/{?LNG}",
+               "dbkey" : "olcssg-ger",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Sportwissenschaft",
-               "title_en" : "OLC-SSG Sports Sciences - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-spo"
+               "title_de" : "Online Contents - SSG Germanistik",
+               "title_en" : "OLC-SSG German language and literature studies - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-ger"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.146/{?LNG}",
+               "dbkey" : "olcssg-for",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Forstwissenschaften",
+               "title_en" : "OLC-SSG Forestry - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-for"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.75/{?LNG}",
+               "dbkey" : "olcssg-ang",
+               "info_url" : "",
+               "title_de" : "Online Contents - SSG Anglistik",
+               "title_en" : "OLC-SSG Anglistics - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-ang"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.46/{?LNG}",
@@ -404,12 +404,12 @@
                "uri" : "http://uri.gbv.de/database/olcssg-thi"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.146/{?LNG}",
-               "dbkey" : "olcssg-for",
+               "access" : "http://gso.gbv.de/DB=2.152/{?LNG}",
+               "dbkey" : "olcssg-soz",
                "info_url" : "",
-               "title_de" : "Online Contents - SSG Forstwissenschaften",
-               "title_en" : "OLC-SSG Forestry - Online Contents-Special Subject Collection",
-               "uri" : "http://uri.gbv.de/database/olcssg-for"
+               "title_de" : "Online Contents - SSG Sozialwissenschaften",
+               "title_en" : "OLC-SSG Social Sciences - Online Contents-Special Subject Collection",
+               "uri" : "http://uri.gbv.de/database/olcssg-soz"
             }
          ],
          "dbkey" : "olcssg",
@@ -597,6 +597,12 @@
                "info" : null,
                "title_de" : "Landschaftsverband Stade",
                "title_en" : "Regional Association Stade"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=9.698/",
+               "info" : null,
+               "title_de" : "Stiftung Dome und Schlösser in Sachsen Anhalt",
+               "title_en" : "Stiftung Dome und Schlösser in Sachsen Anhalt"
             }
          ],
          "info" : null,
@@ -607,46 +613,10 @@
          "access" : null,
          "databases" : [
             {
-               "access" : "http://gso.gbv.de/DB=2.913/{?LNG}",
-               "dbkey" : "rk-oldb",
-               "title_de" : "Regionalkatalog Nordwest",
-               "uri" : "http://uri.gbv.de/database/rk-oldb"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.931/{?LNG}",
-               "dbkey" : "rk-elbeweser",
-               "title_de" : "Regionalkatalog Elbe-Weser-Dreieck",
-               "uri" : "http://uri.gbv.de/database/rk-elbeweser"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.93/{?LNG}",
-               "dbkey" : "rk-bs",
-               "title_de" : "Regionalkatalog Braunschweig",
-               "uri" : "http://uri.gbv.de/database/rk-bs"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.90/{?LNG}",
-               "dbkey" : "rk-goe",
-               "title_de" : "Göttinger Gesamtkatalog",
-               "uri" : "http://uri.gbv.de/database/rk-goe"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.92/{?LNG}",
-               "dbkey" : "rk-han",
-               "title_de" : "Gesamtkatalog Hannover",
-               "uri" : "http://uri.gbv.de/database/rk-han"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.91/{?LNG}",
-               "dbkey" : "rk-hh",
-               "title_de" : "Regionalkatalog Hamburg",
-               "uri" : "http://uri.gbv.de/database/rk-hh"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.98/{?LNG}",
-               "dbkey" : "rk-hi",
-               "title_de" : "Regionalkatalog Hildesheim",
-               "uri" : "http://uri.gbv.de/database/rk-hi"
+               "access" : "http://gso.gbv.de/DB=2.150/{?LNG}",
+               "dbkey" : "rk-kiel",
+               "title_de" : "Regionalkatalog Kiel",
+               "uri" : "http://uri.gbv.de/database/rk-kiel"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.94/{?LNG}",
@@ -655,16 +625,16 @@
                "uri" : "http://uri.gbv.de/database/rk-bremen"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.940/{?LNG}",
-               "dbkey" : "rk-hb",
-               "title_de" : "Regionalkatalog Land Bremen",
-               "uri" : "http://uri.gbv.de/database/rk-hb"
-            },
-            {
                "access" : "http://gso.gbv.de/DB=2.95/{?LNG}",
                "dbkey" : "rk-bb",
                "title_de" : "Regionalkatalog Berlin/Brandenburg",
                "uri" : "http://uri.gbv.de/database/rk-bb"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.92/{?LNG}",
+               "dbkey" : "rk-han",
+               "title_de" : "Gesamtkatalog Hannover",
+               "uri" : "http://uri.gbv.de/database/rk-han"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.916/{?LNG}",
@@ -673,10 +643,46 @@
                "uri" : "http://uri.gbv.de/database/rk-weimar"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.150/{?LNG}",
-               "dbkey" : "rk-kiel",
-               "title_de" : "Regionalkatalog Kiel",
-               "uri" : "http://uri.gbv.de/database/rk-kiel"
+               "access" : "http://gso.gbv.de/DB=2.90/{?LNG}",
+               "dbkey" : "rk-goe",
+               "title_de" : "Göttinger Gesamtkatalog",
+               "uri" : "http://uri.gbv.de/database/rk-goe"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.98/{?LNG}",
+               "dbkey" : "rk-hi",
+               "title_de" : "Regionalkatalog Hildesheim",
+               "uri" : "http://uri.gbv.de/database/rk-hi"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.931/{?LNG}",
+               "dbkey" : "rk-elbeweser",
+               "title_de" : "Regionalkatalog Elbe-Weser-Dreieck",
+               "uri" : "http://uri.gbv.de/database/rk-elbeweser"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.91/{?LNG}",
+               "dbkey" : "rk-hh",
+               "title_de" : "Regionalkatalog Hamburg",
+               "uri" : "http://uri.gbv.de/database/rk-hh"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.913/{?LNG}",
+               "dbkey" : "rk-oldb",
+               "title_de" : "Regionalkatalog Nordwest",
+               "uri" : "http://uri.gbv.de/database/rk-oldb"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.940/{?LNG}",
+               "dbkey" : "rk-hb",
+               "title_de" : "Regionalkatalog Land Bremen",
+               "uri" : "http://uri.gbv.de/database/rk-hb"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.93/{?LNG}",
+               "dbkey" : "rk-bs",
+               "title_de" : "Regionalkatalog Braunschweig",
+               "uri" : "http://uri.gbv.de/database/rk-bs"
             }
          ],
          "dbkey" : "rk",
@@ -690,16 +696,16 @@
          "access" : null,
          "databases" : [
             {
-               "access" : "http://gso.gbv.de/DB=1.97/{?LNG}",
-               "dbkey" : "fachopac-asia",
-               "title_de" : "Fachkatalog Asiatische Datenbanken",
-               "uri" : "http://uri.gbv.de/database/fachopac-asia"
-            },
-            {
                "access" : "http://gso.gbv.de/DB=2.119/{?LNG}",
                "dbkey" : "fachopac-vifanord",
                "title_de" : "Fachkatalog ViFa Nord",
                "uri" : "http://uri.gbv.de/database/fachopac-vifanord"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.111/{?LNG}",
+               "dbkey" : "fachopac-for",
+               "title_de" : "Fachkatalog Forstwissenschaften",
+               "uri" : "http://uri.gbv.de/database/fachopac-for"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.110/{?LNG}",
@@ -708,10 +714,34 @@
                "uri" : "http://uri.gbv.de/database/fachopac-geo"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.112/{?LNG}",
-               "dbkey" : "fachopac-ast",
-               "title_de" : "Fachkatalog Astronomie",
-               "uri" : "http://uri.gbv.de/database/fachopac-ast"
+               "access" : "http://gso.gbv.de/DB=2.122/{?LNG}",
+               "dbkey" : "fachopac-mat",
+               "title_de" : "Fachkatalog Mathematik",
+               "uri" : "http://uri.gbv.de/database/fachopac-mat"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.114/{?LNG}",
+               "dbkey" : "fachopac-ggo",
+               "title_de" : "Fachkatalog Geowissenschaften",
+               "uri" : "http://uri.gbv.de/database/fachopac-ggo"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.138/{?LNG}",
+               "dbkey" : "fachopac-bal",
+               "title_de" : "Fachkatalog Baltische Länder",
+               "uri" : "http://uri.gbv.de/database/fachopac-bal"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=1.97/{?LNG}",
+               "dbkey" : "fachopac-asia",
+               "title_de" : "Fachkatalog Asiatische Datenbanken",
+               "uri" : "http://uri.gbv.de/database/fachopac-asia"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.120/{?LNG}",
+               "dbkey" : "fachopac-nord",
+               "title_de" : "Fachkatalog Nordische Länder",
+               "uri" : "http://uri.gbv.de/database/fachopac-nord"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.115/{?LNG}",
@@ -726,40 +756,10 @@
                "uri" : "http://uri.gbv.de/database/fachopac-ang"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.116/{?LNG}",
-               "dbkey" : "fachopac-bbi",
-               "title_de" : "Fachkatalog Informations-, Buch- und Bibliothekswesen",
-               "uri" : "http://uri.gbv.de/database/fachopac-bbi"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.138/{?LNG}",
-               "dbkey" : "fachopac-bal",
-               "title_de" : "Fachkatalog Baltische Länder",
-               "uri" : "http://uri.gbv.de/database/fachopac-bal"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.111/{?LNG}",
-               "dbkey" : "fachopac-for",
-               "title_de" : "Fachkatalog Forstwissenschaften",
-               "uri" : "http://uri.gbv.de/database/fachopac-for"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.122/{?LNG}",
-               "dbkey" : "fachopac-mat",
-               "title_de" : "Fachkatalog Mathematik",
-               "uri" : "http://uri.gbv.de/database/fachopac-mat"
-            },
-            {
                "access" : "http://gso.gbv.de/DB=2.118/{?LNG}",
                "dbkey" : "fachopac-vor",
                "title_de" : "Fachkatalog Vorderer Orient",
                "uri" : "http://uri.gbv.de/database/fachopac-vor"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.120/{?LNG}",
-               "dbkey" : "fachopac-nord",
-               "title_de" : "Fachkatalog Nordische Länder",
-               "uri" : "http://uri.gbv.de/database/fachopac-nord"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.113/{?LNG}",
@@ -768,22 +768,16 @@
                "uri" : "http://uri.gbv.de/database/fachopac-fin"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.114/{?LNG}",
-               "dbkey" : "fachopac-ggo",
-               "title_de" : "Fachkatalog Geowissenschaften",
-               "uri" : "http://uri.gbv.de/database/fachopac-ggo"
+               "access" : "http://gso.gbv.de/DB=2.112/{?LNG}",
+               "dbkey" : "fachopac-ast",
+               "title_de" : "Fachkatalog Astronomie",
+               "uri" : "http://uri.gbv.de/database/fachopac-ast"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.210/{?LNG}",
-               "dbkey" : "fachopacplus-geo",
-               "title_de" : "Fachkatalog Geophysik inklusive Online Contents",
-               "uri" : "http://uri.gbv.de/database/fachopacplus-geo"
-            },
-            {
-               "access" : "http://gso.gbv.de/DB=2.211/{?LNG}",
-               "dbkey" : "fachopacplus-for",
-               "title_de" : "Fachkatalog Forstwissenschaften inklusive Online Contents",
-               "uri" : "http://uri.gbv.de/database/fachopacplus-for"
+               "access" : "http://gso.gbv.de/DB=2.116/{?LNG}",
+               "dbkey" : "fachopac-bbi",
+               "title_de" : "Fachkatalog Informations-, Buch- und Bibliothekswesen",
+               "uri" : "http://uri.gbv.de/database/fachopac-bbi"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.217/{?LNG}",
@@ -798,16 +792,16 @@
                "uri" : "http://uri.gbv.de/database/fachopacplus-vor"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.297/{?LNG}",
-               "dbkey" : "fachopacplus-ang",
-               "title_de" : "Fachkatalog Anglo-American Culture inklusive Online Contents",
-               "uri" : "http://uri.gbv.de/database/fachopacplus-ang"
+               "access" : "http://gso.gbv.de/DB=2.211/{?LNG}",
+               "dbkey" : "fachopacplus-for",
+               "title_de" : "Fachkatalog Forstwissenschaften inklusive Online Contents",
+               "uri" : "http://uri.gbv.de/database/fachopacplus-for"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.215/{?LNG}",
-               "dbkey" : "fachopacplus-pha",
-               "title_de" : "Fachkatalog Pharmazie inklusive Online Contents",
-               "uri" : "http://uri.gbv.de/database/fachopacplus-pha"
+               "access" : "http://gso.gbv.de/DB=2.210/{?LNG}",
+               "dbkey" : "fachopacplus-geo",
+               "title_de" : "Fachkatalog Geophysik inklusive Online Contents",
+               "uri" : "http://uri.gbv.de/database/fachopacplus-geo"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.216/{?LNG}",
@@ -816,10 +810,22 @@
                "uri" : "http://uri.gbv.de/database/fachopacplus-bbi"
             },
             {
+               "access" : "http://gso.gbv.de/DB=2.215/{?LNG}",
+               "dbkey" : "fachopacplus-pha",
+               "title_de" : "Fachkatalog Pharmazie inklusive Online Contents",
+               "uri" : "http://uri.gbv.de/database/fachopacplus-pha"
+            },
+            {
                "access" : "http://gso.gbv.de/DB=2.212/{?LNG}",
                "dbkey" : "fachopacplus-ast",
                "title_de" : "Fachkatalog Astronomie inklusive Online Contents",
                "uri" : "http://uri.gbv.de/database/fachopacplus-ast"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=2.297/{?LNG}",
+               "dbkey" : "fachopacplus-ang",
+               "title_de" : "Fachkatalog Anglo-American Culture inklusive Online Contents",
+               "uri" : "http://uri.gbv.de/database/fachopacplus-ang"
             }
          ],
          "info" : null,
@@ -1074,10 +1080,10 @@
                "access" : null,
                "databases" : [
                   {
-                     "access" : "http://gso.gbv.de/DB=6.5/{?LNG}",
-                     "dbkey" : "rkoeb-st",
-                     "title_de" : "Regionalkatalog Öffentlicher Bibliotheken in Sachsen-Anhalt",
-                     "uri" : "http://uri.gbv.de/database/rkoeb-st"
+                     "access" : "http://gso.gbv.de/DB=6.7/{?LNG}",
+                     "dbkey" : "rkoeb-th",
+                     "title_de" : "Regionalkatalog Öffentlicher Bibliotheken in Thüringen",
+                     "uri" : "http://uri.gbv.de/database/rkoeb-th"
                   },
                   {
                      "access" : "http://gso.gbv.de/DB=6.4/{?LNG}",
@@ -1086,10 +1092,10 @@
                      "uri" : "http://uri.gbv.de/database/rkoeb-ni"
                   },
                   {
-                     "access" : "http://gso.gbv.de/DB=6.7/{?LNG}",
-                     "dbkey" : "rkoeb-th",
-                     "title_de" : "Regionalkatalog Öffentlicher Bibliotheken in Thüringen",
-                     "uri" : "http://uri.gbv.de/database/rkoeb-th"
+                     "access" : "http://gso.gbv.de/DB=6.5/{?LNG}",
+                     "dbkey" : "rkoeb-st",
+                     "title_de" : "Regionalkatalog Öffentlicher Bibliotheken in Sachsen-Anhalt",
+                     "uri" : "http://uri.gbv.de/database/rkoeb-st"
                   }
                ],
                "dbkey" : "rkoeb",
@@ -1166,7 +1172,7 @@
                "dbkey" : "swb",
                "info_url" : "",
                "title_de" : "SWB - Verbundkatalog des Südwestdeutschen Bibliotheksverbund",
-               "title_en" : "SWB Online-Katalog",
+               "title_en" : "SWB - Online Catalogue",
                "uri" : "http://uri.gbv.de/database/swb"
             },
             {
