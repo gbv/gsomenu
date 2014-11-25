@@ -63,7 +63,6 @@ databases:
                 title_en: "City Museum and Horst Janssen Museum, Oldenburg"
             - "oapc-de-rhn2"
             - "opac-de-sta4"
-            - "opac-de-sta4"
             -
                 access: "http://gso.gbv.de/DB=9.662/"
                 title_de: "Landschaftsverband Stade"
