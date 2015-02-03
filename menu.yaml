@@ -42,6 +42,7 @@ databases:
         title_en: "VZG CBS-Service Catalogues"
         databases:
             - "opac-de-b1594"
+            - "opac-de-hel1"
             - "opac-de-brk1"
             -
                 access: "http://gso.gbv.de/DB=9.359/"
