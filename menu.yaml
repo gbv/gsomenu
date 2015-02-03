@@ -43,6 +43,7 @@ databases:
         databases:
             - "opac-de-b1594"
             - "opac-de-hel1"
+            - "opac-de-we21"
             - "opac-de-brk1"
             -
                 access: "http://gso.gbv.de/DB=9.359/"
