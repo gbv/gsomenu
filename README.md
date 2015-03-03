@@ -2,8 +2,9 @@ Dieses Repository enthält Konfiguration des Datenbankverzeichnis (aka GSO-Menü
 das unter <http://www.gbv.de/gsomenu/> angezeigt wird.
 
 Wesentlich für die Darstellung des GSO-Menü ist lediglich die Datei
-`gsomenu.json` in diesem Repository. Die Datei lässt sich mit dem Skript
-`update` aus folgenden Datenquellen aktualisieren:
+`gsomenu.json` in diesem Repository, die in regelmäßigen Abständen abgefragt
+wird. Die Datei lässt sich mit dem Skript `update` aus folgenden Datenquellen
+aktualisieren:
  
 * `menu.yaml`: Definition der Menustruktur
 
@@ -21,6 +22,9 @@ werden können. Insgesamt lässt sich ein Update folgendermaßen durchführen:
 $ git clone git@github.com:gbv/gsomenu.git
 $ sudo apt-get install cpanminus # einmalig, falls cpanm nicht installiert
 $ sudo cpanm --installdeps .     # einmalig oder bei Systemänderungen
+$ # ggf. menu.yaml/databases.csv bearbeiten und committen
 $ ./update
+$ git diff # zeigt an, was geändert wurde
+$ git add gsomenu.json
 $ git push origin master
 ```
