@@ -68,6 +68,7 @@ sub expand {
                 );
             }
         }
+        say colored('title_en fehlt!','yellow') unless $db->{title_en};
         return $db;
 	} else {
         return merge(
