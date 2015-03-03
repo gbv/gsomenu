@@ -1,0 +1,154 @@
+#!/usr/bin/env perl
+use v5.14;
+
+use Config::Any;
+use Hash::Merge qw(merge);
+use Scalar::Util qw(reftype);
+use JSON;
+use Term::ANSIColor qw(colored);
+
+use RDF::aREF '0.23';
+use RDF::Trine;
+
+my $error;
+
+my ($menu, $dblist) = load_config('menu.yaml', 'databases.csv');
+
+my $databases = expand( $menu->{databases} );
+
+my $json = JSON->new->pretty->canonical->encode( { databases => $databases } );
+
+my $out = "gsomenu.json";
+if ($error) {
+    say STDERR colored('wrote error.json instead of gsomenu.json','red');
+} else {
+    say colored('wrote gsomenu.json','white');
+}
+open my $fh, '>:binary', $out;
+say $fh $json;
+exit !!$error;
+
+# load config files
+sub load_config {
+    return map {
+        my $c = Config::Any->load_files({ files => [ $_ ], use_ext => 1 });
+        if ($c && $c->[0]->{$_}) { 
+            say colored("loaded config file $_","white"); 
+            $c->[0]->{$_};
+        } else {
+            say STDERR colored("failed to load config file $_: $@","red");
+            exit;
+        }   
+    } @_; 
+}
+
+
+# expand menu (sub)tree
+sub expand {
+    my ($m) = @_;
+
+    my $reftype = reftype $m // '';
+	if ( $reftype eq 'ARRAY' ) {
+		return [ map { expand($_) } @$m ];
+	} elsif ( $reftype eq 'HASH' ) {
+        my $db = {
+            title_de => $m->{title_de},
+            title_en => $m->{title_en},
+            access   => $m->{access},
+            info   	 => $m->{info},
+        };
+        $db->{sorted} = $m->{sorted} if $m->{sorted};
+        if ($m->{databases}) {
+            if (ref $m->{databases}) {
+                $db->{databases} = expand( $m->{databases} );
+            } else {
+                expand_list(
+                    $db,
+                    split /\s*\|\s*/, $m->{databases}
+                );
+            }
+        }
+        return $db;
+	} else {
+        return merge(
+            retrieve_database($m),
+            $dblist->{$m},
+        );
+	}
+}
+
+# expand database prefixes to databases
+sub expand_list {
+	my ($db, @prefixes) = @_;
+	$db->{databases} = [ ];
+
+	foreach my $prefix (@prefixes) {
+		my $uri = "http://uri.gbv.de/database/$prefix";
+		my $rdf = encode_aref $uri;
+        rdf2db( $rdf, $uri => $db );
+
+        # '$uri a skos_Concept'
+		if ( grep { $_ eq 'http://www.w3.org/2004/02/skos/core#Concept' } 
+                aref_query($rdf,$uri,'a') ) {
+            my @dbs;
+			foreach my $s ( keys %$rdf ) {
+                # $s dc_subject $uri
+                next unless ( grep { $_ eq $uri } aref_query $rdf, $s, 'dc_subject' );
+				next unless $s =~ s{^http://uri.gbv.de/database/}{};
+				push @dbs, expand($s);
+			}
+			push @{$db->{databases}}, sort { $a->{title_de} cmp $b->{title_de} } @dbs;
+		} else { 
+			# single database
+			push @{$db->{databases}}, expand($prefix);
+		}
+	}
+
+    if (@prefixes == 1) {
+        $db->{dbkey} = $prefixes[0];
+		$db->{uri}   = "http://uri.gbv.de/database/$prefixes[0]";
+    }
+
+    $db = merge( $db, map { $dblist->{$_} // { } } @prefixes );
+}
+
+# retrieve database information as Linked Open Data
+sub retrieve_database {
+    my $dbkey = shift || return '';
+    my $uri = "http://uri.gbv.de/database/$dbkey";
+
+	my $db = { dbkey => $dbkey, uri => $uri };
+    rdf2db( encode_aref($uri), $uri => $db );
+
+	return $db;
+}
+
+sub rdf2db {
+    my ($rdf, $uri, $db) = @_;
+
+	my ($title_de) = aref_query $rdf, $uri, 
+        'dct_title@de|skos_prefLabel@de|dct_title@|skos_prefLabel@';
+	my ($title_en) = aref_query $rdf, $uri, 'dct_title@en', 'skos_prefLabel@en';
+    my ($access)   = aref_query $rdf, $uri, 'gbv_picabase';
+
+    $db->{title_de} ||= $title_de if $title_de;
+    $db->{title_en} ||= $title_en if $title_en;
+
+    if ($access) {
+        if ($access =~ qr{/DB=[0-9.]+[/]?$}) {
+            $access .= '{?LNG}';
+        }
+        $db->{access} ||= $access;
+    }
+
+    # TODO: info-URL 
+    
+    if ($db->{title_de}) {
+        say $uri . colored(" ".$db->{title_de},"green");
+    } else {
+        say STDERR $uri . colored(" missing title/access","red");
+        $error++;
+    }
+}
+
+
