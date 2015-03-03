@@ -953,7 +953,7 @@
                "title_en" : "LBS Greifswald"
             },
             {
-               "access" : "http://haweb1.bibliothek.uni-halle.de/cgi-bin/wwwopc4menu",
+               "access" : "http://opac.bibliothek.uni-halle.de/cgi-bin/wwwopc4menu",
                "info" : null,
                "title_de" : "LBS Halle - Merseburg",
                "title_en" : "LBS Halle-Merseburg"

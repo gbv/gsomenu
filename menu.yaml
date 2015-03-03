@@ -141,7 +141,7 @@ databases:
                 title_de: "LBS Greifswald"
                 title_en: "LBS Greifswald"
             -
-                access: "http://haweb1.bibliothek.uni-halle.de/cgi-bin/wwwopc4menu"
+                access: "http://opac.bibliothek.uni-halle.de/cgi-bin/wwwopc4menu"
                 title_de: "LBS Halle - Merseburg"
                 title_en: "LBS Halle-Merseburg"
             -
