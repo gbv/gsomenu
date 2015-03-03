@@ -15,7 +15,6 @@ my $error;
 my ($menu, $dblist) = load_config('menu.yaml', 'databases.csv');
 
 my $databases = expand( $menu->{databases} );
-
 my $json = JSON->new->pretty->canonical->encode( { databases => $databases } );
 
 my $out = "gsomenu.json";
@@ -24,7 +23,7 @@ if ($error) {
 } else {
     say colored('wrote gsomenu.json','white');
 }
-open my $fh, '>:binary', $out;
+open(my $fh, '>:utf8', $out) or die "failed to open $out";
 say $fh $json;
 exit !!$error;
 
