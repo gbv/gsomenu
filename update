@@ -128,7 +128,8 @@ sub rdf2db {
 
 	my ($title_de) = aref_query $rdf, $uri, 
         'dct_title@de|skos_prefLabel@de|dct_title@|skos_prefLabel@';
-	my ($title_en) = aref_query $rdf, $uri, 'dct_title@en', 'skos_prefLabel@en';
+	my ($title_en) = aref_query $rdf, $uri, 
+        'dct_title@en|skos_prefLabel@en|dct_title@|skos_prefLabel@';
     my ($access)   = aref_query $rdf, $uri, 'gbv_picabase';
 
     $db->{title_de} ||= $title_de if $title_de;
