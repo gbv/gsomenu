@@ -4,7 +4,7 @@ use v5.14;
 use Config::Any;
 use Hash::Merge qw(merge);
 use Scalar::Util qw(reftype);
-use JSON;
+use JSON::XS;
 use Term::ANSIColor qw(colored);
 
 use RDF::aREF '0.23';
@@ -15,11 +15,12 @@ my $error;
 my ($menu, $dblist) = load_config('menu.yaml', 'databases.csv');
 
 my $databases = expand( $menu->{databases} );
-my $json = JSON->new->pretty->canonical->encode( { databases => $databases } );
+my $json = JSON::XS->new->pretty->canonical->encode( { databases => $databases } );
 
 my $out = "gsomenu.json";
 if ($error) {
     say STDERR colored('wrote error.json instead of gsomenu.json','red');
+    $out = "error.json";
 } else {
     say colored('wrote gsomenu.json','white');
 }
