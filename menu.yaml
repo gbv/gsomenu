@@ -51,6 +51,7 @@ databases:
                 title_nds: "Institut för nedderdüütsche Spraak, Bremen"
                 title_en: "Institute for the Low German Language, Bremen"
             - "opac-de-bre14"
+            - "opac-de-mus-027614"
             -
                 access: "http://gso.gbv.de/DB=9.690/"
                 title_de: "Archiv des Landkreises Cuxhaven"

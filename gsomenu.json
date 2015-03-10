@@ -567,6 +567,12 @@
                "uri" : "http://uri.gbv.de/database/opac-de-bre14"
             },
             {
+               "access" : "http://gso.gbv.de/DB=9.709/{?LNG}",
+               "dbkey" : "opac-de-mus-027614",
+               "title_de" : "Katalog der Bibliothek der Kunsthalle Bremen",
+               "uri" : "http://uri.gbv.de/database/opac-de-mus-027614"
+            },
+            {
                "access" : "http://gso.gbv.de/DB=9.690/",
                "info" : null,
                "title_de" : "Archiv des Landkreises Cuxhaven",
