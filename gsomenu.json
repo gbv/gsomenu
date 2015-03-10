@@ -579,12 +579,6 @@
                "title_en" : "Museums of the City Halberstadt"
             },
             {
-               "access" : "http://gso.gbv.de/DB=9.604/{?LNG}",
-               "dbkey" : "opac-de-hel1",
-               "title_de" : "Katalog der ehemaligen Universitätsbibliothek Helmstedt",
-               "uri" : "http://uri.gbv.de/database/opac-de-hel1"
-            },
-            {
                "access" : "http://gso.gbv.de/DB=9.642/",
                "info" : null,
                "title_de" : "Stadtmuseum und Horst Janssen Museum Oldenburg",

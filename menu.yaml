@@ -59,7 +59,6 @@ databases:
                 access: "http://gso.gbv.de/DB=9.651/"
                 title_de: "Museen der Stadt Halberstadt"
                 title_en: "Museums of the City Halberstadt"
-            - "opac-de-hel1"
             -
                 access: "http://gso.gbv.de/DB=9.642/"
                 title_de: "Stadtmuseum und Horst Janssen Museum Oldenburg"
