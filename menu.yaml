@@ -149,11 +149,11 @@ databases:
                 title_de: "LBS Hamburg"
                 title_en: "LBS Hamburg"
             -
-                access: "http://katalog.b.tu-harburg.de/ "
-                title_de: "LBS TU Hamburg-Harburg"
-                title_en: "LBS TU Hamburg-Harburg"
+                access: "https://katalog.b.tuhh.de/DB=1/"
+                title_de: "LBS Hamburg, TUHH"
+                title_en: "LBS Hamburg, TUHH"
             -
-                access: "https://katalog.b.tu-harburg.de/DB=22/"
+                access: "https://katalog.b.tuhh.de/DB=22/"
                 title_de: "LBS Hamburg, HCU"
                 title_en: "LBS Hamburg, HCU"
             -
