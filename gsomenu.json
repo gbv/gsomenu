@@ -600,8 +600,8 @@
                "access" : "http://gso.gbv.de/DB=9.675/{?LNG}",
                "dbkey" : "opac-de-sta4",
                "info_url" : "",
-               "title_de" : "Stadtarchiv, Hansestadt Stade",
-               "title_en" : "Muncipal Archive Stade",
+               "title_de" : "Hansestadt Stade: Stadtarchiv, Museen Stade und Predigerbibliothek",
+               "title_en" : "Libraries of the Municipal Archives Stade, Stade Museums and Stade Preachers' Library",
                "uri" : "http://uri.gbv.de/database/opac-de-sta4"
             },
             {
