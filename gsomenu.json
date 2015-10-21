@@ -477,7 +477,13 @@
                "title_de" : "VD17 - Verzeichnis der im deutschen Sprachraum erschienenen Drucke des 17. Jahrhunderts",
                "title_en" : "VD17 - Bibliography of Books Printed in the German Speaking Countries from 1601 to 1700",
                "uri" : "http://uri.gbv.de/database/vd17"
-            }
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=1.60/{?LNG}",
+               "info_url" : "",
+               "title_de" : "VDLied - Das Verzeichnis der deutschsprachigen Liedflugschriften digital",
+               "title_en" : "VDLied - Union Catalogue of Digitized German Song Pamphlets"
+            } 
          ],
          "info" : "http://www.gbv.de/benutzer/datenbanken/deutsche_nationaldatenbanken",
          "title_de" : "Nationale Datenbanken und Bibliographien",
