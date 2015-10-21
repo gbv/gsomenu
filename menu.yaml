@@ -64,7 +64,7 @@ databases:
                 access: "http://gso.gbv.de/DB=9.642/"
                 title_de: "Stadtmuseum und Horst Janssen Museum Oldenburg"
                 title_en: "City Museum and Horst Janssen Museum, Oldenburg"
-            - "oapc-de-rhn2"
+            - "opac-de-rhn2"
             - "opac-de-sta4"
             -
                 access: "http://gso.gbv.de/DB=9.662/"
