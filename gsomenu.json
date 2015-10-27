@@ -1144,6 +1144,12 @@
                "info" : null,
                "title_de" : "Niedersächsisches Konsortium - Verlag Harri Deutsch",
                "title_en" : "Harri Deutsch Databases"
+            },
+            {
+               "access" : "http://gso.gbv.de/DB=1.90/{?LNG}",
+               "info" : null,
+               "title_de" : "Springer E-Journals Aufsätze",
+               "title_en" : "Springer E-Journals"
             }
          ],
          "info" : null,
