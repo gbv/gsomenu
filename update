@@ -1,155 +1,125 @@
 #!/usr/bin/env perl
 use v5.14;
 
-use Config::Any;
+use Catmandu -all;
+use Catmandu::Importer::getJSON;
 use Hash::Merge qw(merge);
-use Scalar::Util qw(reftype);
-use JSON::XS;
 use Term::ANSIColor qw(colored);
 
-use RDF::aREF '0.23';
-use RDF::Trine;
+# read configuration
+my $menu    = importer('YAML', file => 'menu.yaml')->next;
+my $dblist  = { map { $_->{dbkey} => $_ } 
+                @{ importer('CSV', file => 'databases.csv')->to_array } };
 
-my $error;
+# write errors to error.log
+open (my $errlog, '>', 'error.log');
 
-my ($menu, $dblist) = load_config('menu.yaml', 'databases.csv');
-
+# create gsomenu.json
 my $databases = expand( $menu->{databases} );
-my $json = JSON::XS->new->pretty->canonical->encode( { databases => $databases } );
 
-my $out = "gsomenu.json";
-if ($error) {
-    say STDERR colored('wrote error.json instead of gsomenu.json','red');
-    $out = "error.json";
-} else {
-    say colored('wrote gsomenu.json','white');
-}
-open(my $fh, '>:utf8', $out) or die "failed to open $out";
-say $fh $json;
-exit !!$error;
-
-# load config files
-sub load_config {
-    return map {
-        my $c = Config::Any->load_files({ files => [ $_ ], use_ext => 1 });
-        if ($c && $c->[0]->{$_}) { 
-            say colored("loaded config file $_","white"); 
-            $c->[0]->{$_};
-        } else {
-            say STDERR colored("failed to load config file $_: $@","red");
-            exit;
-        }   
-    } @_; 
-}
-
+say colored('wrote gsomenu.json','white');
+exporter('JSON', file => 'gsomenu.json', pretty => 1, canonical => 1)
+    ->add( { databases => $databases } );
 
 # expand menu (sub)tree
 sub expand {
     my ($m) = @_;
 
-    my $reftype = reftype $m // '';
-	if ( $reftype eq 'ARRAY' ) {
+    my $db;
+
+    # database referenced by dbkey
+    if (!ref $m) {
+        $db = merge ( retrieve($m), $dblist->{$m} );
+    } 
+    # expanded list
+    elsif ( ref $m eq 'ARRAY' ) {
 		return [ map { expand($_) } @$m ];
-	} elsif ( $reftype eq 'HASH' ) {
-        my $db = {
-            title_de => $m->{title_de},
-            title_en => $m->{title_en},
-            access   => $m->{access},
-            info   	 => $m->{info},
+	}
+    # database group
+    elsif ( ref $m eq 'HASH' ) {
+        $db = { 
+            map { $_ => $m->{$_} }
+            grep { defined $m->{$_} }
+            qw(title_de title_en access info sorted)
         };
-        $db->{sorted} = $m->{sorted} if $m->{sorted};
-        if ($m->{databases}) {
-            if (ref $m->{databases}) {
-                $db->{databases} = expand( $m->{databases} );
+
+        # explicit list
+        if (ref $m->{databases}) {
+            $db->{databases} = expand( $m->{databases} );
+        }
+        # list given by group prefix(es)
+        else { 
+            my @prefixes = split /\s*\|\s*/, $m->{databases};
+
+            say colored( join('|', @prefixes), 'blue' );
+            $db = merge( $db, map { $dblist->{$_} // { } } @prefixes );
+
+            my @databases;
+            foreach my $prefix (@prefixes) {
+                my $db2 = retrieve($prefix);
+
+                if ( $db2->{subjectOf} ) {
+                    my @dbs;
+                    foreach my $s ( @{$db2->{subjectOf}} ) {
+                        next unless $s =~ s{^http://uri.gbv.de/database/}{};
+                        push @dbs, expand($s);
+                    }
+                    delete $db2->{subjectOf};
+                    push @databases, sort { $a->{title_de} cmp $b->{title_de} } @dbs;
+                } else { 
+                    # single database
+                    push @databases, expand($prefix);
+                }
+
+                $db = merge( $db, $db2 );
+            }
+            $db->{databases} = \@databases if @databases;
+
+            if (@prefixes == 1) {
+                $db->{dbkey} = $prefixes[0];
+                $db->{uri}   = "http://uri.gbv.de/database/$prefixes[0]";
             } else {
-                expand_list(
-                    $db,
-                    split /\s*\|\s*/, $m->{databases}
-                );
+                delete $db->{dbkey};
+                delete $db->{uri};
             }
         }
-        say colored('title_en fehlt!','yellow') unless $db->{title_en};
-        return $db;
-	} else {
-        return merge(
-            retrieve_database($m),
-            $dblist->{$m},
-        );
-	}
-}
-
-# expand database prefixes to databases
-sub expand_list {
-	my ($db, @prefixes) = @_;
-	$db->{databases} = [ ];
-
-	foreach my $prefix (@prefixes) {
-		my $uri = "http://uri.gbv.de/database/$prefix";
-		my $rdf = encode_aref $uri;
-        rdf2db( $rdf, $uri => $db );
-
-        # '$uri a skos_Concept'
-		if ( grep { $_ eq 'http://www.w3.org/2004/02/skos/core#Concept' } 
-                aref_query($rdf,$uri,'a') ) {
-            my @dbs;
-			foreach my $s ( keys %$rdf ) {
-                # $s dc_subject $uri
-                next unless ( grep { $_ eq $uri } aref_query $rdf, $s, 'dc_subject' );
-				next unless $s =~ s{^http://uri.gbv.de/database/}{};
-				push @dbs, expand($s);
-			}
-			push @{$db->{databases}}, sort { $a->{title_de} cmp $b->{title_de} } @dbs;
-		} else { 
-			# single database
-			push @{$db->{databases}}, expand($prefix);
-		}
 	}
 
-    if (@prefixes == 1) {
-        $db->{dbkey} = $prefixes[0];
-		$db->{uri}   = "http://uri.gbv.de/database/$prefixes[0]";
-    }
+    # check
+    unless ( $db->{title_en} ) {
+        my $msg = $db->{dbkey} .": title_en missing";
+        say STDERR colored($msg, 'yellow');
+        say $errlog $msg;
+    };
 
-    $db = merge( $db, map { $dblist->{$_} // { } } @prefixes );
+    return $db;
 }
 
-# retrieve database information as Linked Open Data
-sub retrieve_database {
-    my $dbkey = shift || return '';
-    my $uri = "http://uri.gbv.de/database/$dbkey";
+sub retrieve {
+    my ($dbkey) = @_;
 
-	my $db = { dbkey => $dbkey, uri => $uri };
-    rdf2db( encode_aref($uri), $uri => $db );
+    my $url = "http://uri.gbv.de/database/$dbkey?format=jsonld";
+    my $db  = importer('getJSON', from => $url)->next or do {
+        say colored("Failed to get $url","red");
+        exit 1;
+    };
 
-	return $db;
-}
+    $db->{dbkey} = $dbkey;
+    $db->{title_de} = $db->{title}{de} || $db->{prefLabel}{de};
+    $db->{title_en} = $db->{title}{en} || $db->{prefLabel}{en};
 
-sub rdf2db {
-    my ($rdf, $uri, $db) = @_;
-
-	my ($title_de) = aref_query $rdf, $uri, 
-        'dct_title@de|skos_prefLabel@de|dct_title@|skos_prefLabel@';
-	my ($title_en) = aref_query $rdf, $uri, 'dct_title@en', 'skos_prefLabel@en';
-    my ($access)   = aref_query $rdf, $uri, 'gbv_picabase';
-
-    $db->{title_de} ||= $title_de if $title_de;
-    $db->{title_en} ||= $title_en if $title_en;
-
-    if ($access) {
-        if ($access =~ qr{/DB=[0-9.]+[/]?$}) {
-            $access .= '{?LNG}';
-        }
-        $db->{access} ||= $access;
+    $db->{access} = $db->{url} || $db->{picabase};
+    if ($db->{access} =~ qr{/DB=[0-9.]+[/]?$}) {
+        $db->{access} .= '{?LNG}';
     }
 
-    # TODO: info-URL 
+    delete $db->{$_} for 
+        grep { !defined $db->{$_} } qw(title_de title_en);
+    delete $db->{$_} for qw(prefLabel title count srubase picabase 
+        @context openaccess url opacOf type inScheme);
+
+    say colored($db->{dbkey},'green');
+    exporter('YAML')->add($db);
     
-    if ($db->{title_de}) {
-        say $uri . colored(" ".$db->{title_de},"green");
-    } else {
-        say STDERR $uri . colored(" missing title/access","red");
-        $error++;
-    }
+	$db;
 }
-
-

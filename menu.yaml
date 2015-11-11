@@ -26,6 +26,7 @@ databases:
             - ikar
             - leibniz
             - vd17
+            - vdlied
     -
         title_de: "Datenbanken mit Nationallizenz"
         title_en: "National license databases"
@@ -220,7 +221,6 @@ databases:
         databases:
             - oevk
             - goevk
-#            - ekztitel
             - olcoeb
             -
                 title_de: "Regionalkataloge Öffentlicher Bibliotheken"
@@ -232,11 +232,11 @@ databases:
         title_en: "Other databases"
         databases:
             - doajgbv
-#            - ohbtoc
             -
                 title_de: "Niedersächsisches Konsortium - Verlag Harri Deutsch"
                 title_en: "Harri Deutsch Databases"
                 access: "http://www.gbv.de/benutzer/datenbanken/harri_deutsch_verlag"
+            - springerej
     -
         title_de: "Externe Datenbanken"
         title_en: "External databases"

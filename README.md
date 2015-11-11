@@ -14,14 +14,18 @@ aktualisieren:
   Diese Informationen sollen in Zukunft auch im Datenbankverzeichnis
   verwaltet werden, so dass diese Datei dann überflüssig wird!
 
-Das Skript `update` benötigt Perl ab Version 5.14 und verschiedene Perl-Module,
-die mittels [cpanminus](https://metacpan.org/pod/App::cpanminus) installiert
-werden können. Insgesamt lässt sich ein Update folgendermaßen durchführen:
+Fehlende Englische Datenbanknamen werden in `error.log` protokolliert.
+
+Das Skript `update` benötigt Perl ab Version 5.14 und drei Perl Module. Am
+einfachsten ist die Installation als Debian/Ubuntu-Package:
+
+```.bash
+sudo apt-get install libcatmandu-perl libcatmandu-importer-getjson-perl libhash-merge-perl
+```
+Anschließend lässt sich ein Update folgendermaßen durchführen:
 
 ```.bash
 $ git clone git@github.com:gbv/gsomenu.git
-$ sudo apt-get install cpanminus # einmalig, falls cpanm nicht installiert
-$ sudo cpanm --installdeps .     # einmalig oder bei Systemänderungen
 $ # ggf. menu.yaml/databases.csv bearbeiten und committen
 $ ./update
 $ git diff # zeigt an, was geändert wurde
