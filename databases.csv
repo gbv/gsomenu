@@ -1,23 +1,11 @@
 dbkey,title_en,info_url
-bmsonline,BMS - Bibliography of Music Literature,
-ddbexil,German Exile Press 1933-1945,
-ddbexil,German Exile Press 1933-1945,
-digicult,digiCULT,
-doajgbv,DOAJ - Directory of Open Access Journals,http://www.gbv.de/benutzer/datenbanken/online_ressourcen
-eromm,EROMM - European Register of Microform ans Digital Masters,
-goevk,GOeVK combined,
-gvk,GVK - GBV Union Catalogue,http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV
-gvkplus,GVK-PLUS - GBV Union Catalogue with Online Contents,http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV
-gvkplus,GVK-PLUS - GBV Union Catalogue with Online Contents,
-hebis,HeBIS - Union Catalogue Hessia,
-idz,IDZ - Index of German Journals 1750-1815,
-ikar,IKAR - Printed Maps before 1850,
-leibniz,Leibniz Bibliography,
-natliz,Nationallizenzen - Collections – Monographies,http://www.gbv.de/benutzer/datenbanken/nl_monographien
-natlizfak,Nationallizenzen - Fach- und Faktendatenbanken,http://www.gbv.de/benutzer/datenbanken/nationallizenzen-fach-und-faktendatenbanken
-natlizzss,Nationallizenzen - Collections - Journals,http://www.gbv.de/benutzer/datenbanken/nl_zeitschriften
-olc,Online Contents,http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV
-olc,Online Contents,
+doajgbv,,http://www.gbv.de/benutzer/datenbanken/online_ressourcen
+gvk,,http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV
+gvkplus,,http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV
+natliz,,http://www.gbv.de/benutzer/datenbanken/nl_monographien
+natlizfak,,http://www.gbv.de/benutzer/datenbanken/nationallizenzen-fach-und-faktendatenbanken
+natlizzss,,http://www.gbv.de/benutzer/datenbanken/nl_zeitschriften
+olc,,http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV
 olcssg-alt,OLC-SSG Classics - Online Contents-Special Subject Collection,
 olcssg-ana,OLC-SSG Asia and Northafrica - Online Contents-Special Subject Collection,
 olcssg-ang,OLC-SSG Anglistics - Online Contents-Special Subject Collection,
@@ -66,13 +54,3 @@ olcssg-vet,OLC-SSG Veterinary Medicine - Online Contents-Special Subject Collect
 olcssg-vor,OLC-SSG Middle East and North Africa - Online Contents-Special Subject Collection,
 olcssg-wiw,OLC-SSG Economic Sciences - Online Contents-Special Subject Collection,
 olcssg-zge,OLC-SSG Contemporary History - Online Contents-Special Subject Collection,
-olr,,http://www.gbv.de/benutzer/datenbanken/online_ressourcen 
-opac-de-brk1,"Centre for Global Ministries and Ecumenical Relations, Breklum",
-swb,SWB Online-Katalog,
-vd17,VD17 - Bibliography of Books Printed in the German Speaking Countries from 1601 to 1700,
-wao,WAO - World Affairs Online,
-opac-de-b1594,"Institute for Advanced Study, Berlin",
-opac-de-brk1,"Leibniz Center for Tropical Marine Ecology, Bremen",
-opac-de-rhn2,"Mathias University of Applied Sciences Rheine",
-opac-de-sta4,"Libraries of the Municipal Archives Stade, Stade Museums and Stade Preachers' Library",
-opac-de-we21,"Harzbücherei Wernigerode - Online Catalogue of the Library",

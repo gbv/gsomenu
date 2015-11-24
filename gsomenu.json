@@ -11,7 +11,7 @@
       {
          "access" : "http://gso.gbv.de/DB=2.3/{?LNG}",
          "dbkey" : "olc",
-         "info_url" : "",
+         "info_url" : "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV",
          "title_de" : "Online Contents",
          "title_en" : "Online Contents",
          "uri" : "http://uri.gbv.de/database/olc"
@@ -19,7 +19,7 @@
       {
          "access" : "http://gso.gbv.de/DB=2.2/{?LNG}",
          "dbkey" : "gvkplus",
-         "info_url" : "",
+         "info_url" : "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV",
          "title_de" : "GVK-PLUS - Gemeinsamer Verbundkatalog mit Online Contents",
          "title_en" : "GVK-PLUS - GBV Union Catalogue with Online Contents",
          "uri" : "http://uri.gbv.de/database/gvkplus"
@@ -424,7 +424,6 @@
             {
                "access" : "http://www.musikbibliographie.de/DB=1.86/{?LNG}",
                "dbkey" : "bmsonline",
-               "info_url" : "",
                "title_de" : "BMS - Bibliographie des Musikschrifttums online",
                "title_en" : "BMS - Bibliography of Music Literature",
                "uri" : "http://uri.gbv.de/database/bmsonline"
@@ -432,7 +431,6 @@
             {
                "access" : "http://gso.gbv.de/DB=1.25/{?LNG}",
                "dbkey" : "digicult",
-               "info_url" : "",
                "title_de" : "digiCULT",
                "title_en" : "digiCULT",
                "uri" : "http://uri.gbv.de/database/digicult"
@@ -440,7 +438,6 @@
             {
                "access" : "http://gso.gbv.de/DB=2.8/{?LNG}",
                "dbkey" : "eromm",
-               "info_url" : "",
                "title_de" : "Europäisches Register der Mikroformmaster und digitalen Master (EROMM)",
                "title_en" : "EROMM - European Register of Microform ans Digital Masters",
                "uri" : "http://uri.gbv.de/database/eromm"
@@ -448,7 +445,6 @@
             {
                "access" : "http://gso.gbv.de/DB=2.13/{?LNG}",
                "dbkey" : "idz",
-               "info_url" : "",
                "title_de" : "IDZ - Index Deutschsprachiger Zeitschriften 1750-1815",
                "title_en" : "IDZ - Index of German Journals 1750-1815",
                "uri" : "http://uri.gbv.de/database/idz"
@@ -456,7 +452,6 @@
             {
                "access" : "http://gso.gbv.de/DB=1.68/{?LNG}",
                "dbkey" : "ikar",
-               "info_url" : "",
                "title_de" : "IKAR - Landkartendrucke vor 1850",
                "title_en" : "IKAR - Printed Maps before 1850",
                "uri" : "http://uri.gbv.de/database/ikar"
@@ -464,7 +459,6 @@
             {
                "access" : "http://www.leibniz-bibliographie.de/DB=1.95/{?LNG}",
                "dbkey" : "leibniz",
-               "info_url" : "",
                "title_de" : "Leibniz-Bibliographie",
                "title_en" : "Leibniz Bibliography",
                "uri" : "http://uri.gbv.de/database/leibniz"
@@ -472,7 +466,6 @@
             {
                "access" : "http://gso.gbv.de/DB=1.28/{?LNG}",
                "dbkey" : "vd17",
-               "info_url" : "",
                "title_de" : "VD17 - Verzeichnis der im deutschen Sprachraum erschienenen Drucke des 17. Jahrhunderts",
                "title_en" : "VD17 - Bibliography of Books Printed in the German Speaking Countries from 1601 to 1700",
                "uri" : "http://uri.gbv.de/database/vd17"
@@ -501,7 +494,7 @@
                "dbkey" : "natliz",
                "info_url" : "http://www.gbv.de/benutzer/datenbanken/nl_monographien",
                "title_de" : "Nationallizenzen Monographien",
-               "title_en" : "Nationallizenzen - Collections – Monographies",
+               "title_en" : "Nationallizenzen - Collections - Monographies",
                "uri" : "http://uri.gbv.de/database/natliz"
             },
             {
@@ -529,7 +522,6 @@
             {
                "access" : "http://gso.gbv.de/DB=9.663/{?LNG}",
                "dbkey" : "opac-de-b1594",
-               "info_url" : "",
                "title_de" : "Wissenschaftskolleg zu Berlin",
                "title_en" : "Institute for Advanced Study, Berlin",
                "uri" : "http://uri.gbv.de/database/opac-de-b1594"
@@ -543,7 +535,6 @@
             {
                "access" : "http://gso.gbv.de/DB=9.692/{?LNG}",
                "dbkey" : "opac-de-we21",
-               "info_url" : "",
                "title_de" : "Harzbücherei Wernigerode - Online-Katalog der Bibliothek",
                "title_en" : "Harzbücherei Wernigerode - Online Catalogue of the Library",
                "uri" : "http://uri.gbv.de/database/opac-de-we21"
@@ -551,9 +542,8 @@
             {
                "access" : "http://gso.gbv.de/DB=9.664/{?LNG}",
                "dbkey" : "opac-de-brk1",
-               "info_url" : "",
                "title_de" : "Zentrum für Mission und Ökumene - Nordkirche weltweit",
-               "title_en" : "Leibniz Center for Tropical Marine Ecology, Bremen",
+               "title_en" : "Centre for Global Ministries and Ecumenical Relations, Breklum",
                "uri" : "http://uri.gbv.de/database/opac-de-brk1"
             },
             {
@@ -565,12 +555,14 @@
                "access" : "http://gso.gbv.de/DB=9.647/{?LNG}",
                "dbkey" : "opac-de-bre14",
                "title_de" : "Leibniz-Zentrum für Marine Tropenökologie, Bremen",
+               "title_en" : "Leibniz Center for Tropical Marine Ecology, Bremen",
                "uri" : "http://uri.gbv.de/database/opac-de-bre14"
             },
             {
                "access" : "http://gso.gbv.de/DB=9.709/{?LNG}",
                "dbkey" : "opac-de-mus-027614",
                "title_de" : "Katalog der Bibliothek der Kunsthalle Bremen",
+               "title_en" : "Kunsthalle Bremen - Online Catalogue of the Library",
                "uri" : "http://uri.gbv.de/database/opac-de-mus-027614"
             },
             {
@@ -591,7 +583,6 @@
             {
                "access" : "http://gso.gbv.de/DB=9.646/{?LNG}",
                "dbkey" : "opac-de-rhn2",
-               "info_url" : "",
                "title_de" : "Mathias Hochschule Rheine - Online-Katalog der Bibliothek",
                "title_en" : "Mathias University of Applied Sciences Rheine",
                "uri" : "http://uri.gbv.de/database/opac-de-rhn2"
@@ -599,7 +590,6 @@
             {
                "access" : "http://gso.gbv.de/DB=9.675/{?LNG}",
                "dbkey" : "opac-de-sta4",
-               "info_url" : "",
                "title_de" : "Hansestadt Stade: Stadtarchiv, Museen Stade und Predigerbibliothek",
                "title_en" : "Libraries of the Municipal Archives Stade, Stade Museums and Stade Preachers' Library",
                "uri" : "http://uri.gbv.de/database/opac-de-sta4"
@@ -625,6 +615,7 @@
                "access" : "http://gso.gbv.de/DB=2.92/{?LNG}",
                "dbkey" : "rk-han",
                "title_de" : "Gesamtkatalog Hannover",
+               "title_en" : "Union Catalogue of Hannover",
                "uri" : "http://uri.gbv.de/database/rk-han"
             },
             {
@@ -637,48 +628,56 @@
                "access" : "http://gso.gbv.de/DB=2.90/{?LNG}",
                "dbkey" : "rk-goe",
                "title_de" : "Göttinger Gesamtkatalog",
+               "title_en" : "Union Catalogue of Göttingen",
                "uri" : "http://uri.gbv.de/database/rk-goe"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.95/{?LNG}",
                "dbkey" : "rk-bb",
                "title_de" : "Regionalkatalog Berlin/Brandenburg",
+               "title_en" : "Regional Catalogue of Berlin/Brandenburg",
                "uri" : "http://uri.gbv.de/database/rk-bb"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.93/{?LNG}",
                "dbkey" : "rk-bs",
                "title_de" : "Regionalkatalog Braunschweig",
+               "title_en" : "Regional Catalogue of Braunschweig",
                "uri" : "http://uri.gbv.de/database/rk-bs"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.94/{?LNG}",
                "dbkey" : "rk-bremen",
                "title_de" : "Regionalkatalog Bremen/Bremerhaven",
+               "title_en" : "Regional Catalogue of Bremen/Bremerhaven",
                "uri" : "http://uri.gbv.de/database/rk-bremen"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.931/{?LNG}",
                "dbkey" : "rk-elbeweser",
                "title_de" : "Regionalkatalog Elbe-Weser-Dreieck",
+               "title_en" : "Regional Catalogue of Elbe-Weser-Dreieck",
                "uri" : "http://uri.gbv.de/database/rk-elbeweser"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.91/{?LNG}",
                "dbkey" : "rk-hh",
                "title_de" : "Regionalkatalog Hamburg",
+               "title_en" : "Regional Catalogue of Hamburg",
                "uri" : "http://uri.gbv.de/database/rk-hh"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.98/{?LNG}",
                "dbkey" : "rk-hi",
                "title_de" : "Regionalkatalog Hildesheim",
+               "title_en" : "Regional Catalogue of Hildesheim",
                "uri" : "http://uri.gbv.de/database/rk-hi"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.150/{?LNG}",
                "dbkey" : "rk-kiel",
                "title_de" : "Regionalkatalog Kiel",
+               "title_en" : "Regional Catalogue of Kiel",
                "uri" : "http://uri.gbv.de/database/rk-kiel"
             },
             {
@@ -858,12 +857,14 @@
                "access" : "http://gso.gbv.de/DB=2.96/{?LNG}",
                "dbkey" : "mpigbv",
                "title_de" : "MPI Bibliothekskatalog im GBV",
+               "title_en" : "MPI Library Catalogue on GBV",
                "uri" : "http://uri.gbv.de/database/mpigbv"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.914/{?LNG}",
                "dbkey" : "museen",
                "title_de" : "Museumsbibliotheken im GBV",
+               "title_en" : "Museum libraries in the GBV",
                "uri" : "http://uri.gbv.de/database/museen"
             },
             {
@@ -1039,15 +1040,15 @@
             {
                "access" : "http://gso.gbv.de/DB=2.226/{?LNG}",
                "dbkey" : "goevk",
-               "info_url" : "",
                "title_de" : "Kombinierte Datenbank aus GVK und ÖVK (GÖVK)",
-               "title_en" : "GOeVK combined",
+               "title_en" : "GOeVK combined database",
                "uri" : "http://uri.gbv.de/database/goevk"
             },
             {
                "access" : "http://gso.gbv.de/DB=2.32/{?LNG}",
                "dbkey" : "olcoeb",
                "title_de" : "Online Contents für Öffentliche Bibliotheken",
+               "title_en" : "Online Contents for Public Libraries",
                "uri" : "http://uri.gbv.de/database/olcoeb"
             },
             {
@@ -1129,7 +1130,6 @@
             {
                "access" : "http://cbsopac.rz.uni-frankfurt.de/DB=2.1/{?LNG}",
                "dbkey" : "hebis",
-               "info_url" : "",
                "title_de" : "HeBIS - Hessisches Bibliotheksinformationssystem",
                "title_en" : "HeBIS - Union Catalogue Hessia",
                "uri" : "http://uri.gbv.de/database/hebis"
@@ -1142,7 +1142,6 @@
             {
                "access" : "http://swb.bsz-bw.de/DB=2.1/{?LNG}",
                "dbkey" : "swb",
-               "info_url" : "",
                "title_de" : "SWB - Verbundkatalog des Südwestdeutschen Bibliotheksverbund",
                "title_en" : "SWB - Online Catalogue",
                "uri" : "http://uri.gbv.de/database/swb"
