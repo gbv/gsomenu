@@ -9,7 +9,7 @@
          "uri" : "http://uri.gbv.de/database/gvk"
       },
       {
-         "access" : "http://gso.gbv.de/DB=2.3/{?LNG}",
+         "access" : "https://gso.gbv.de/DB=2.3/{?LNG}",
          "dbkey" : "olc",
          "info_url" : "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV",
          "title_de" : "Online Contents",
@@ -17,7 +17,7 @@
          "uri" : "http://uri.gbv.de/database/olc"
       },
       {
-         "access" : "http://gso.gbv.de/DB=2.2/{?LNG}",
+         "access" : "https://gso.gbv.de/DB=2.2/{?LNG}",
          "dbkey" : "gvkplus",
          "info_url" : "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV",
          "title_de" : "GVK-PLUS - Gemeinsamer Verbundkatalog mit Online Contents",
@@ -684,6 +684,7 @@
                "access" : "http://gso.gbv.de/DB=2.940/{?LNG}",
                "dbkey" : "rk-hb",
                "title_de" : "Regionalkatalog Land Bremen",
+               "title_en" : "Union Catalogue Bremen/Bremerhaven",
                "uri" : "http://uri.gbv.de/database/rk-hb"
             },
             {
@@ -1035,6 +1036,7 @@
                "access" : "http://gso.gbv.de/DB=1.126/{?LNG}",
                "dbkey" : "oevk",
                "title_de" : "Verbundkatalog Öffentlicher Bibliotheken",
+               "title_en" : "Verbundkatalog Öffentlicher Bibliotheken",
                "uri" : "http://uri.gbv.de/database/oevk"
             },
             {
