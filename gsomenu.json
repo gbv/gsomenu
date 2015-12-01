@@ -603,6 +603,13 @@
                "access" : "http://gso.gbv.de/DB=9.698/",
                "title_de" : "Stiftung Dome und Schlösser in Sachsen Anhalt",
                "title_en" : "Stiftung Dome und Schlösser in Sachsen Anhalt"
+            },
+            {
+               "access" : "https://gsoapi.gbv.de/DB=9.708/{?LNG}",
+               "dbkey" : "opac-de-hv129",
+               "title_de" : "Akademie für Raumforschung und Landesplanung (ARL) - Leibniz-Forum für Raumwissenschaften",
+               "title_en" : "Akademie für Raumforschung und Landesplanung (ARL) - Leibniz-Forum für Raumwissenschaften",
+               "uri" : "http://uri.gbv.de/database/opac-de-hv129"
             }
          ],
          "title_de" : "Kataloge im CBS-Service der VZG",

@@ -75,6 +75,7 @@ databases:
                 access: "http://gso.gbv.de/DB=9.698/"
                 title_de: "Stiftung Dome und Schlösser in Sachsen Anhalt"
                 title_en: "Stiftung Dome und Schlösser in Sachsen Anhalt"
+            - "opac-de-hv129"
     - 
         databases: rk
         title_en: "Regional databases"
