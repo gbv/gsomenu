@@ -605,7 +605,7 @@
                "title_en" : "Stiftung Dome und Schlösser in Sachsen Anhalt"
             },
             {
-               "access" : "https://gsoapi.gbv.de/DB=9.708/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=9.708/{?LNG}",
                "dbkey" : "opac-de-hv129",
                "title_de" : "Akademie für Raumforschung und Landesplanung (ARL) - Leibniz-Forum für Raumwissenschaften",
                "title_en" : "Akademie für Raumforschung und Landesplanung (ARL) - Leibniz-Forum für Raumwissenschaften",
