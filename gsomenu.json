@@ -28,7 +28,7 @@
          "access" : null,
          "databases" : [
             {
-               "access" : "http://gso.gbv.de/DB=2.159/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.159/{?LNG}",
                "dbkey" : "olcssg-ssa",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Afrika südlich der Sahara",
@@ -36,7 +36,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-ssa"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.44/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.44/{?LNG}",
                "dbkey" : "olcssg-alt",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Altertumswissenschaften",
@@ -44,7 +44,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-alt"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.75/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.75/{?LNG}",
                "dbkey" : "olcssg-ang",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Anglistik",
@@ -52,7 +52,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-ang"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.81/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.81/{?LNG}",
                "dbkey" : "olcssg-arc",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Architektur",
@@ -60,7 +60,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-arc"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.143/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.143/{?LNG}",
                "dbkey" : "olcssg-ana",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Asien und Nordafrika",
@@ -68,7 +68,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-ana"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.43/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.43/{?LNG}",
                "dbkey" : "olcssg-ast",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Astronomie",
@@ -76,7 +76,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-ast"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.151/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.151/{?LNG}",
                "dbkey" : "olcssg-bal",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Baltische Länder",
@@ -84,7 +84,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-bal"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.85/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.85/{?LNG}",
                "dbkey" : "olcssg-benelux",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Benelux",
@@ -92,7 +92,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-benelux"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.141/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.141/{?LNG}",
                "dbkey" : "olcssg-bildung",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Bildungsforschung",
@@ -100,7 +100,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-bildung"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.78/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.78/{?LNG}",
                "dbkey" : "olcssg-che",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Chemie",
@@ -108,7 +108,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-che"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.41/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.41/{?LNG}",
                "dbkey" : "olcssg-eth",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Ethnologie",
@@ -116,7 +116,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-eth"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.147/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.147/{?LNG}",
                "dbkey" : "olcssg-film",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Film und Theater",
@@ -124,7 +124,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-film"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.146/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.146/{?LNG}",
                "dbkey" : "olcssg-for",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Forstwissenschaften",
@@ -132,7 +132,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-for"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.31/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.31/{?LNG}",
                "dbkey" : "olcssg-rom",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Frankreichkunde und Allgemeine Romanistik",
@@ -140,7 +140,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-rom"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.38/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.38/{?LNG}",
                "dbkey" : "olcssg-ggo",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Geowissenschaften",
@@ -148,7 +148,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-ggo"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.158/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.158/{?LNG}",
                "dbkey" : "olcssg-ger",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Germanistik",
@@ -156,7 +156,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-ger"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.35/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.35/{?LNG}",
                "dbkey" : "olcssg-his",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Geschichte",
@@ -164,7 +164,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-his"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.144/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.144/{?LNG}",
                "dbkey" : "olcssg-hsw",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Hochschulwesen",
@@ -172,7 +172,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-hsw"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.160/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.160/{?LNG}",
                "dbkey" : "olcssg-iba",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Ibero-Amerika, Spanien und Portugal",
@@ -180,7 +180,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-iba"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.45/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.45/{?LNG}",
                "dbkey" : "olcssg-bbi",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Informations-, Buch- und Bibliothekswesen",
@@ -188,7 +188,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-bbi"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.156/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.156/{?LNG}",
                "dbkey" : "olcssg-int",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Internationale Beziehungen und Länderkunde",
@@ -196,7 +196,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-int"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.130/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.130/{?LNG}",
                "dbkey" : "olcssg-ita",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Italienforschung",
@@ -204,7 +204,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-ita"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.131/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.131/{?LNG}",
                "dbkey" : "olcssg-kph",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Klassische Philologie",
@@ -212,7 +212,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-kph"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.42/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.42/{?LNG}",
                "dbkey" : "olcssg-kun",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Kunst und Kunstwissenschaft",
@@ -220,7 +220,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-kun"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.77/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.77/{?LNG}",
                "dbkey" : "olcssg-mat",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Mathematik und Informatik",
@@ -228,7 +228,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-mat"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.149/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.149/{?LNG}",
                "dbkey" : "olcssg-med",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Medien- und Kommunikationswissenschaften",
@@ -236,7 +236,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-med"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.50/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.50/{?LNG}",
                "dbkey" : "olcssg-mus",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Musikwissenschaft",
@@ -244,7 +244,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-mus"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.47/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.47/{?LNG}",
                "dbkey" : "olcssg-nord",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Nordeuropa",
@@ -252,7 +252,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-nord"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.142/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.142/{?LNG}",
                "dbkey" : "olcssg-ost",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Ost- und Südostasien",
@@ -260,7 +260,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-ost"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.133/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.133/{?LNG}",
                "dbkey" : "olcssg-oeu",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Osteuropa",
@@ -268,7 +268,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-oeu"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.76/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.76/{?LNG}",
                "dbkey" : "olcssg-pha",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Pharmazie",
@@ -276,7 +276,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-pha"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.140/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.140/{?LNG}",
                "dbkey" : "olcssg-phi",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Philosophie",
@@ -284,7 +284,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-phi"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.79/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.79/{?LNG}",
                "dbkey" : "olcssg-phy",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Physik",
@@ -292,7 +292,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-phy"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.89/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.89/{?LNG}",
                "dbkey" : "olcssg-pol",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Politikwissenschaft und Friedensforschung",
@@ -300,7 +300,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-pol"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.37/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.37/{?LNG}",
                "dbkey" : "olcssg-psy",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Psychologie",
@@ -308,7 +308,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-psy"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.34/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.34/{?LNG}",
                "dbkey" : "olcssg-jur",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Recht",
@@ -316,7 +316,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-jur"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.132/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.132/{?LNG}",
                "dbkey" : "olcssg-rok",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Romanischer Kulturkreis",
@@ -324,7 +324,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-rok"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.33/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.33/{?LNG}",
                "dbkey" : "olcssg-sla",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Slavistik",
@@ -332,7 +332,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-sla"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.152/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.152/{?LNG}",
                "dbkey" : "olcssg-soz",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Sozialwissenschaften",
@@ -340,7 +340,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-soz"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.148/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.148/{?LNG}",
                "dbkey" : "olcssg-spo",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Sportwissenschaft",
@@ -348,7 +348,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-spo"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.134/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.134/{?LNG}",
                "dbkey" : "olcssg-soa",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Südasien",
@@ -356,7 +356,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-soa"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.80/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.80/{?LNG}",
                "dbkey" : "olcssg-tec",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Technik",
@@ -364,7 +364,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-tec"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.46/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.46/{?LNG}",
                "dbkey" : "olcssg-thi",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Technikgeschichte",
@@ -372,7 +372,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-thi"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.82/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.82/{?LNG}",
                "dbkey" : "olcssg-umw",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Umwelt",
@@ -380,7 +380,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-umw"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.83/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.83/{?LNG}",
                "dbkey" : "olcssg-vet",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Veterinärmedizin",
@@ -388,7 +388,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-vet"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.84/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.84/{?LNG}",
                "dbkey" : "olcssg-vor",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Vorderer Orient",
@@ -396,7 +396,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-vor"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.39/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.39/{?LNG}",
                "dbkey" : "olcssg-wiw",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Wirtschaftswissenschaften",
@@ -404,7 +404,7 @@
                "uri" : "http://uri.gbv.de/database/olcssg-wiw"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.36/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.36/{?LNG}",
                "dbkey" : "olcssg-zge",
                "info_url" : "",
                "title_de" : "Online Contents - SSG Zeitgeschichte",
@@ -429,28 +429,28 @@
                "uri" : "http://uri.gbv.de/database/bmsonline"
             },
             {
-               "access" : "http://gso.gbv.de/DB=1.25/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=1.25/{?LNG}",
                "dbkey" : "digicult",
                "title_de" : "digiCULT",
                "title_en" : "digiCULT",
                "uri" : "http://uri.gbv.de/database/digicult"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.8/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.8/{?LNG}",
                "dbkey" : "eromm",
                "title_de" : "Europäisches Register der Mikroformmaster und digitalen Master (EROMM)",
                "title_en" : "EROMM - European Register of Microform ans Digital Masters",
                "uri" : "http://uri.gbv.de/database/eromm"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.13/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.13/{?LNG}",
                "dbkey" : "idz",
                "title_de" : "IDZ - Index Deutschsprachiger Zeitschriften 1750-1815",
                "title_en" : "IDZ - Index of German Journals 1750-1815",
                "uri" : "http://uri.gbv.de/database/idz"
             },
             {
-               "access" : "http://gso.gbv.de/DB=1.68/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=1.68/{?LNG}",
                "dbkey" : "ikar",
                "title_de" : "IKAR - Landkartendrucke vor 1850",
                "title_en" : "IKAR - Printed Maps before 1850",
@@ -464,7 +464,7 @@
                "uri" : "http://uri.gbv.de/database/leibniz"
             },
             {
-               "access" : "http://gso.gbv.de/DB=1.28/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=1.28/{?LNG}",
                "dbkey" : "vd17",
                "title_de" : "VD17 - Verzeichnis der im deutschen Sprachraum erschienenen Drucke des 17. Jahrhunderts",
                "title_en" : "VD17 - Bibliography of Books Printed in the German Speaking Countries from 1601 to 1700",
@@ -490,7 +490,7 @@
                "title_en" : "Nationallizenzen Search Engine"
             },
             {
-               "access" : "http://gso.gbv.de/DB=1.50/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=1.50/{?LNG}",
                "dbkey" : "natliz",
                "info_url" : "http://www.gbv.de/benutzer/datenbanken/nl_monographien",
                "title_de" : "Nationallizenzen Monographien",
@@ -498,7 +498,7 @@
                "uri" : "http://uri.gbv.de/database/natliz"
             },
             {
-               "access" : "http://gso.gbv.de/DB=1.55/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=1.55/{?LNG}",
                "dbkey" : "natlizzss",
                "info_url" : "http://www.gbv.de/benutzer/datenbanken/nl_zeitschriften",
                "title_de" : "Nationallizenzen Zeitschriften",
@@ -506,7 +506,7 @@
                "uri" : "http://uri.gbv.de/database/natlizzss"
             },
             {
-               "access" : "http://gso.gbv.de/DB=5.30/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=5.30/{?LNG}",
                "dbkey" : "natlizfak",
                "info_url" : "http://www.gbv.de/benutzer/datenbanken/nationallizenzen-fach-und-faktendatenbanken",
                "title_de" : "Nationallizenzen - Fach- und Faktendatenbanken",
@@ -520,27 +520,27 @@
       {
          "databases" : [
             {
-               "access" : "http://gso.gbv.de/DB=9.663/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=9.663/{?LNG}",
                "dbkey" : "opac-de-b1594",
                "title_de" : "Wissenschaftskolleg zu Berlin",
                "title_en" : "Institute for Advanced Study, Berlin",
                "uri" : "http://uri.gbv.de/database/opac-de-b1594"
             },
             {
-               "access" : "http://gso.gbv.de/DB=9.604/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=9.604/{?LNG}",
                "dbkey" : "opac-de-hel1",
                "title_de" : "Katalog der ehemaligen Universitätsbibliothek Helmstedt",
                "uri" : "http://uri.gbv.de/database/opac-de-hel1"
             },
             {
-               "access" : "http://gso.gbv.de/DB=9.692/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=9.692/{?LNG}",
                "dbkey" : "opac-de-we21",
                "title_de" : "Harzbücherei Wernigerode - Online-Katalog der Bibliothek",
                "title_en" : "Harzbücherei Wernigerode - Online Catalogue of the Library",
                "uri" : "http://uri.gbv.de/database/opac-de-we21"
             },
             {
-               "access" : "http://gso.gbv.de/DB=9.664/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=9.664/{?LNG}",
                "dbkey" : "opac-de-brk1",
                "title_de" : "Zentrum für Mission und Ökumene - Nordkirche weltweit",
                "title_en" : "Centre for Global Ministries and Ecumenical Relations, Breklum",
@@ -552,14 +552,14 @@
                "title_en" : "Institute for the Low German Language, Bremen"
             },
             {
-               "access" : "http://gso.gbv.de/DB=9.647/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=9.647/{?LNG}",
                "dbkey" : "opac-de-bre14",
                "title_de" : "Leibniz-Zentrum für Marine Tropenökologie, Bremen",
                "title_en" : "Leibniz Center for Tropical Marine Ecology, Bremen",
                "uri" : "http://uri.gbv.de/database/opac-de-bre14"
             },
             {
-               "access" : "http://gso.gbv.de/DB=9.709/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=9.709/{?LNG}",
                "dbkey" : "opac-de-mus-027614",
                "title_de" : "Katalog der Bibliothek der Kunsthalle Bremen",
                "title_en" : "Kunsthalle Bremen - Online Catalogue of the Library",
@@ -581,14 +581,14 @@
                "title_en" : "City Museum and Horst Janssen Museum, Oldenburg"
             },
             {
-               "access" : "http://gso.gbv.de/DB=9.646/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=9.646/{?LNG}",
                "dbkey" : "opac-de-rhn2",
                "title_de" : "Mathias Hochschule Rheine - Online-Katalog der Bibliothek",
                "title_en" : "Mathias University of Applied Sciences Rheine",
                "uri" : "http://uri.gbv.de/database/opac-de-rhn2"
             },
             {
-               "access" : "http://gso.gbv.de/DB=9.675/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=9.675/{?LNG}",
                "dbkey" : "opac-de-sta4",
                "title_de" : "Hansestadt Stade: Stadtarchiv, Museen Stade und Predigerbibliothek",
                "title_en" : "Libraries of the Municipal Archives Stade, Stade Museums and Stade Preachers' Library",
@@ -619,83 +619,83 @@
          "access" : null,
          "databases" : [
             {
-               "access" : "http://gso.gbv.de/DB=2.92/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.92/{?LNG}",
                "dbkey" : "rk-han",
                "title_de" : "Gesamtkatalog Hannover",
                "title_en" : "Union Catalogue of Hannover",
                "uri" : "http://uri.gbv.de/database/rk-han"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.916/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.916/{?LNG}",
                "dbkey" : "rk-weimar",
                "title_de" : "Gesamtkatalog Weimarer Bibliotheken",
                "uri" : "http://uri.gbv.de/database/rk-weimar"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.90/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.90/{?LNG}",
                "dbkey" : "rk-goe",
                "title_de" : "Göttinger Gesamtkatalog",
                "title_en" : "Union Catalogue of Göttingen",
                "uri" : "http://uri.gbv.de/database/rk-goe"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.95/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.95/{?LNG}",
                "dbkey" : "rk-bb",
                "title_de" : "Regionalkatalog Berlin/Brandenburg",
                "title_en" : "Regional Catalogue of Berlin/Brandenburg",
                "uri" : "http://uri.gbv.de/database/rk-bb"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.93/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.93/{?LNG}",
                "dbkey" : "rk-bs",
                "title_de" : "Regionalkatalog Braunschweig",
                "title_en" : "Regional Catalogue of Braunschweig",
                "uri" : "http://uri.gbv.de/database/rk-bs"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.94/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.94/{?LNG}",
                "dbkey" : "rk-bremen",
                "title_de" : "Regionalkatalog Bremen/Bremerhaven",
                "title_en" : "Regional Catalogue of Bremen/Bremerhaven",
                "uri" : "http://uri.gbv.de/database/rk-bremen"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.931/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.931/{?LNG}",
                "dbkey" : "rk-elbeweser",
                "title_de" : "Regionalkatalog Elbe-Weser-Dreieck",
                "title_en" : "Regional Catalogue of Elbe-Weser-Dreieck",
                "uri" : "http://uri.gbv.de/database/rk-elbeweser"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.91/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.91/{?LNG}",
                "dbkey" : "rk-hh",
                "title_de" : "Regionalkatalog Hamburg",
                "title_en" : "Regional Catalogue of Hamburg",
                "uri" : "http://uri.gbv.de/database/rk-hh"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.98/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.98/{?LNG}",
                "dbkey" : "rk-hi",
                "title_de" : "Regionalkatalog Hildesheim",
                "title_en" : "Regional Catalogue of Hildesheim",
                "uri" : "http://uri.gbv.de/database/rk-hi"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.150/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.150/{?LNG}",
                "dbkey" : "rk-kiel",
                "title_de" : "Regionalkatalog Kiel",
                "title_en" : "Regional Catalogue of Kiel",
                "uri" : "http://uri.gbv.de/database/rk-kiel"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.940/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.940/{?LNG}",
                "dbkey" : "rk-hb",
                "title_de" : "Regionalkatalog Land Bremen",
                "title_en" : "Union Catalogue Bremen/Bremerhaven",
                "uri" : "http://uri.gbv.de/database/rk-hb"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.913/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.913/{?LNG}",
                "dbkey" : "rk-oldb",
                "title_de" : "Regionalkatalog Nordwest",
                "uri" : "http://uri.gbv.de/database/rk-oldb"
@@ -711,133 +711,133 @@
          "access" : null,
          "databases" : [
             {
-               "access" : "http://gso.gbv.de/DB=2.97/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.97/{?LNG}",
                "dbkey" : "fachopac-ang",
                "title_de" : "Fachkatalog Anglo-American Culture",
                "uri" : "http://uri.gbv.de/database/fachopac-ang"
             },
             {
-               "access" : "http://gso.gbv.de/DB=1.97/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=1.97/{?LNG}",
                "dbkey" : "fachopac-asia",
                "title_de" : "Fachkatalog Asiatische Datenbanken",
                "uri" : "http://uri.gbv.de/database/fachopac-asia"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.112/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.112/{?LNG}",
                "dbkey" : "fachopac-ast",
                "title_de" : "Fachkatalog Astronomie",
                "uri" : "http://uri.gbv.de/database/fachopac-ast"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.138/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.138/{?LNG}",
                "dbkey" : "fachopac-bal",
                "title_de" : "Fachkatalog Baltische Länder",
                "uri" : "http://uri.gbv.de/database/fachopac-bal"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.113/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.113/{?LNG}",
                "dbkey" : "fachopac-fin",
                "title_de" : "Fachkatalog Finnougristik",
                "uri" : "http://uri.gbv.de/database/fachopac-fin"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.111/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.111/{?LNG}",
                "dbkey" : "fachopac-for",
                "title_de" : "Fachkatalog Forstwissenschaften",
                "uri" : "http://uri.gbv.de/database/fachopac-for"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.110/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.110/{?LNG}",
                "dbkey" : "fachopac-geo",
                "title_de" : "Fachkatalog Geophysik",
                "uri" : "http://uri.gbv.de/database/fachopac-geo"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.114/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.114/{?LNG}",
                "dbkey" : "fachopac-ggo",
                "title_de" : "Fachkatalog Geowissenschaften",
                "uri" : "http://uri.gbv.de/database/fachopac-ggo"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.116/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.116/{?LNG}",
                "dbkey" : "fachopac-bbi",
                "title_de" : "Fachkatalog Informations-, Buch- und Bibliothekswesen",
                "uri" : "http://uri.gbv.de/database/fachopac-bbi"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.122/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.122/{?LNG}",
                "dbkey" : "fachopac-mat",
                "title_de" : "Fachkatalog Mathematik",
                "uri" : "http://uri.gbv.de/database/fachopac-mat"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.120/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.120/{?LNG}",
                "dbkey" : "fachopac-nord",
                "title_de" : "Fachkatalog Nordische Länder",
                "uri" : "http://uri.gbv.de/database/fachopac-nord"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.115/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.115/{?LNG}",
                "dbkey" : "fachopac-pha",
                "title_de" : "Fachkatalog Pharmazie",
                "uri" : "http://uri.gbv.de/database/fachopac-pha"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.119/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.119/{?LNG}",
                "dbkey" : "fachopac-vifanord",
                "title_de" : "Fachkatalog ViFa Nord",
                "uri" : "http://uri.gbv.de/database/fachopac-vifanord"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.118/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.118/{?LNG}",
                "dbkey" : "fachopac-vor",
                "title_de" : "Fachkatalog Vorderer Orient",
                "uri" : "http://uri.gbv.de/database/fachopac-vor"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.297/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.297/{?LNG}",
                "dbkey" : "fachopacplus-ang",
                "title_de" : "Fachkatalog Anglo-American Culture inklusive Online Contents",
                "uri" : "http://uri.gbv.de/database/fachopacplus-ang"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.212/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.212/{?LNG}",
                "dbkey" : "fachopacplus-ast",
                "title_de" : "Fachkatalog Astronomie inklusive Online Contents",
                "uri" : "http://uri.gbv.de/database/fachopacplus-ast"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.211/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.211/{?LNG}",
                "dbkey" : "fachopacplus-for",
                "title_de" : "Fachkatalog Forstwissenschaften inklusive Online Contents",
                "uri" : "http://uri.gbv.de/database/fachopacplus-for"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.210/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.210/{?LNG}",
                "dbkey" : "fachopacplus-geo",
                "title_de" : "Fachkatalog Geophysik inklusive Online Contents",
                "uri" : "http://uri.gbv.de/database/fachopacplus-geo"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.216/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.216/{?LNG}",
                "dbkey" : "fachopacplus-bbi",
                "title_de" : "Fachkatalog Informations-, Buch- und Bibliothekswesen inklusive Online Contents",
                "uri" : "http://uri.gbv.de/database/fachopacplus-bbi"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.215/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.215/{?LNG}",
                "dbkey" : "fachopacplus-pha",
                "title_de" : "Fachkatalog Pharmazie inklusive Online Contents",
                "uri" : "http://uri.gbv.de/database/fachopacplus-pha"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.217/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.217/{?LNG}",
                "dbkey" : "fachopacplus-sca",
                "title_de" : "Fachkatalog Skandinavien inklusive Online Contents",
                "uri" : "http://uri.gbv.de/database/fachopacplus-sca"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.218/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.218/{?LNG}",
                "dbkey" : "fachopacplus-vor",
                "title_de" : "Fachkatalog Vorderer Orient inklusive Online Contents",
                "uri" : "http://uri.gbv.de/database/fachopacplus-vor"
@@ -850,33 +850,33 @@
       {
          "databases" : [
             {
-               "access" : "http://gso.gbv.de/DB=9.235/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=9.235/{?LNG}",
                "dbkey" : "opac-de-616",
                "title_de" : "Katalog der Arbeitsgemeinschaft Niedersächsischer Behördenbibliotheken",
                "uri" : "http://uri.gbv.de/database/opac-de-616"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.920/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.920/{?LNG}",
                "dbkey" : "thbb",
                "title_de" : "Katalog der Thüringer Behördenbibliotheken",
                "uri" : "http://uri.gbv.de/database/thbb"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.96/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.96/{?LNG}",
                "dbkey" : "mpigbv",
                "title_de" : "MPI Bibliothekskatalog im GBV",
                "title_en" : "MPI Library Catalogue on GBV",
                "uri" : "http://uri.gbv.de/database/mpigbv"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.914/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.914/{?LNG}",
                "dbkey" : "museen",
                "title_de" : "Museumsbibliotheken im GBV",
                "title_en" : "Museum libraries in the GBV",
                "uri" : "http://uri.gbv.de/database/museen"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.910/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.910/{?LNG}",
                "dbkey" : "amb",
                "title_de" : "Katalog der meereswissenschaftlichen Bibliotheken Deutschlands",
                "title_en" : "German Association of Marine Science Libraries and Information Centers Catalogue",
@@ -1040,21 +1040,21 @@
       {
          "databases" : [
             {
-               "access" : "http://gso.gbv.de/DB=1.126/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=1.126/{?LNG}",
                "dbkey" : "oevk",
                "title_de" : "Verbundkatalog Öffentlicher Bibliotheken",
                "title_en" : "Verbundkatalog Öffentlicher Bibliotheken",
                "uri" : "http://uri.gbv.de/database/oevk"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.226/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.226/{?LNG}",
                "dbkey" : "goevk",
                "title_de" : "Kombinierte Datenbank aus GVK und ÖVK (GÖVK)",
                "title_en" : "GOeVK combined database",
                "uri" : "http://uri.gbv.de/database/goevk"
             },
             {
-               "access" : "http://gso.gbv.de/DB=2.32/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=2.32/{?LNG}",
                "dbkey" : "olcoeb",
                "title_de" : "Online Contents für Öffentliche Bibliotheken",
                "title_en" : "Online Contents for Public Libraries",
@@ -1064,19 +1064,19 @@
                "access" : null,
                "databases" : [
                   {
-                     "access" : "http://gso.gbv.de/DB=6.4/{?LNG}",
+                     "access" : "https://gso.gbv.de/DB=6.4/{?LNG}",
                      "dbkey" : "rkoeb-ni",
                      "title_de" : "Regionalkatalog Öffentlicher Bibliotheken in Niedersachsen",
                      "uri" : "http://uri.gbv.de/database/rkoeb-ni"
                   },
                   {
-                     "access" : "http://gso.gbv.de/DB=6.5/{?LNG}",
+                     "access" : "https://gso.gbv.de/DB=6.5/{?LNG}",
                      "dbkey" : "rkoeb-st",
                      "title_de" : "Regionalkatalog Öffentlicher Bibliotheken in Sachsen-Anhalt",
                      "uri" : "http://uri.gbv.de/database/rkoeb-st"
                   },
                   {
-                     "access" : "http://gso.gbv.de/DB=6.7/{?LNG}",
+                     "access" : "https://gso.gbv.de/DB=6.7/{?LNG}",
                      "dbkey" : "rkoeb-th",
                      "title_de" : "Regionalkatalog Öffentlicher Bibliotheken in Thüringen",
                      "uri" : "http://uri.gbv.de/database/rkoeb-th"
@@ -1096,7 +1096,7 @@
       {
          "databases" : [
             {
-               "access" : "http://gso.gbv.de/DB=1.91/{?LNG}",
+               "access" : "https://gso.gbv.de/DB=1.91/{?LNG}",
                "dbkey" : "doajgbv",
                "info_url" : "http://www.gbv.de/benutzer/datenbanken/online_ressourcen",
                "title_de" : "DOAJ - Directory of Open Access Journals",
