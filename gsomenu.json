@@ -367,8 +367,7 @@
          "dbkey" : "olcssg",
          "info" : "http://www.gbv.de/benutzer/datenbanken/ssg",
          "sorted" : "1",
-         "title_de" : "Online-Contents-Sondersammelgebietsausschnitte (OLC-SSG)",
-         "title_en" : "Online-Contents (OLC-SSG)",
+         "title_de" : "Online-Contents - Thematische Ausschnitte",
          "uri" : "http://uri.gbv.de/database/olcssg"
       },
       {

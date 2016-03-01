@@ -12,7 +12,7 @@ databases:
     - 
         databases: olcssg
         info: "http://www.gbv.de/benutzer/datenbanken/ssg"
-        title_en: "Online-Contents (OLC-SSG)"
+        title_en: "Online-Contents - Subjects"
         sorted: true
     - 
         title_de: "Nationale Datenbanken und Bibliographien"
