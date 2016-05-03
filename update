@@ -18,8 +18,9 @@ open (my $errlog, '>', 'error.log');
 my $databases = expand( $menu->{databases} );
 
 say colored('wrote gsomenu.json','white');
-exporter('JSON', file => 'gsomenu.json', pretty => 1, canonical => 1)
-    ->add( { databases => $databases } );
+my $exporter = exporter('JSON', file => 'gsomenu.json', pretty => 1, canonical => 1, array => 0);
+$exporter->add( { databases => $databases } );
+$exporter->commit;
 
 # expand menu (sub)tree
 sub expand {
