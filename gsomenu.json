@@ -557,6 +557,11 @@
                "title_de" : "Akademie für Raumforschung und Landesplanung (ARL) - Leibniz-Forum für Raumwissenschaften",
                "title_en" : "Akademie für Raumforschung und Landesplanung (ARL) - Leibniz-Forum für Raumwissenschaften",
                "uri" : "http://uri.gbv.de/database/opac-de-hv129"
+            },
+            {
+               "access" : "https://gso.gbv.de/DB=9.1003/",
+               "title_de" : "Landkreis Rotenburg Wümme - Online-Katalog der Bibliothek",
+               "title_en" : "Landkreis Rotenburg Wümme - Online Catalogue of the Library"
             }
          ],
          "title_de" : "Kataloge im CBS-Service der VZG",

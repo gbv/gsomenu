@@ -72,6 +72,10 @@ databases:
                 title_de: "Stiftung Dome und Schlösser in Sachsen Anhalt"
                 title_en: "Stiftung Dome und Schlösser in Sachsen Anhalt"
             - "opac-de-hv129"
+            -
+                access: "https://gso.gbv.de/DB=9.1003/"
+                title_de: "Landkreis Rotenburg Wümme - Online-Katalog der Bibliothek"
+                title_en: "Landkreis Rotenburg Wümme - Online Catalogue of the Library"
     - 
         databases: rk
         title_en: "Regional databases"
