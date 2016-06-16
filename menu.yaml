@@ -17,7 +17,7 @@ databases:
     - 
         title_de: "Nationale Datenbanken und Bibliographien"
         title_en: "German National Databases"
-        info: "http://www.gbv.de/benutzer/datenbanken/deutsche_nationaldatenbanken"
+        info: "https://www.gbv.de/benutzer/datenbanken/deutsche_nationaldatenbanken"
         databases:
             - bmsonline
             - digicult
@@ -47,28 +47,28 @@ databases:
             - "opac-de-we21"
             - "opac-de-brk1"
             -
-                access: "http://gso.gbv.de/DB=9.359/"
+                access: "https://gso.gbv.de/DB=9.359/"
                 title_de: "Institut für niederdeutsche Sprache, Bremen"
                 title_nds: "Institut för nedderdüütsche Spraak, Bremen"
                 title_en: "Institute for the Low German Language, Bremen"
             - "opac-de-bre14"
             - "opac-de-mus-027614"
             -
-                access: "http://gso.gbv.de/DB=9.690/"
+                access: "https://gso.gbv.de/DB=9.690/"
                 title_de: "Archiv des Landkreises Cuxhaven"
                 title_en: "Archive of the Rural District of Cuxhaven"
             -
-                access: "http://gso.gbv.de/DB=9.651/"
+                access: "https://gso.gbv.de/DB=9.651/"
                 title_de: "Museen der Stadt Halberstadt"
                 title_en: "Museums of the City Halberstadt"
             - "opac-de-rhn2"
             - "opac-de-sta4"
             -
-                access: "http://gso.gbv.de/DB=9.662/"
+                access: "https://gso.gbv.de/DB=9.662/"
                 title_de: "Landschaftsverband Stade"
                 title_en: "Regional Association Stade"
             -
-                access: "http://gso.gbv.de/DB=9.698/"
+                access: "https://gso.gbv.de/DB=9.698/"
                 title_de: "Stiftung Dome und Schlösser in Sachsen Anhalt"
                 title_en: "Stiftung Dome und Schlösser in Sachsen Anhalt"
             - "opac-de-hv129"
@@ -218,7 +218,7 @@ databases:
     -
         title_de: "Datenbanken für Öffentliche Bibliotheken"
         title_en: "Databases for Public Libraries"
-        info: "http://www.gbv.de/benutzer/datenbanken/datenbanken_OEBs" 
+        info: "https://www.gbv.de/benutzer/datenbanken/datenbanken_OEBs" 
         databases:
             - oevk
             - goevk
@@ -236,7 +236,7 @@ databases:
             -
                 title_de: "Niedersächsisches Konsortium - Verlag Harri Deutsch"
                 title_en: "Harri Deutsch Databases"
-                access: "http://www.gbv.de/benutzer/datenbanken/harri_deutsch_verlag"
+                access: "https://www.gbv.de/benutzer/datenbanken/harri_deutsch_verlag"
             - springerej
     -
         title_de: "Externe Datenbanken"
@@ -245,7 +245,7 @@ databases:
             -
                 title_de: "DNB - Deutsche Nationalbibliothek"
                 title_en: "DNB - German National Library"
-                access: "http://portal.d-nb.de/"
+                access: "https://portal.d-nb.de/"
             -
                 title_de: "BVB - Bibliotheksverbund Bayern"
                 title_en: "BVB - Bavarian Library Network"
@@ -267,7 +267,7 @@ databases:
             -
                 title_de: "LoC - Library of Congress"
                 title_en: "LoC - Library of Congress"
-                access: "http://catalog.loc.gov/"
+                access: "https://catalog.loc.gov/"
             -
                 title_de: "TEL - The European Library"
                 title_en: "TEL - The European Library"
