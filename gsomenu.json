@@ -368,6 +368,7 @@
          "info" : "http://www.gbv.de/benutzer/datenbanken/ssg",
          "sorted" : "1",
          "title_de" : "Online-Contents - Thematische Ausschnitte",
+         "title_en" : "Online-Contents - Subjects",
          "uri" : "http://uri.gbv.de/database/olcssg"
       },
       {
@@ -965,7 +966,7 @@
                "title_en" : "LBS Potsdam"
             },
             {
-               "access" : "http://katalog.ub.uni-rostock.de/ubscript-cgi/wwwopc4menu?LNG=DU",
+               "access" : "http://opac.lbs-rostock.gbv.de/ubscript-cgi/wwwopc4menu?LNG=DU",
                "title_de" : "LBS Rostock",
                "title_en" : "LBS Rostock"
             },
