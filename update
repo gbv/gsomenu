@@ -39,7 +39,7 @@ sub expand {
     # database group
     elsif ( ref $m eq 'HASH' ) {
         $db = { 
-            map { $_ => $m->{$_} }
+            map { $_ => $m->{$_} . "" }
             grep { defined $m->{$_} }
             qw(title_de title_en access info sorted)
         };
