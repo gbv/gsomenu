@@ -26,6 +26,11 @@ databases:
             - ikar
             - leibniz
             - vd17
+            - 
+                title_de: "VD18-Datenbank: Das Verzeichnis Deutscher Drucke des 18. Jahrhunderts"
+                title_en: "VD18-Database: The Index of 18th century German prints"
+                access: "https://gso.gbv.de/DB=1.65/"
+
             - vdlied
     -
         title_de: "Datenbanken mit Nationallizenz"

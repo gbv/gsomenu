@@ -423,6 +423,11 @@
                "uri" : "http://uri.gbv.de/database/vd17"
             },
             {
+               "access" : "https://gso.gbv.de/DB=1.65/",
+               "title_de" : "VD18-Datenbank: Das Verzeichnis Deutscher Drucke des 18. Jahrhunderts",
+               "title_en" : "VD18-Database: The Index of 18th century German prints"
+            },
+            {
                "access" : "https://gso.gbv.de/DB=1.60/{?LNG}",
                "dbkey" : "vdlied",
                "title_de" : "VDLied - Das Verzeichnis der deutschsprachigen Liedflugschriften digital",
