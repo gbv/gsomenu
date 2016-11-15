@@ -567,6 +567,11 @@
                "access" : "https://gso.gbv.de/DB=9.1003/",
                "title_de" : "Landkreis Rotenburg Wümme - Online-Katalog der Bibliothek",
                "title_en" : "Landkreis Rotenburg Wümme - Online Catalogue of the Library"
+            },
+            {
+               "access" : "https://gso.gbv.de/DB=9.297/",
+               "title_de" : "Landesamt für Denkmalpflege Schleswig Holstein, Kiel - Online-Katalog der Bibliothek",
+               "title_en" : "Landesamt für Denkmalpflege Schleswig Holstein, Kiel - Online-Katalog der Bibliothek"
             }
          ],
          "title_de" : "Kataloge im CBS-Service der VZG",
