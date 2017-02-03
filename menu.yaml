@@ -85,6 +85,14 @@ databases:
                 access: "https://gso.gbv.de/DB=9.297/"
                 title_de: "Landesamt für Denkmalpflege Schleswig Holstein, Kiel - Online-Katalog der Bibliothek"
                 title_en: "Landesamt für Denkmalpflege Schleswig Holstein, Kiel - Online-Katalog der Bibliothek"
+            -
+                access: "https://gso.gbv.de/DB=9.611/"
+                title_de: "Maecenata Bibliothek, Berlin - Online-Katalog der Bibliothek"
+                title_en: "Maecenata Library, Berlin - Catalogue of the Library"
+            -
+                access: "https://gso.gbv.de/DB=9.681/"
+                title_de: "Deutsche Reiterliche Vereinigung Warendorf - Online-Katalog der Bibliothek"
+                title_en: "Deutsche Reiterliche Vereinigung Warendorf - Online-Katalog der Bibliothek"
     - 
         databases: rk
         title_en: "Regional databases"
