@@ -866,17 +866,17 @@
                "title_en" : "LBS Service"
             },
             {
-               "access" : "http://lhanh.gbv.de/cgi-bin/wwwopc4menu",
+               "access" : "https://lhanh.gbv.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Anhalt",
                "title_en" : "LBS Anhalt"
             },
             {
-               "access" : "http://stabikat.staatsbibliothek-berlin.de/ ",
+               "access" : "http://stabikat.de/",
                "title_de" : "LBS Berlin - Staatsbibliothek",
                "title_en" : "LBS Berlin - Staatsbibliothek"
             },
             {
-               "access" : "http://iaiweb1.iai.spk-berlin.de/cgi-bin/wwwopc4menu",
+               "access" : "https://lhiai.gbv.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Berlin - Stiftung Preußischer Kulturbesitz",
                "title_en" : "LBS Berlin - Stiftung Preußischer Kulturbesitz"
             },
@@ -886,77 +886,77 @@
                "title_en" : "LBS Braunschweig"
             },
             {
-               "access" : "http://katalog.suub.uni-bremen.de/cgi-bin/wwwopc4menu",
+               "access" : "https://vhweb.suub.uni-bremen.de/",
                "title_de" : "LBS Bremen",
                "title_en" : "LBS Bremen"
             },
             {
-               "access" : "http://opac.ub.tu-clausthal.de/cgi-bin/wwwopc4menu",
+               "access" : "https://lhclz.gbv.de/DB=1/",
                "title_de" : "LBS Clausthal",
                "title_en" : "LBS Clausthal"
             },
             {
-               "access" : "http://lhemd.gbv.de/cgi-bin/wwwopc4menu ",
+               "access" : "https://lhemd.gbv.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Emden",
                "title_en" : "LBS EMden"
             },
             {
-               "access" : "http://opac.uni-erfurt.de/cgi-bin/wwwopc4menu",
+               "access" : "https://opac.uni-erfurt.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Erfurt",
                "title_en" : "LBS Erfurt"
             },
             {
-               "access" : "http://www.sub.uni-goettingen.de/weitere-informationen/weitere-sucheinstiege-recherchetipps/lokale-kataloge/",
+               "access" : "https://opac.sub.uni-goettingen.de/DB=1/",
                "title_de" : "LBS Göttingen",
                "title_en" : "LBS Göttingen"
             },
             {
-               "access" : "https://opac.ub.uni-greifswald.de/cgi-bin/wwwopc4menu",
+               "access" : "https://lhgrw.gbv.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Greifswald",
                "title_en" : "LBS Greifswald"
             },
             {
-               "access" : "http://opac.bibliothek.uni-halle.de/cgi-bin/wwwopc4menu",
+               "access" : "https://lhhal.gbv.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Halle - Merseburg",
                "title_en" : "LBS Halle-Merseburg"
             },
             {
-               "access" : "http://kataloge.uni-hamburg.de/cgi-bin/wwwopc4menu ",
+               "access" : "https://kataloge.uni-hamburg.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Hamburg",
                "title_en" : "LBS Hamburg"
             },
             {
-               "access" : "https://katalog.b.tuhh.de/DB=1/",
+               "access" : "https://lhhar.gbv.de/DB=1/",
                "title_de" : "LBS Hamburg, TUHH",
                "title_en" : "LBS Hamburg, TUHH"
             },
             {
-               "access" : "https://katalog.b.tuhh.de/DB=22/",
+               "access" : "https://lhhar.gbv.de/DB=22/",
                "title_de" : "LBS Hamburg, HCU",
                "title_en" : "LBS Hamburg, HCU"
             },
             {
-               "access" : "http://hsu-bibliothek.de/DB=1/",
+               "access" : "https://ub.hsu-hh.de/DB=1/",
                "title_de" : "LBS Hamburg, HSU",
                "title_en" : "Catalog of the University Library of the Helmut-Schmidt-Universität"
             },
             {
-               "access" : "http://opac.tib.uni-hannover.de/cgi-bin/wwwopc4menu",
+               "access" : "https://opac.tib.eu/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Hannover",
                "title_en" : "Hannover Local Library System (HOBSY)"
             },
             {
-               "access" : "http://opac.lbs-hildesheim.gbv.de/cgi-bin/wwwopc4menu",
+               "access" : "https://opac.lbs-hildesheim.gbv.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Hildesheim",
                "title_en" : "LBS Hildesheim"
             },
             {
-               "access" : "http://katalog.bibliothek.tu-ilmenau.de/cgi-bin/wwwopc4menu",
+               "access" : "https://lhilm.gbv.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Ilmenau",
                "title_en" : "LBS Ilmenau"
             },
             {
-               "access" : "http://kataloge.thulb.uni-jena.de/cgi-bin/wwwopc4menu_ssl",
+               "access" : "https://kataloge.thulb.uni-jena.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Jena",
                "title_en" : "LBS Jena"
             },
@@ -971,39 +971,39 @@
                "title_en" : "LBS Kiel: ZBW"
             },
             {
-               "access" : "http://katalog.leuphana.gbv.de/DB=1/",
+               "access" : "http://lhlue.gbv.de/DB=1/",
                "title_de" : "LBS Lüneburg",
                "title_en" : "LBS University Library of Lueneburg"
             },
             {
-               "access" : "http://opac.uni-magdeburg.de/cgi-bin/wwwopc4menu",
+               "access" : "https://opac.lbs-magdeburg.gbv.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Magdeburg",
                "title_en" : "LBS Magdeburg"
             },
             {
-               "access" : "http://osopc4.ub.uni-osnabrueck.de/cgi-bin/wwwopc4menu",
+               "access" : "https://osopc4.ub.uni-osnabrueck.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Osnabrück",
                "title_en" : "LBS Osnabrueck"
             },
             {
-               "access" : "http://opac.ub.uni-potsdam.de",
+               "access" : "https://lhpot.gbv.de/",
                "title_de" : "LBS Potsdam",
                "title_en" : "LBS Potsdam"
             },
             {
-               "access" : "http://opac.lbs-rostock.gbv.de/ubscript-cgi/wwwopc4menu?LNG=DU",
+               "access" : "http://katalog.ub.uni-rostock.de/ubscript-cgi/wwwopc4menu",
                "title_de" : "LBS Rostock",
                "title_en" : "LBS Rostock"
             },
             {
-               "access" : "http://opac.hs-wismar.de/cgi-bin/wwwopc4menu",
-               "title_de" : "LBS Schwerin - Wismar",
-               "title_en" : "LBS Schwerin - Wismar"
-            },
-            {
-               "access" : "http://wwwopac.ub.uni-weimar.de/cgi-bin/wwwopc4menu",
+               "access" : "https://opac.lbs-weimar.gbv.de/cgi-bin/wwwopc4menu",
                "title_de" : "LBS Weimar",
                "title_en" : "LBS Weimar"
+            },
+            {
+               "access" : "http://lhwis.gbv.de/cgi-bin/wwwopc4menu",
+               "title_de" : "LBS Wismar",
+               "title_en" : "LBS Wismar"
             }
          ],
          "title_de" : "Lokale Bibliothekskataloge",
