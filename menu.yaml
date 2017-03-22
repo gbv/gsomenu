@@ -51,6 +51,7 @@ databases:
             - "opac-de-hel1"
             - "opac-de-we21"
             - "opac-de-brk1"
+            - "opac-de-b2226"
             -
                 access: "https://gso.gbv.de/DB=9.359/"
                 title_de: "Institut für niederdeutsche Sprache, Bremen"
@@ -93,6 +94,10 @@ databases:
                 access: "https://gso.gbv.de/DB=9.681/"
                 title_de: "Deutsche Reiterliche Vereinigung Warendorf - Online-Katalog der Bibliothek"
                 title_en: "Deutsche Reiterliche Vereinigung Warendorf - Online-Katalog der Bibliothek"
+            -
+                access: "https://gso.gbv.de/DB=9.240/"
+                title_de: "Eutiner Landesbibliothek - Online-Katalog der Bibliothek"
+                title_en: "Eutiner Landesbibliothek - Online-Katalog der Bibliothek"
     - 
         databases: rk
         title_en: "Regional databases"

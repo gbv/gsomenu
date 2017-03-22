@@ -504,6 +504,13 @@
                "uri" : "http://uri.gbv.de/database/opac-de-brk1"
             },
             {
+               "access" : "http://gso.gbv.de/DB=9.702/{?LNG}",
+               "dbkey" : "opac-de-b2226",
+               "title_de" : "Max-Planck-Institut für Wissenschaftsgeschichte",
+               "title_en" : "Max Planck Institute for the History of Science",
+               "uri" : "http://uri.gbv.de/database/opac-de-b2226"
+            },
+            {
                "access" : "https://gso.gbv.de/DB=9.359/",
                "title_de" : "Institut für niederdeutsche Sprache, Bremen",
                "title_en" : "Institute for the Low German Language, Bremen"
@@ -582,6 +589,11 @@
                "access" : "https://gso.gbv.de/DB=9.681/",
                "title_de" : "Deutsche Reiterliche Vereinigung Warendorf - Online-Katalog der Bibliothek",
                "title_en" : "Deutsche Reiterliche Vereinigung Warendorf - Online-Katalog der Bibliothek"
+            },
+            {
+               "access" : "https://gso.gbv.de/DB=9.240/",
+               "title_de" : "Eutiner Landesbibliothek - Online-Katalog der Bibliothek",
+               "title_en" : "Eutiner Landesbibliothek - Online-Katalog der Bibliothek"
             }
          ],
          "title_de" : "Kataloge im CBS-Service der VZG",
