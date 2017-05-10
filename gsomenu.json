@@ -374,6 +374,48 @@
       {
          "databases" : [
             {
+               "access" : "https://gso.gbv.de/DB=1.91/{?LNG}",
+               "dbkey" : "doajgbv",
+               "info_url" : "http://www.gbv.de/benutzer/datenbanken/online_ressourcen",
+               "title_de" : "DOAJ - Directory of Open Access Journals",
+               "title_en" : "DOAJ - Directory of Open Access Journals",
+               "uri" : "http://uri.gbv.de/database/doajgbv"
+            },
+            {
+               "access" : "https://gso.gbv.de/DB=2.13/{?LNG}",
+               "dbkey" : "idz",
+               "title_de" : "IDZ - Index Deutschsprachiger Zeitschriften 1750-1815",
+               "title_en" : "IDZ - Index of German Journals 1750-1815",
+               "uri" : "http://uri.gbv.de/database/idz"
+            },
+            {
+               "access" : "http://gsoapi.gbv.de/DB=1.93/{?LNG}",
+               "dbkey" : "jstor",
+               "title_de" : "JSTOR",
+               "title_en" : "JSTOR",
+               "uri" : "http://uri.gbv.de/database/jstor"
+            },
+            {
+               "access" : "https://gso.gbv.de/DB=1.92/{?LNG}",
+               "dbkey" : "medline",
+               "title_de" : "Medical Literature Analysis and Retrieval System Online",
+               "title_en" : "Medical Literature Analysis and Retrieval System Online",
+               "uri" : "http://uri.gbv.de/database/medline"
+            },
+            {
+               "access" : "https://gso.gbv.de/DB=1.90/{?LNG}",
+               "dbkey" : "springerej",
+               "title_de" : "Springer E-Journals Aufsätze",
+               "title_en" : "Springer E-Journals",
+               "uri" : "http://uri.gbv.de/database/springerej"
+            }
+         ],
+         "title_de" : "Aufsatzdatenbanken",
+         "title_en" : "Article databases"
+      },
+      {
+         "databases" : [
+            {
                "access" : "http://www.musikbibliographie.de/DB=1.86/{?LNG}",
                "dbkey" : "bmsonline",
                "title_de" : "BMS - Bibliographie des Musikschrifttums online",
@@ -388,18 +430,16 @@
                "uri" : "http://uri.gbv.de/database/digicult"
             },
             {
+               "access" : "https://gso.gbv.de/DB=1.2/",
+               "title_de" : "E-Book-Pool",
+               "title_en" : "E-Book-Pool"
+            },
+            {
                "access" : "https://gso.gbv.de/DB=2.8/{?LNG}",
                "dbkey" : "eromm",
                "title_de" : "Europäisches Register der Mikroformmaster und digitalen Master (EROMM)",
                "title_en" : "EROMM - European Register of Microform ans Digital Masters",
                "uri" : "http://uri.gbv.de/database/eromm"
-            },
-            {
-               "access" : "https://gso.gbv.de/DB=2.13/{?LNG}",
-               "dbkey" : "idz",
-               "title_de" : "IDZ - Index Deutschsprachiger Zeitschriften 1750-1815",
-               "title_en" : "IDZ - Index of German Journals 1750-1815",
-               "uri" : "http://uri.gbv.de/database/idz"
             },
             {
                "access" : "https://gso.gbv.de/DB=1.68/{?LNG}",
@@ -1080,24 +1120,9 @@
       {
          "databases" : [
             {
-               "access" : "https://gso.gbv.de/DB=1.91/{?LNG}",
-               "dbkey" : "doajgbv",
-               "info_url" : "http://www.gbv.de/benutzer/datenbanken/online_ressourcen",
-               "title_de" : "DOAJ - Directory of Open Access Journals",
-               "title_en" : "DOAJ - Directory of Open Access Journals",
-               "uri" : "http://uri.gbv.de/database/doajgbv"
-            },
-            {
                "access" : "https://www.gbv.de/benutzer/datenbanken/harri_deutsch_verlag",
                "title_de" : "Niedersächsisches Konsortium - Verlag Harri Deutsch",
                "title_en" : "Harri Deutsch Databases"
-            },
-            {
-               "access" : "https://gso.gbv.de/DB=1.90/{?LNG}",
-               "dbkey" : "springerej",
-               "title_de" : "Springer E-Journals Aufsätze",
-               "title_en" : "Springer E-Journals",
-               "uri" : "http://uri.gbv.de/database/springerej"
             }
          ],
          "title_de" : "Sonstige Datenbanken",

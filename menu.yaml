@@ -14,6 +14,15 @@ databases:
         info: "http://www.gbv.de/benutzer/datenbanken/ssg"
         title_en: "Online-Contents - Subjects"
         sorted: true
+    -
+        title_de: "Aufsatzdatenbanken"
+        title_en: "Article databases"
+        databases:
+            - doajgbv
+            - idz
+            - jstor
+            - medline
+            - springerej
     - 
         title_de: "Nationale Datenbanken und Bibliographien"
         title_en: "German National Databases"
@@ -21,8 +30,11 @@ databases:
         databases:
             - bmsonline
             - digicult
+            -
+                title_de: "E-Book-Pool"
+                title_en: "E-Book-Pool"
+                access: "https://gso.gbv.de/DB=1.2/"
             - eromm
-            - idz
             - ikar
             - leibniz
             - vd17
@@ -253,12 +265,10 @@ databases:
         title_de: "Sonstige Datenbanken"
         title_en: "Other databases"
         databases:
-            - doajgbv
             -
                 title_de: "Niedersächsisches Konsortium - Verlag Harri Deutsch"
                 title_en: "Harri Deutsch Databases"
                 access: "https://www.gbv.de/benutzer/datenbanken/harri_deutsch_verlag"
-            - springerej
     -
         title_de: "Externe Datenbanken"
         title_en: "External databases"
