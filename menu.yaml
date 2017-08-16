@@ -110,6 +110,11 @@ databases:
                 access: "https://gso.gbv.de/DB=9.240/"
                 title_de: "Eutiner Landesbibliothek - Online-Katalog der Bibliothek"
                 title_en: "Eutiner Landesbibliothek - Online-Katalog der Bibliothek"
+            -
+                access: "https://gso.gbv.de/DB=9.1014/"
+                title_de: "Europäisches Hansemuseum Lübeck - Online-Katalog der Bibliothek"
+                title_en: "Europäisches Hansemuseum Lübeck - Online Catalogue of the Library"
+
     - 
         databases: rk
         title_en: "Regional databases"
