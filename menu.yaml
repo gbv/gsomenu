@@ -8,7 +8,6 @@
 databases:
     - gvk
     - olc
-    - gvkplus
     - 
         databases: olcssg
         info: "http://www.gbv.de/benutzer/datenbanken/ssg"
@@ -18,7 +17,7 @@ databases:
         title_de: "Aufsatzdatenbanken"
         title_en: "Article databases"
         databases:
-            - doajgbv
+            - doaj
             - idz
             - jstor
             - medline
