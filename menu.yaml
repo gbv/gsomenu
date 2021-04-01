@@ -8,6 +8,11 @@
 databases:
     - gvk
     - olc
+    - gvkplus
+    -
+        title_de:
+        title_en:
+        access:
     - 
         databases: olcssg
         info: "http://www.gbv.de/benutzer/datenbanken/ssg"

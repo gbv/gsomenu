@@ -17,6 +17,14 @@
          "uri" : "http://uri.gbv.de/database/olc"
       },
       {
+         "access" : "https://gso.gbv.de/DB=2.2/{?LNG}",
+         "dbkey" : "gvkplus",
+         "info_url" : "http://www.gbv.de/benutzer/datenbanken/datenbanken_des_GBV",
+         "title_de" : "GVK-PLUS - Gemeinsamer Verbundkatalog mit Online Contents",
+         "title_en" : "GVK-PLUS - GBV Union Catalogue with Online Contents",
+         "uri" : "http://uri.gbv.de/database/gvkplus"
+      },
+      {
          "access" : null,
          "databases" : [
             {
